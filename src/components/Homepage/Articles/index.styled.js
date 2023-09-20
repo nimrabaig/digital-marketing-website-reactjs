@@ -15,7 +15,7 @@ export const Card = styled.div`
   padding: 50px;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
+  gap: 40px;
   border-radius: 10px;
   background-color: ${(props) => props.bg};
 `;
@@ -26,6 +26,12 @@ export const Header = styled.div`
   align-items: center;
   width: 100%;
   margin-bottom: 20px;
+
+  @media (max-width: 370px) {
+    flex-direction: column !important;
+    justify-content: center;
+    text-align: center !important;
+  }
 `;
 
 export const Category = styled.div`
@@ -48,6 +54,7 @@ export const Date = styled(Text)`
 font-weight: 500;`;
 
 export const Title = styled(Text)`
+width: 100%;
 font-weight: 600;
 margin-bottom: 20px;`;
 

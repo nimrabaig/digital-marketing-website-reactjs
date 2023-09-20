@@ -41,6 +41,7 @@ export const Header = styled.div`
 
   @media (max-width: 370px) {
     flex-direction: column !important;
+    justify-content: center;
   }
 
   @media (max-width: 750px) {

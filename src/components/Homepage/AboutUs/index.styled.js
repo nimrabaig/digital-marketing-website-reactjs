@@ -47,11 +47,14 @@ export const TextContent = styled.div`
 
 export const Header = styled.div`
   display: flex;
+  width: 100%;
   align-items: center;
   gap: 30px;
 
   @media (max-width: 370px) {
     flex-direction: column !important;
+    justify-content: center;
+    text-align: center !important;
   }
 `;
 export const Column = styled.div`

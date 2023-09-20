@@ -7,12 +7,15 @@ export const Flex = styled.div`
   margin-right: auto;
 
   @media (max-width: 750px) {
-    justify-content: ${(props) => props.mobileViewAlignment ?? "center"};
+    justify-content: center;
     width: 100%;
   }
 
   @media (max-width: 370px) {
     justify-content: center !important;
+    margin: auto !important;
+    text-align: center;
+    width: 100%
   }
 `;
 
@@ -25,4 +28,10 @@ export const Text = styled.div`
   letter-spacing: 2.025px;
   text-transform: uppercase;
   color: ${props => props.color ?? "#000"};
+
+  @media (max-width: 370px) {
+    margin: auto !important;
+    text-align: center;
+    width: 100%
+  }
 `;

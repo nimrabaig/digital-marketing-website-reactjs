@@ -108,5 +108,16 @@ export const Button = styled.div`
   cursor: pointer;
   margin: 20px auto;
   border: 1px solid rgba(82, 82, 85, 1);
-  background-color: ${props => props.primary ? "#fff" : "rgba(41, 41, 48, 1)"};
-  color: ${props => props.primary ? "rgba(41, 41, 48, 1)" : "#fff"};`
+  background-color: ${(props) =>
+    props.primary ? "#fff" : "rgba(41, 41, 48, 1)"};
+  color: ${(props) => (props.primary ? "rgba(41, 41, 48, 1)" : "#fff")};
+`;
+
+export const Oneliner = styled.span`
+  color: #292930;
+  font-family: Nunito;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110.5%; /* 44.2px */
+`;

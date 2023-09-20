@@ -4,6 +4,8 @@ import ProcessBg from "../../../assets/process-bg.png";
 export const Background = styled.div`
   background-color: #fff;
   background-image: url(${ProcessBg});
+  background-repeat: no-repeat;
+  background-size: 100%;
   margin: 200px auto;
   height: 1000px;
   width: 80%;
@@ -15,6 +17,9 @@ export const Background = styled.div`
 `;
 
 export const ProcessDescription = styled.div`
+display: flex;
+text-align: center;
+margin: auto;
   color: #292930;
   text-align: center;
   font-family: Nunito;

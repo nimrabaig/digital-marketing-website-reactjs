@@ -1,4 +1,4 @@
-import { Column, Wrapper } from "../Pricing/index.styled";
+import { Column, Oneliner, Wrapper } from "../Pricing/index.styled";
 import SectionName from "../../SectionName";
 import Button from "../../Button";
 import Arrow from "../../../assets/arrow.png";
@@ -28,6 +28,7 @@ const Articles = () => {
         style={{ marginBottom: 20 }}
       />
       <SectionName section={"08 . Articles"} margin={"auto"} />
+      <Oneliner>Browse our content on growth marketing</Oneliner>
 
       <Container>
         <Card bg={"rgba(255, 243, 202, 1)"}>
@@ -100,9 +101,7 @@ const Articles = () => {
           }}
         >
           More Articles
-       
-            <img src={WhiteArrow} alt=""  style={{ marginLeft: 20 }}/>{" "}
-     
+          <img src={WhiteArrow} alt="" style={{ marginLeft: 20 }} />{" "}
         </Button>
       </Container>
     </Wrapper>

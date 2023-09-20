@@ -11,9 +11,12 @@ export const Header = styled.div`
   display: flex;
   align-items: center;
   gap: 30px;
+  width: 100%;
 
   @media (max-width: 370px) {
     flex-direction: column !important;
+    justify-content: center;
+    text-align: center !important;
   }
 `;
 

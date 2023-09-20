@@ -8,6 +8,7 @@ import {
   Price,
   Text,
   Button,
+  Oneliner,
 } from "./index.styled";
 import PricingIcon from "../../../assets/pricing-icon.png";
 import SectionName from "../../SectionName";
@@ -37,6 +38,7 @@ const Pricing = () => {
         style={{ marginBottom: 20 }}
       />
       <SectionName section={"06 . Price & Plan"} margin={"auto"} />
+      <Oneliner>The #1 digital marketing services company</Oneliner>
 
       <Container>
         <Package>
