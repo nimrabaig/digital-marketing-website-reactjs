@@ -23,7 +23,7 @@ const Benefits = () => {
         <Header>
           <img src={BenefitIcon} alt="" />
           <Column>
-            <SectionName section={"Benefits"} mobileViewAlignment={"left"} />
+            <SectionName section={"07 . Benefits"} mobileViewAlignment={"left"} />
             <span>Benifit of working with Lumanta</span>
           </Column>
         </Header>

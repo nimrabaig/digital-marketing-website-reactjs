@@ -52,7 +52,7 @@ const Header = () => {
           <MobileMenuIcon
             src={Options}
             alt=""
-            height={30}
+            height={18}
             onClick={() => setShowDropdown(!showDropDown)}
           />
         ) : (

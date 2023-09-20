@@ -16,7 +16,6 @@ import {
   Text,
   Title,
 } from "./index.styled";
-import { Flex } from "../../SectionName/index.styled";
 
 const Articles = () => {
   return (
@@ -28,7 +27,7 @@ const Articles = () => {
         width={80}
         style={{ marginBottom: 20 }}
       />
-      <SectionName section={"06 . Price & Plan"} margin={"auto"} />
+      <SectionName section={"08 . Articles"} margin={"auto"} />
 
       <Container>
         <Card bg={"rgba(255, 243, 202, 1)"}>
