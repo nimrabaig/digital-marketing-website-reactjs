@@ -8,14 +8,13 @@ export const Flex = styled.div`
 
   @media (max-width: 750px) {
     justify-content: center;
-    width: 100%;
+    margin: auto !important;
   }
 
   @media (max-width: 370px) {
     justify-content: center !important;
     margin: auto !important;
     text-align: center;
-    width: 100%
   }
 `;
 
@@ -29,9 +28,8 @@ export const Text = styled.div`
   text-transform: uppercase;
   color: ${props => props.color ?? "#000"};
 
-  @media (max-width: 370px) {
+  @media (max-width: 750px) {
     margin: auto !important;
     text-align: center;
-    width: 100%
   }
 `;

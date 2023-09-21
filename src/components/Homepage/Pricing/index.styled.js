@@ -120,4 +120,9 @@ export const Oneliner = styled.span`
   font-style: normal;
   font-weight: 600;
   line-height: 110.5%; /* 44.2px */
+
+  @media (max-width: 750px) {
+    text-align: center;
+    
+  }
 `;

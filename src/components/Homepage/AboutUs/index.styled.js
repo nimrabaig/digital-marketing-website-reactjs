@@ -51,7 +51,7 @@ export const Header = styled.div`
   align-items: center;
   gap: 30px;
 
-  @media (max-width: 370px) {
+  @media (max-width: 750px) {
     flex-direction: column !important;
     justify-content: center;
     text-align: center !important;
@@ -60,14 +60,6 @@ export const Header = styled.div`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  span {
-    color: #292930;
-    font-family: Nunito;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 110.5%; /* 44.2px */
-  }
 `;
 
 export const Separator = styled.hr`

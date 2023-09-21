@@ -45,6 +45,7 @@ export const Container = styled.div`
 
   @media (max-width: 750px) {
     background: none !important;
+    margin-bottom: 100px;
   }
 `;
 
@@ -72,8 +73,25 @@ export const TextContent = styled.div`
 export const ButtonContainer = styled.div`
   display: flex;
   width: 100%;
-  justify-content: center;
+  margin-bottom: 60px;
+  gap: 20px;
 
+  @media (max-width: 750px) {
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+export const ValuesButtonContainer = styled(ButtonContainer)`
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
+`;
+
+export const LongButtonsContainer = styled(ButtonContainer)`
   @media (max-width: 1120px) {
     flex-direction: column;
   }
@@ -86,6 +104,14 @@ export const Text = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: 156.5%; /* 28.17px */
+  text-align: left;
+  margin-right: auto;
+
+  @media (max-width: 750px) {
+    text-align: center;
+    margin: auto !important;
+    width: 100%;
+  }
 `;
 
 export const ValuesContainer = styled.div`
@@ -117,7 +143,7 @@ export const Card = styled.div`
 
 export const Grid = styled.div`
   display: flex;
-  height: 505px;
+  height: 502px;
   flex-direction: row;
   flex-wrap: wrap;
   overflow: hidden;
@@ -125,6 +151,24 @@ export const Grid = styled.div`
   gap: 20px;
   margin: 40px auto;
   justify-content: center;
+`;
+
+export const TeamGrid = styled.div`
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+  gap: 20px;
+  margin-top: 60px;
+
+  @media (max-width: 1040px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 660px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const CardText = styled.div`
@@ -147,11 +191,52 @@ export const SecondaryButton = styled(Button)`
   border: 1px solid #fff;
   color: #fff;
   background-color: transparent;
+
+  @media (max-width: 750px) {
+    width: 121.047px;
+  }
 `;
 
 export const PrimaryButton = styled(Button)`
-position: relative;
+  position: relative;
   border: 1px solid #fff;
   color: #292930;
   background-color: #fff;
+`;
+
+export const TeamsContainer = styled(ValuesContainer)`
+  background-color: #fff;
+`;
+
+export const TeamCard = styled.div`
+  border-radius: 30px;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  padding: 25px 25px 50px 25px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+
+  &:hover {
+    background: linear-gradient(
+      111.05deg,
+      #e9f7ff 9.66%,
+      #ffdbd5 57.52%,
+      #fff3ca 103.42%
+    );
+  }
+`;
+
+export const Image = styled.img`
+  border-radius: 20px 20px 0px 0px;
+`;
+export const Name = styled(Text)`
+  color: #292930;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 114.5%; /* 28.625px */
 `;

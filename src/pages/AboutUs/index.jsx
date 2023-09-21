@@ -1,5 +1,6 @@
 import PageTitle from "../../components/PageTitle";
 import { ValuesData } from "../../constants/Values";
+import { Team } from "../../constants/Team";
 import {
   Banner,
   Container,
@@ -14,6 +15,13 @@ import {
   Bar,
   PrimaryButton,
   SecondaryButton,
+  TeamsContainer,
+  TeamCard,
+  Name,
+  Image,
+  LongButtonsContainer,
+  ValuesButtonContainer,
+  TeamGrid,
 } from "./index.styled";
 import IntroImg from "../../assets/about-us-intro.png";
 import { Header, Column } from "../../components/Homepage/AboutUs/index.styled";
@@ -23,9 +31,11 @@ import Button from "../../components/Button";
 import Icon1 from "../../assets/dev-scale.png";
 import Icon2 from "../../assets/research.png";
 import ValuesIcon from "../../assets/values-icon.png";
+import ContactUsIon from "../../assets/contact-us-icon.png";
 import { Oneliner } from "../../components/Homepage/Pricing/index.styled";
 import { Ellipse } from "../../components/Homepage/Services/index.styled";
 import Arrow from "../../assets/arrow.png";
+import GetInTouch from "../../components/GetInTouch";
 
 const AboutUs = () => {
   return (
@@ -47,10 +57,10 @@ const AboutUs = () => {
                 section={"02. ABOUT US"}
                 mobileViewAlignment={"left"}
               />
-              <span>Your Trusted Partner in Digital Marketing</span>
+              <Oneliner>Your Trusted Partner in Digital Marketing</Oneliner>
             </Column>
           </Header>
-          <ButtonContainer
+          <LongButtonsContainer
             style={{
               margin: "30px 20px",
               gap: 20,
@@ -78,17 +88,16 @@ const AboutUs = () => {
               <img src={Icon2} alt="" style={{ marginRight: 10 }} height={30} />
               Research & Strategy
             </Button>
-          </ButtonContainer>
+          </LongButtonsContainer>
           <Text>
             Welcome to Lumenta, your premier destination for digital marketing
             excellence. Established in [Year of Establishment], we are a dynamic
             and results-driven digital marketing agency dedicated to propelling
             your business to online success.
           </Text>
-
-          <Button style={{ marginRight: "auto", marginTop: 20 }}>
-            Get In Touch
-          </Button>
+          <ButtonContainer>
+            <Button style={{ marginTop: 20 }}>Get In Touch</Button>
+          </ButtonContainer>
         </TextContent>
       </Container>
 
@@ -126,17 +135,61 @@ const AboutUs = () => {
             </Card>
           ))}
         </Grid>
-        
-        <ButtonContainer style={{marginBottom: 60, gap: 20 }}>
+
+        <ValuesButtonContainer>
           <SecondaryButton>Get In Touch</SecondaryButton>
           <PrimaryButton>
             Our Services{" "}
             <Ellipse>
-              <img src={Arrow} alt="" height={10} width={6}  />
+              <img src={Arrow} alt="" height={10} width={6} />
             </Ellipse>
           </PrimaryButton>
-        </ButtonContainer>
+        </ValuesButtonContainer>
       </ValuesContainer>
+
+      <TeamsContainer>
+        <img
+          src={ValuesIcon}
+          alt=""
+          height={80}
+          width={80}
+          style={{ marginBottom: 20 }}
+        />
+        <SectionName section={"03 . Our team"} margin={"auto"} />
+        <Oneliner>Our team of expert marketers</Oneliner>
+        <TeamGrid>
+          {Team.map((emp) => (
+            <TeamCard>
+              <Image src={emp.image} alt="" />
+              <Name>{emp.name}</Name>
+              <Text>{emp.designation}</Text>
+            </TeamCard>
+          ))}
+        </TeamGrid>
+
+        <GetInTouch />
+      </TeamsContainer>
+
+      <TeamsContainer>
+        <img
+          src={ContactUsIon}
+          alt=""
+          height={80}
+          width={80}
+          style={{ marginBottom: 20 }}
+        />
+        <SectionName section={"04 . Contacts us"} margin={"auto"} />
+        <Oneliner>Join Us on the Journey</Oneliner>
+        <Text
+          style={{ margin: "40px auto", width: "90%", textAlign: "center" }}
+        >
+          These values are not just words; they are the essence of Lumenta. When
+          you choose us as your digital marketing partner, you invest in
+          expertise and align with a company that follows these principles.
+          Together, we'll navigate the digital landscape and achieve remarkable
+          success.
+        </Text>
+      </TeamsContainer>
     </Wrapper>
   );
 };
