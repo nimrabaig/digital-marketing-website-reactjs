@@ -1,15 +1,15 @@
-import { Header, Text, Flex, Column } from "./index.styled";
+import { Header, Text, Flex, Column, Oneliner } from "./index.styled";
 
-const SectionHeader = ({ icon, title, oneliner, color, margin }) => {
+const SectionHeader = ({ icon, title, oneliner, color, leftAlign }) => {
   return (
-    <Header>
+    <Header leftAlign={leftAlign}>
       <img src={icon} alt="" />
       <Column>
-        <Flex margin={margin}>
+        <Flex leftAlign={leftAlign}>
           <Text style={{ color: "#fec90c" }}>{"//"}&nbsp;</Text>
           <Text color={color}>{title}</Text>
         </Flex>
-        <span>{oneliner}</span>
+        <Oneliner leftAlign={leftAlign}>{oneliner}</Oneliner>
       </Column>
     </Header>
   );

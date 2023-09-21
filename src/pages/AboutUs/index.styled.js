@@ -208,6 +208,11 @@ export const TeamsContainer = styled(ValuesContainer)`
   background-color: #fff;
 `;
 
+export const ContactUsContainer = styled(ValuesContainer)`
+  background-color: #fff;
+  justify-content: unset;
+`;
+
 export const TeamCard = styled.div`
   border-radius: 30px;
   border: 1px solid #dcdcdc;

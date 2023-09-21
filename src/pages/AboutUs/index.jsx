@@ -1,4 +1,3 @@
-import PageTitle from "../../components/PageTitle";
 import { ValuesData } from "../../constants/Values";
 import { Team } from "../../constants/Team";
 import {
@@ -16,6 +15,7 @@ import {
   PrimaryButton,
   SecondaryButton,
   TeamsContainer,
+  ContactUsContainer,
   TeamCard,
   Name,
   Image,
@@ -23,6 +23,7 @@ import {
   ValuesButtonContainer,
   TeamGrid,
 } from "./index.styled";
+import TeamsIcon from "../../assets/hand-shake-icon.png";
 import IntroImg from "../../assets/about-us-intro.png";
 import { Header, Column } from "../../components/Homepage/AboutUs/index.styled";
 import SectionName from "../../components/SectionName";
@@ -40,9 +41,7 @@ import GetInTouch from "../../components/GetInTouch";
 const AboutUs = () => {
   return (
     <Wrapper>
-      <Banner>
-        <PageTitle first={"About"} second={"Us"} />
-      </Banner>
+      <Banner />
 
       <Container
         style={{
@@ -149,7 +148,7 @@ const AboutUs = () => {
 
       <TeamsContainer>
         <img
-          src={ValuesIcon}
+          src={TeamsIcon}
           alt=""
           height={80}
           width={80}
@@ -170,7 +169,7 @@ const AboutUs = () => {
         <GetInTouch />
       </TeamsContainer>
 
-      <TeamsContainer>
+      <ContactUsContainer>
         <img
           src={ContactUsIon}
           alt=""
@@ -189,7 +188,7 @@ const AboutUs = () => {
           Together, we'll navigate the digital landscape and achieve remarkable
           success.
         </Text>
-      </TeamsContainer>
+      </ContactUsContainer>
     </Wrapper>
   );
 };

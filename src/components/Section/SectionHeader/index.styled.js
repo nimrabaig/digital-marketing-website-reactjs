@@ -4,9 +4,11 @@ export const Header = styled.div`
   display: flex;
   align-items: center;
   gap: 30px;
-  width: 55%;
-  justify-content: flex-start;
-  margin-bottom: 35%;
+  width: ${props => props.leftAlign ? "55%" : "100%"};
+  justify-content: center;
+  margin-bottom: 60px;
+  flex-direction: ${(props) =>
+    props.leftAlign ? "row" : "column"};
 
   @media (max-width: 370px) {
     flex-direction: column !important;
@@ -16,9 +18,10 @@ export const Header = styled.div`
 
 export const Flex = styled.div`
   display: flex;
-  margin-left: ${(props) =>
-    props.margin ? "auto" : ""};
-  margin-right: auto;
+  margin-right: ${(props) =>
+    props.leftAlign ? "auto" : ""};
+  margin: ${(props) =>
+    !props.leftAlign ? "auto !important" :""};
 
   @media (max-width: 750px) {
     justify-content: ${(props) => props.mobileViewAlignment ?? "center"};
@@ -33,14 +36,6 @@ export const Flex = styled.div`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  span {
-    color: #292930;
-    font-family: Nunito;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 110.5%; /* 44.2px */
-  }
 `;
 
 export const Text = styled.div`
@@ -53,3 +48,12 @@ export const Text = styled.div`
   text-transform: uppercase;
   color: ${props => props.color ?? "#000"};
 `;
+export const Oneliner = styled(Text)`
+ color: #292930;
+ font-size: 40px;
+ font-weight: 600;
+ line-height: 110.5%;
+ margin-top: 10px;
+ text-transform: none;
+ text-align: ${props => props.leftAlign ? "left" : "center"};
+  `

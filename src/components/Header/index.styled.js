@@ -41,6 +41,7 @@ export const MenuItem = styled.div`
   line-height: 160%; /* 28.8px */
   text-transform: capitalize;
   margin: auto 20px;
+  cursor: pointer;
 `;
 
 export const MobileMenuIcon = styled.img`

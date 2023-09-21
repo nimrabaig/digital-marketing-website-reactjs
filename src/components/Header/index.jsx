@@ -12,8 +12,10 @@ import LumentaLogo from "../../assets/logo.png";
 import Options from "../../assets/menu.png";
 import { MenuItems } from "../../constants/Menu";
 import Button from "../Button";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
   const [isHeaderMoved, setHeaderMovement] = useState(false);
   const [isMobileView, setMobileView] = useState(false);
   const [showDropDown, setShowDropdown] = useState(false);
@@ -28,7 +30,6 @@ const Header = () => {
     }
 
     function handleWidth() {
-      console.log("nkb", window.innerWidth, isMobileView);
       if (window.innerWidth <= 750) {
         setMobileView(true);
       } else {
@@ -58,7 +59,7 @@ const Header = () => {
         ) : (
           <Menu>
             {MenuItems.map((item, index) => (
-              <MenuItem key={index}>{item}</MenuItem>
+              <MenuItem key={index} onClick={() => navigate(`${item.path}`)}>{item.text}</MenuItem>
             ))}
             <Button primary={true} style={{ marginLeft: 40 }}>
               Get Started
