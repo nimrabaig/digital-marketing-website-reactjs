@@ -89,7 +89,7 @@ export const CardInner = styled.div`
 `;
 
 export const Text = styled.div`
-  color: ${props => props.color ?? "#555"};
+  color: ${(props) => props.color ?? "#555"};
   font-size: ${(props) => (props.size ? `${props.size}px` : "18px")};
   font-style: normal;
   font-weight: ${(props) => props.weight ?? "400"};
@@ -108,13 +108,13 @@ export const Tag = styled.div`
 `;
 
 export const FormBackground = styled.div`
-width: 100%;
-margin-top: 100px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-  background: linear-gradient(151.16deg, #FFF8F8 10.38%, #F5F7FF 95.44%);
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(151.16deg, #fff8f8 10.38%, #f5f7ff 95.44%);
   min-height: 700px;
 `;
 
@@ -134,9 +134,83 @@ export const TextArea = styled.textarea`
   &::placeholder {
     font-family: Nunito;
     font-size: 18px;
-  };
+  }
 
   @media (max-width: 750px) {
     width: 90%;
+  }
+`;
+
+export const Grid = styled.div`
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+  gap: 20px;
+  margin-top: 60px;
+
+  @media (max-width: 1210px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
+
+export const FAQ = styled(Column)`
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 60px auto 100px;
+`;
+
+export const FAQContainer = styled.div`
+  border-radius: 10px;
+  border: 1.5px solid #dcdcdc;
+  background: ${(props) =>
+    props.selected
+      ? "linear-gradient(124deg,#e9f7ff 5.58%,#ffdbd4 21.8%,#fff3ca 37.36%)"
+      : "#fff"};
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  padding: 34px;
+  width: 70%;
+
+  @media (max-width: 750px) {
+    padding: 34px 20px;
+    width: 90%;
+  }
+`;
+
+export const FAQQuestion = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  color: #292930;
+  font-family: Nunito;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110.5%; /* 33.15px */
+
+  @media (max-width: 750px) {
+    font-size: 18px;
+  }
+`;
+
+export const FAQAnswer = styled.div`
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  @media (max-width: 750px) {
+    font-size: 18px;
   }
 `;

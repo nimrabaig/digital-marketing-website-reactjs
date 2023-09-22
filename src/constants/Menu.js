@@ -17,7 +17,7 @@ export const MenuItems = [
   },
 
   {
-    text: "About",
-    path: "/Contact",
+    text: "Contact",
+    path: "/contact-us",
   },
 ];

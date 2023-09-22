@@ -4,6 +4,7 @@ import {
   Container,
   Wrapper,
   Flex,
+  Grid,
   ContactCardOuter,
   CardInner,
   Tag,
@@ -11,9 +12,14 @@ import {
   Text,
   FormBackground,
   TextArea,
+  FAQQuestion,
+  FAQ,
+  FAQAnswer,
+  FAQContainer,
 } from "./index.styled";
 import { Label } from "@progress/kendo-react-labels";
 import Icon from "../../assets/hand-shake-icon.png";
+import FAQIcon from "../../assets/testimonials-icon.png";
 import Separator from "../../components/Separator";
 import Email from "../../assets/contact-email.png";
 import Phone from "../../assets/contact-phone.png";
@@ -21,8 +27,35 @@ import Location from "../../assets/contact-location.png";
 import Form from "../../components/Form";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
+import Subscribe from "../../components/Subscribe";
+import { FAQs } from "../../constants/FAQs";
+import { Ellipse } from "../../components/Homepage/CaseStudies/index.styled";
+import Arrow from "../../assets/arrow.png";
+import { useState } from "react";
 
 const ContactUs = () => {
+  const [selected, setSelected] = useState(0);
+
+  const SelectedFAQ = ({ index }) => {
+    return (
+      <FAQContainer
+        selected={selected === index}
+        onClick={() => {
+          selected === index ? setSelected(null) : setSelected(index);
+        }}
+      >
+        <FAQQuestion>
+          {" "}
+          {FAQs[index].question}
+          <Ellipse  selected={selected === index} style={{ position: "relative", right: 0 }}>
+            <img src={Arrow} alt="" />
+          </Ellipse>
+        </FAQQuestion>
+        <FAQAnswer>{FAQs[index].answer}</FAQAnswer>
+      </FAQContainer>
+    );
+  };
+
   return (
     <>
       <Banner />
@@ -34,7 +67,7 @@ const ContactUs = () => {
             oneliner={"Let’s build something awesome together"}
           />
 
-          <Flex>
+          <Grid>
             <ContactCardOuter>
               <CardInner>
                 <Tag>Contact</Tag>
@@ -87,7 +120,7 @@ const ContactUs = () => {
                 </Flex>
               </CardInner>
             </ContactCardOuter>
-          </Flex>
+          </Grid>
 
           <FormBackground>
             <Form>
@@ -125,12 +158,49 @@ const ContactUs = () => {
               </Column>
             </Form>
 
-            <Button style={{
-              backgroundColor: "rgba(41, 41, 48, 1)",
-              color: "#fff",
-              marginTop: 60
-            }}>Send Message</Button>
+            <Button
+              style={{
+                backgroundColor: "rgba(41, 41, 48, 1)",
+                color: "#fff",
+                marginTop: 60,
+              }}
+            >
+              Send Message
+            </Button>
           </FormBackground>
+        </Container>
+      </Wrapper>
+
+      <Subscribe />
+
+      <Wrapper>
+        <Container>
+          <SectionHeader
+            icon={FAQIcon}
+            title="02 . FAQ"
+            oneliner={"Frequently Asked Questions"}
+          />
+
+          <FAQ>
+            {FAQs.map((faq, index) =>
+              selected === index ? (
+                <SelectedFAQ index={index} />
+              ) : (
+                <FAQContainer
+                  onClick={() => {
+                    selected === index ? setSelected(null) : setSelected(index);
+                  }}
+                >
+                  <FAQQuestion>
+                    {faq?.question}
+                    <Ellipse style={{ position: "relative", right: 0 }}>
+                      <img src={Arrow} alt="" />
+                    </Ellipse>
+                  </FAQQuestion>
+                </FAQContainer>
+              )
+            )}
+          </FAQ>
         </Container>
       </Wrapper>
     </>

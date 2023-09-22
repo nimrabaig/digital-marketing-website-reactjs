@@ -82,13 +82,9 @@ export const Card = styled.div`
 
   transition: all 0.3s ease-in-out;
   transform: ${(props) =>
-    props.selected
-      ? "translateY(0) scaleY(1)"
-      : "translateY(100%) scaleY(0)"};
+    props.selected ? "translateY(0) scaleY(1)" : "translateY(100%) scaleY(0)"};
   animation: ${(props) =>
-    props.selected
-      ? "foldDown 600ms ease-in-out"
-      : "foldUp 600ms ease-in-out"};
+    props.selected ? "foldDown 600ms ease-in-out" : "foldUp 600ms ease-in-out"};
   animation-fill-mode: forwards;
 
   @keyframes foldDown {
@@ -96,7 +92,7 @@ export const Card = styled.div`
       transform: translateY(-50%) scaleY(0);
       opacity: 0;
     }
- 
+
     100% {
       transform: translateY(0) scaleY(1);
       opacity: 1;
@@ -151,6 +147,10 @@ export const Ellipse = styled.div`
 
   img {
     transform: ${(props) => (props.selected ? "rotate(90deg)" : "")};
+  }
+  @media (max-width: 750px) {
+    height: 30px;
+    width: 52px;
   }
 `;
 
