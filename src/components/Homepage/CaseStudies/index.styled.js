@@ -12,53 +12,31 @@ export const Wrapper = styled.div`
   display: flex;
   padding: 40px;
   flex-direction: column;
+
+  @media (max-width: 1000px) {
+    padding: 40px 0px !important;
+  }
 `;
 
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
   gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
-  @media (max-width: 750px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
     justify-content: center;
+    margin: auto;
   }
 `;
 
 export const SideImage = styled.img`
   @media (max-width: 1050px) {
     display: none;
-  }
-`;
-
-export const Header = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  width: 70%;
-
-  @media (max-width: 370px) {
-    flex-direction: column !important;
-    justify-content: center;
-  }
-
-  @media (max-width: 750px) {
-    width: 100%;
-  }
-`;
-
-export const Column = styled.div`
-  display: flex;
-  flex-direction: column;
-  span {
-    color: #292930;
-    font-family: Nunito;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 110.5%; /* 44.2px */
   }
 `;
 
@@ -111,6 +89,10 @@ export const Card = styled.div`
       opacity: 1;
     }
   }
+
+  @media (max-width: 1000px) {
+    width: 90%;
+  }
 `;
 
 export const CardHeader = styled.div`
@@ -119,6 +101,11 @@ export const CardHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+
+  @media (max-width: 1000px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const Heading = styled.div`
@@ -130,6 +117,11 @@ export const Heading = styled.div`
   text-align: left;
   position: ${(props) => (props.selected ? "" : "absolute")};
   left: ${(props) => (props.selected ? "" : "30px")};
+
+  @media (max-width: 1000px) {
+    width: 70%;
+    text-overflow: ellipsis;
+  }
 `;
 
 export const Ellipse = styled.div`
@@ -150,7 +142,7 @@ export const Ellipse = styled.div`
   }
   @media (max-width: 750px) {
     height: 30px;
-    width: 52px;
+    width: 30px;
   }
 `;
 
@@ -162,8 +154,12 @@ export const Category = styled.div`
   font-weight: 400;
   line-height: 156.5%; /* 28.17px */
   text-align: left;
-
+  display: flex;
   width: 93%;
+  @media (max-width: 1000px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const Detail = styled.div`
@@ -177,3 +173,13 @@ export const Detail = styled.div`
   margin-top: 8px;
   width: 93%;
 `;
+export const SideContainer = styled.div`
+width: 45%;
+
+ @media (max-width: 1000px) {
+  width: 100%;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }`

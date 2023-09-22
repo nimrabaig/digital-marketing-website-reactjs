@@ -214,3 +214,24 @@ export const FAQAnswer = styled.div`
     font-size: 18px;
   }
 `;
+export const Ellipse = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  background-color: ${(props) =>
+    props.selected ? "rgba(255, 117, 3, 1)" : "rgba(41, 41, 48, 1)"};
+
+  img {
+    transform: ${(props) => (props.selected ? "rotate(90deg)" : "")};
+  }
+  @media (max-width: 750px) {
+    height: 30px;
+    width: 52px;
+  }
+`;

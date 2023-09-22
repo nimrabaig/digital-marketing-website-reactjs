@@ -12,21 +12,19 @@ import {
   Avatar,
 } from "./index.styled";
 import StarRatings from "react-star-ratings";
-import SectionName from "../../SectionName";
 import TestimonialIcon from "../../../assets/testimonials-icon.png";
 import { Separator } from "../AboutUs/index.styled";
 import User1 from "../../../assets/testimonial-1.png";
+import SectionHeader from "../../Section/SectionHeader";
 
 const Testimonials = () => {
   return (
     <Wrapper>
-      <Header>
-        <img src={TestimonialIcon} alt="" />
-        <Column>
-          <SectionName section={" 04. Testimonials"} mobileViewAlignment={"left"} />
-          <span>We work with customers across all industries</span>
-        </Column>
-      </Header>
+      <SectionHeader 
+      icon={TestimonialIcon}
+      title={"04. Testimonials"}
+      oneliner={"We work with customers across all industries"}
+      leftAlign={true}/>
 
       <CardContainer>
         <OuterCard>

@@ -16,6 +16,7 @@ import {
   FAQ,
   FAQAnswer,
   FAQContainer,
+  Ellipse
 } from "./index.styled";
 import { Label } from "@progress/kendo-react-labels";
 import Icon from "../../assets/hand-shake-icon.png";
@@ -29,7 +30,6 @@ import Input from "../../components/Input";
 import Button from "../../components/Button";
 import Subscribe from "../../components/Subscribe";
 import { FAQs } from "../../constants/FAQs";
-import { Ellipse } from "../../components/Homepage/CaseStudies/index.styled";
 import Arrow from "../../assets/arrow.png";
 import { useState } from "react";
 

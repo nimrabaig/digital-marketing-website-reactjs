@@ -3,8 +3,6 @@ import { styled } from "styled-components";
 export const Wrapper = styled.div`
   margin: auto;
   width: 90%;
-  display: Flex;
-  flex-direction: column;
 `;
 
 export const Header = styled.div`
@@ -12,34 +10,31 @@ export const Header = styled.div`
   align-items: center;
   gap: 30px;
   width: 100%;
-
-  @media (max-width: 370px) {
-    flex-direction: column !important;
-    justify-content: center;
-    text-align: center !important;
-  }
 `;
 
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  span {
-    color: #292930;
-    font-family: Nunito;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 110.5%; /* 44.2px */
-  }
 `;
 
 export const CardContainer = styled.div`
   display: flex;
+  height: 446px;
+  flex-direction: row;
+  width:90%;
+  flex-wrap: wrap;
+  overflow: hidden;
   gap: 20px;
-  width: 100%;
+  margin: 40px auto;
   justify-content: center;
-  align-items: center;
-  margin: 60px auto 200px;
+
+  @media (max-width: 530px) {
+    height: 488px;
+  }
+
+  @media (max-width: 430px) {
+    height: 557px;
+  }
 `;
 
 export const OuterCard = styled.div`
@@ -48,7 +43,7 @@ export const OuterCard = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  width: 100%;
+  width: 433px;
   border-radius: 7px;
   background: linear-gradient(151deg, #fff8f8 10.38%, #f5f7ff 95.44%);
   min-height: 250px;

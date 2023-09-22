@@ -13,11 +13,16 @@ export const Container = styled.div`
 export const Card = styled.div`
   display: inline-flex;
   padding: 50px;
+  width: 100%;
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
   border-radius: 10px;
   background-color: ${(props) => props.bg};
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 `;
 
 export const Header = styled.div`
@@ -58,4 +63,7 @@ width: 100%;
 font-weight: 600;
 margin-bottom: 20px;`;
 
-
+export const SideImage = styled.img`
+@media (max-width: 1000px){
+  width: 300px;
+}`

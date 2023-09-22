@@ -10,8 +10,9 @@ import {
   Link,
   Phone,
   Icon,
+  Flex,
+  Column,
 } from "./index.styled";
-import { Column } from "../Homepage/Pricing/index.styled";
 import Logo from "../../assets/logo.png";
 import Lumenta from "../../assets/lumenta.png";
 import Call from "../../assets/call.png";
@@ -21,7 +22,6 @@ import { Separator } from "../Homepage/Benefits/index.styled.js";
 import Follows from "../../assets/follows.png";
 import Links from "../../assets/links.png";
 import Button from "../Button";
-import { Flex } from "../SectionName/index.styled";
 
 const Footer = () => {
   return (
@@ -72,8 +72,15 @@ const Footer = () => {
 
           <Separator style={{ width: "100%" }} />
 
-          <Row style={{ gap: 40, width: "100%" , marginTop: 20}}>
-            <Column style={{ gap: 15 }}>
+          <Row
+            style={{
+              gap: 40,
+              width: "100%",
+              marginTop: 20,
+              flexDirection: "row",
+            }}
+          >
+            <Column style={{ gap: 15, alignSelf: "flex-start" }}>
               <Flex>
                 <Icon src={Pages} alt="" />
                 <Text>Pages</Text>
@@ -85,7 +92,7 @@ const Footer = () => {
               <Text>Contact</Text>
             </Column>
 
-            <Column style={{ gap: 15 }}>
+            <Column style={{ gap: 15, alignSelf: "flex-start" }}>
               <Flex>
                 <Icon src={Links} alt="" />
                 <Text>Important Links</Text>
@@ -97,7 +104,7 @@ const Footer = () => {
               <Text>PDF Sample#4</Text>
             </Column>
 
-            <Column style={{ gap: 15 }}>
+            <Column style={{ gap: 15, alignSelf: "flex-start" }}>
               <Flex>
                 <Icon src={Follows} alt="" />
                 <Text>Follows</Text>
@@ -106,14 +113,15 @@ const Footer = () => {
               <Text>Twitter</Text>
               <Text>Instagram</Text>
               <Text>LinkedIn</Text>
-              <Text></Text>
             </Column>
           </Row>
 
           <Separator style={{ width: "100%" }} />
 
-          <Text style={{ textAlign: "center", margin: "auto"}}>Copyright © 2023 - Lumenta Digital Inc</Text>
-
+          <Text style={{ textAlign: "center", margin: "auto 20px" }}>
+            Copyright © 2023 - Lumenta Digital Inc
+          </Text>
+          <br />
         </Column>
       </Wrapper>
     </Background>

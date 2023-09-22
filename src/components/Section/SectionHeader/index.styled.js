@@ -4,27 +4,23 @@ export const Header = styled.div`
   display: flex;
   align-items: center;
   gap: 30px;
-  width: ${props => props.leftAlign ? "55%" : "100%"};
   justify-content: center;
-  margin-bottom: 60px;
-  flex-direction: ${(props) =>
-    props.leftAlign ? "row" : "column"};
+  flex-direction: ${(props) => (props.leftAlign ? "row" : "column")};
 
-  @media (max-width: 370px) {
+  @media (max-width: 1000px) {
     flex-direction: column !important;
     justify-content: center;
+    width: 100%;
   }
 `;
 
 export const Flex = styled.div`
   display: flex;
-  margin-right: ${(props) =>
-    props.leftAlign ? "auto" : ""};
-  margin: ${(props) =>
-    !props.leftAlign ? "auto !important" :""};
+  margin-right: ${(props) => (props.leftAlign ? "auto" : "")};
+  margin: ${(props) => (!props.leftAlign ? "auto !important" : "")};
 
-  @media (max-width: 750px) {
-    justify-content: ${(props) => props.mobileViewAlignment ?? "center"};
+  @media (max-width: 1000px) {
+    justify-content: center;
     width: 100%;
   }
 
@@ -46,14 +42,18 @@ export const Text = styled.div`
   line-height: 156.5%; /* 23.475px */
   letter-spacing: 2.025px;
   text-transform: uppercase;
-  color: ${props => props.color ?? "#000"};
+  color: ${(props) => props.color ?? "#000"};
 `;
 export const Oneliner = styled(Text)`
- color: #292930;
- font-size: 40px;
- font-weight: 600;
- line-height: 110.5%;
- margin-top: 10px;
- text-transform: none;
- text-align: ${props => props.leftAlign ? "left" : "center"};
-  `
+  color: ${(props) => props.color ?? "#292930"};
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 110.5%;
+  margin-top: 10px;
+  text-transform: none;
+  text-align: ${(props) => (props.leftAlign ? "left" : "center")};
+
+  @media (max-width: 1000px) {
+    text-align: center !important;
+  }
+`;

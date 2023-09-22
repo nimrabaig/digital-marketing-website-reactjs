@@ -37,6 +37,7 @@ import { Oneliner } from "../../components/Homepage/Pricing/index.styled";
 import { Ellipse } from "../../components/Homepage/Services/index.styled";
 import Arrow from "../../assets/arrow.png";
 import GetInTouch from "../../components/GetInTouch";
+import SectionHeader from "../../components/Section/SectionHeader";
 
 const AboutUs = () => {
   return (
@@ -101,21 +102,12 @@ const AboutUs = () => {
       </Container>
 
       <ValuesContainer>
-        <img
-          src={ValuesIcon}
-          alt=""
-          height={80}
-          width={80}
-          style={{ marginBottom: 20 }}
-        />
-        <SectionName
-          section={"02 . Our values"}
-          margin={"auto"}
+        <SectionHeader
+          icon={ValuesIcon}
+          title={"02 . Our values"}
+          oneliner={"The core values behind our work"}
           color={"#fff"}
         />
-        <Oneliner style={{ color: "#fff" }}>
-          The core values behind our work
-        </Oneliner>
 
         <Grid>
           {ValuesData.map((item) => (

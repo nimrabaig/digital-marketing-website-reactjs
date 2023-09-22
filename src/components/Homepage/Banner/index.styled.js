@@ -10,9 +10,13 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
 
-  @media (max-width: 750px) {
+  @media (max-width: 1000px) {
     height: 800px;
-    background: none !important;
+    background: linear-gradient(111deg, #E9F7FF 9.95%, #FFDBD4 85.17%);;
+  }
+
+  @media (max-width: 640px) {
+    height: 1000px;
   }
 `;
 
@@ -24,10 +28,10 @@ export const Content = styled.div`
   margin: 120px 100px;
   width: 90%;
 
-  @media (max-width: 750px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
     justify-centent: center; 
-    margin: 90px auto 20px !important;
+    margin: 120px auto 20px !important;
   }
 `;
 
@@ -45,7 +49,7 @@ export const Tagline = styled.h2`
     color: rgba(32, 111, 253, 1);
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 1000px) {
     text-align: center;
   }
 `;
@@ -57,7 +61,7 @@ export const SubText = styled.p`
   font-weight: 400;
   line-height: 156.5%; /* 28.17px */
   width: 570px;
-  @media (max-width: 750px) {
+  @media (max-width: 1000px) {
     text-align: center;
     padding: 0px 20px;
     margin: 20px auto 0px;
@@ -72,10 +76,10 @@ export const ButtonsContainer = styled.div`
   margin-top: 20px;
   gap: 20px;
   padding-bottom: 20px;
-  @media (max-width: 750px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
     justify-content: center;
-    margin: auto !important;
+    margin: 40px auto 20px !important;
   }
   @media (max-width: 370px) {
     margin-top: 30px !important;

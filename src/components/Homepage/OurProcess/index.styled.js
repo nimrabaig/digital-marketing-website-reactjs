@@ -1,19 +1,18 @@
 import { styled } from "styled-components";
-import ProcessBg from "../../../assets/process-bg.png";
 
 export const Background = styled.div`
-  background-color: #fff;
-  background-image: url(${ProcessBg});
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 200px auto;
-  height: 1000px;
+  background: linear-gradient(111deg, #E9F7FF 9.66%, #FFDBD4 57.52%, #FFF3CA 103.42%);
+  margin: 100px auto;
+  min-height: 1000px;
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 60px 40px;
+  @media (max-width: 1000px) {
+
+  }
 `;
 
 export const ProcessDescription = styled.div`
@@ -67,6 +66,11 @@ export const Step = styled.div`
   text-align: left;
   margin-right: auto;
   padding-bottom: 10px;
+
+  @media (max-width: 1000px){
+    margin: auto !important;
+    text-align: center !important;
+  }
 `;
 
 export const StepDescription = styled.div`
@@ -78,13 +82,19 @@ export const StepDescription = styled.div`
   line-height: 156.5%; /* 28.17px */
   margin-bottom: 100px;
   text-align: left;
+
+  @media (max-width: 1000px){
+    margin: auto !important;
+    text-align: center !important;
+  }
 `;
 
 export const Divider = styled.div`
   border-left: 6px dotted #e38676;
   height: 160px;
-  /* position: absolute;
-  left: 50%;
-  margin-left: -3px;
-  top: 0; */
+
+  @media (max-width: 1000px) {
+    height: 125px;
+    margin: 20px;
+  }
 `;

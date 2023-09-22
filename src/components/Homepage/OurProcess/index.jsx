@@ -7,7 +7,7 @@ import {
   Stage,
   Step,
   StepDescription,
-  Divider
+  Divider,
 } from "./index.styled";
 import SectionName from "../../SectionName";
 import ProcessIcon from "../../../assets/process-icon.png";
@@ -20,7 +20,7 @@ const OurProcess = () => {
 
   useLayoutEffect(() => {
     function updateSize() {
-      if (window.innerWidth <= 60) {
+      if (window.innerWidth <= 1000) {
         setMobielView(true);
       } else {
         setMobielView(false);
@@ -33,47 +33,83 @@ const OurProcess = () => {
 
   return (
     <Background>
-      <img src={ProcessIcon} alt="" height={80} width={80} style={{marginBottom: 20 }} />
+      <img
+        src={ProcessIcon}
+        alt=""
+        height={80}
+        width={80}
+        style={{ marginBottom: 20 }}
+      />
       <SectionName section={"03 . Our Process"} margin={"auto"} />
 
       <ProcessDescription>
         A simple, yet powerful and efficient process
       </ProcessDescription>
-      <Flex>
-        <ProcessSection>
-          <img src={Process1} alt="" />
-          <Step>Work Execution</Step>
-          <StepDescription>
-            Efficiency in Action Executing Excellence Every Step of the Way.
-          </StepDescription>
-          <img src={Process3} alt="" />
-        </ProcessSection>
+      {mobileView ? (
+        <Flex>
+          <ProcessSection>
+            <Stage style={{ marginTop: 26 }}>1</Stage>
+            <img src={Process1} alt="" style={{ margin: 20}} />
+            <Step>Marketing Plan</Step>
+            <StepDescription>
+              Inspiring Growth Crafting Your Path to Marketing Success.
+            </StepDescription>
+            <Divider />
+            <Stage>2</Stage>
+            <img src={Process2} alt="" style={{ margin: 20}} />
+            <Step>Work Execution</Step>
+            <StepDescription>
+              Efficiency in Action Executing Excellence Every Step of the Way.
+            </StepDescription>
 
-        <ProcessSection>
-          <Stage style={{ marginTop: 26 }}>1</Stage>
-          <Divider />
-          <Stage>2</Stage>
-          <Divider />
-          <Stage>3</Stage>
-          <br />
-          <br />
-        </ProcessSection>
+            <Divider />
+            <Stage>3</Stage>
+            <img src={Process2} alt="" style={{ margin: 20}} />
 
-        <ProcessSection>
-          <Step>Marketing Plan</Step>
-          <StepDescription>
-            Inspiring Growth Crafting Your Path to Marketing Success.
-          </StepDescription>
+            <Step>Growth & Scale</Step>
+            <StepDescription>
+              Unlocking Growth. From Growth to Greatness, scaling the Summit of
+              Success.
+            </StepDescription>
+          </ProcessSection>
+        </Flex>
+      ) : (
+        <Flex>
+          <ProcessSection>
+            <img src={Process1} alt="" />
+            <Step>Work Execution</Step>
+            <StepDescription>
+              Efficiency in Action Executing Excellence Every Step of the Way.
+            </StepDescription>
+            <img src={Process3} alt="" />
+          </ProcessSection>
 
-          <img src={Process2} alt="" />
+          <ProcessSection>
+            <Stage style={{ marginTop: 26 }}>1</Stage>
+            <Divider />
+            <Stage>2</Stage>
+            <Divider />
+            <Stage>3</Stage>
+            <br />
+            <br />
+          </ProcessSection>
 
-          <Step>Growth & Scale</Step>
-          <StepDescription>
-            Unlocking Growth. From Growth to Greatness, scaling the Summit of
-            Success.
-          </StepDescription>
-        </ProcessSection>
-      </Flex>
+          <ProcessSection>
+            <Step>Marketing Plan</Step>
+            <StepDescription>
+              Inspiring Growth Crafting Your Path to Marketing Success.
+            </StepDescription>
+
+            <img src={Process2} alt="" />
+
+            <Step>Growth & Scale</Step>
+            <StepDescription>
+              Unlocking Growth. From Growth to Greatness, scaling the Summit of
+              Success.
+            </StepDescription>
+          </ProcessSection>
+        </Flex>
+      )}
     </Background>
   );
 };

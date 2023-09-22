@@ -15,17 +15,17 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 90%;
+  width: 100%;
   margin: 60px auto;
 
-  @media (max-width: 750px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
   }
 `;
 
 export const Package = styled.div`
   min-height: 450px;
-  min-width: 300px;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,10 +35,6 @@ export const Package = styled.div`
   color: ${(props) => (props.primary ? "#fff" : "rgba(85, 85, 85, 1)")};
   padding: 20px;
   border-radius: 10px;
-
-  @media (max-width: 1060px) {
-    min-width: 200px;
-  }
 `;
 
 export const Row = styled.div`

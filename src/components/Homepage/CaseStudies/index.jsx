@@ -1,8 +1,6 @@
 import {
   Wrapper,
   Background,
-  Header,
-  Column,
   Container,
   Card,
   Heading,
@@ -11,8 +9,8 @@ import {
   SideImage,
   Category,
   Detail,
+  SideContainer,
 } from "./index.styled";
-import SectionName from "../../SectionName";
 import CaseStudiesIcon from "../../../assets/case-studies-icon.png";
 import Button from "../../Button";
 import Arrow from "../../../assets/arrow.png";
@@ -20,6 +18,7 @@ import CaseStudiesImage from "../../../assets/case-studies-image.png";
 import { useState } from "react";
 
 import { CaseStudiesData } from "../../../constants/CaseStudies";
+import SectionHeader from "../../Section/SectionHeader";
 
 const CaseStudies = () => {
   const [selected, setSelected] = useState(0);
@@ -48,27 +47,25 @@ const CaseStudies = () => {
     <Background>
       <Wrapper>
         <Container>
-          <Header>
-            <img src={CaseStudiesIcon} alt="" />
-            <Column>
-              <SectionName
-                section={"05 . Case Sudies"}
-                mobileViewAlignment={"left"}
-                color={"#fff"}
-              />
-              <span style={{ color: "#fff" }}>
-                Various Projects Done. Browse our latest case study on Marketing
-                Agency
-              </span>
-            </Column>
-          </Header>
-          <Button style={{ height: 52, padding: "0px 34px" }}>
+          <SectionHeader
+            icon={CaseStudiesIcon}
+            title={"05 . Case Sudies"}
+            oneliner={
+              "Various Projects Done. Browse our latest case study on Marketing Agency"
+            }
+            color={"#fff"}
+            leftAlign={true}
+          />
+
+          <Button style={{ height: 52, padding: "0px 34px", minWidth: 134 }}>
             More Case Studies
           </Button>
         </Container>
 
-        <Container style={{ padding: 40, width: "90%", gap: "0px" }}>
-          <div style={{ width: "45%" }}>
+        <Container
+          style={{ width: "90%", gap: "0px", marginTop: 20 }}
+        >
+          <SideContainer>
             {selected === 0 ? (
               <Preview index={0} />
             ) : (
@@ -119,7 +116,7 @@ const CaseStudies = () => {
                 </CardHeader>
               </Card>
             )}
-          </div>
+          </SideContainer>
           <SideImage src={CaseStudiesImage} alt="" height={400} width={"48%"} />
         </Container>
       </Wrapper>

@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
     background-position: left bottom;
     margin-top: 100px;
 
-  @media (max-width: 750px) {
+  @media (max-width: 1000px) {
     height: 800px;
     background: none !important;
   }
@@ -27,6 +27,11 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const TextContent = styled.div`
@@ -39,7 +44,7 @@ export const TextContent = styled.div`
   margin-left: auto;
   margin-right: 100px;
 
-  @media (max-width: 750px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
     margin: 90px auto 20px !important;
     width: 90%;
@@ -49,33 +54,6 @@ export const TextContent = styled.div`
     margin: auto !important;
     text-align: center;
     width: 100%;
-  }
-`;
-
-export const Header = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  width: 55%;
-  justify-content: flex-start;
-  margin-bottom: 35%;
-
-  @media (max-width: 370px) {
-    flex-direction: column !important;
-    justify-content: center;
-    text-align: center !important;
-  }
-`;
-export const Column = styled.div`
-  display: flex;
-  flex-direction: column;
-  span {
-    color: #292930;
-    font-family: Nunito;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 110.5%; /* 44.2px */
   }
 `;
 
@@ -97,7 +75,9 @@ export const BenefitHeader = styled.div`
   display: flex;
   align-items: center;
   width: 90%;
-  @media (max-width: 370px) {
+
+
+  @media (max-width: 1000px) {
     width: 100%;
     margin: auto !important;
   }

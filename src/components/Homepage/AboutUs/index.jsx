@@ -1,6 +1,4 @@
 import {
-  Header,
-  Column,
   TextContent,
   Wrapper,
   Separator,
@@ -9,23 +7,24 @@ import {
   ServiceText,
   ServiceDetail,
 } from "./index.styled";
-import SideImage from "../../../assets/at.png";
+import AboutUsIcon from "../../../assets/at.png";
 import Service1 from "../../../assets/about-us-1.png";
 import Service2 from "../../../assets/about-us-2.png";
-import SectionName from "../../SectionName";
+import SectionHeader from "../../Section/SectionHeader";
 
 const AboutUs = () => {
   return (
     <>
       <Wrapper>
         <TextContent>
-          <Header>
-            <img src={SideImage} alt="" />
-            <Column>
-              <SectionName section={"02. ABOUT US"} mobileViewAlignment={"left"} />
-              <span>The #1 digital marketing services company</span>
-            </Column>
-          </Header>
+        <SectionHeader
+            icon={AboutUsIcon}
+            title={"02. ABOUT US"}
+            leftAlign={true}
+            oneliner={
+              "High-impact services to take your business to the next level"
+            }
+          />
           <Separator />
 
           <ServiceDetail style={{ marginLeft: 0 }}>
@@ -45,7 +44,7 @@ const AboutUs = () => {
                 <Separator style={{ marginTop: 10 }} />
               </div>
             </ServiceHeader>
-            <ServiceDetail>
+            <ServiceDetail >
               We understand that when you invest in digital marketing services,
               you're not just looking for promises; you're looking for results.
               That's why we stand by our commitment to delivering guaranteed

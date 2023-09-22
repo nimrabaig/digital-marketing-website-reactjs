@@ -12,9 +12,9 @@ export const Wrapper = styled.div`
   background-position: center left;
   height: 800px;
 
-  @media (max-width: 750px) {
-    height: 800px;
+  @media (max-width: 1000px) {
     background: none !important;
+    height: max-content;
   }
 
   @media (max-width: 370px) {
@@ -32,15 +32,19 @@ export const TextContent = styled.div`
   margin-left: auto;
   margin-right: 100px;
 
+  @media (max-width: 1000px) {
+    margin: 90px auto !important;
+    width: 90%;
+  }
+
   @media (max-width: 750px) {
     flex-direction: column;
-    margin: 90px auto 20px !important;
     width: 90%;
   }
 
   @media (max-width: 370px) {
     margin: auto !important;
-    text-align: center ;
+    text-align: center;
     width: 100%;
   }
 `;
@@ -79,7 +83,8 @@ export const ServiceHeader = styled.div`
   display: flex;
   align-items: center;
   width: 90%;
-  @media (max-width: 370px) {
+
+  @media (max-width: 1000px) {
     width: 100%;
     margin: auto !important;
   }
@@ -91,6 +96,7 @@ export const ServiceText = styled.span`
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
+  text-align: left !important;
 `;
 
 export const ServiceDetail = styled.span`
@@ -106,8 +112,9 @@ export const ServiceDetail = styled.span`
   font-weight: 400;
   line-height: 156.5%; /* 28.17px */
 
-  @media (max-width: 370px) {
+  @media (max-width: 1000px) {
     width: 100%;
     margin: 20px auto !important;
+    text-align: center;
   }
 `;

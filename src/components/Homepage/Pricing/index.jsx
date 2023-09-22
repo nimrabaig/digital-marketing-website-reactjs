@@ -8,16 +8,15 @@ import {
   Price,
   Text,
   Button,
-  Oneliner,
 } from "./index.styled";
 import PricingIcon from "../../../assets/pricing-icon.png";
-import SectionName from "../../SectionName";
 import { Separator } from "../AboutUs/index.styled";
 import Package1 from "../../../assets/package-1.png";
 import Package2 from "../../../assets/package-2.png";
 import Package3 from "../../../assets/package-3.png";
 import Check from "../../../assets/check.png";
 import UnCheck from "../../../assets/uncheck.png";
+import SectionHeader from "../../Section/SectionHeader";
 
 const Pricing = () => {
 
@@ -30,20 +29,16 @@ const Pricing = () => {
   }
   return (
     <Wrapper>
-      <img
-        src={PricingIcon}
-        alt=""
-        height={80}
-        width={80}
-        style={{ marginBottom: 20 }}
-      />
-      <SectionName section={"06 . Price & Plan"} margin={"auto"} />
-      <Oneliner>The #1 digital marketing services company</Oneliner>
+
+      <SectionHeader 
+      icon={PricingIcon}
+      title={"06 . Price & Plan"}
+      oneliner={"The #1 digital marketing services company"}/>
 
       <Container>
         <Package>
           <Row>
-            <img src={Package1} alt="" />
+            <img src={Package1} alt="" width={55} />
             <Column>
               <PackageType>Starter</PackageType>
               <Row>
@@ -65,7 +60,7 @@ const Pricing = () => {
 
         <Package primary={true}>
           <Row>
-            <img src={Package2} alt="" />
+            <img src={Package2} alt="" width={55} />
             <Column>
               <PackageType primary={true}>Starter</PackageType>
               <Row>
@@ -89,7 +84,7 @@ const Pricing = () => {
 
         <Package>
           <Row>
-            <img src={Package3} alt="" />
+            <img src={Package3} alt="" width={55} />
             <Column>
               <PackageType>Starter</PackageType>
               <Row>

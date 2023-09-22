@@ -1,8 +1,6 @@
 import {
   Container,
   Wrapper,
-  Header,
-  Column,
   TextContent,
   BenefitItem,
   BenefitHeader,
@@ -10,23 +8,23 @@ import {
   BenefitDescription,
   Separator,
 } from "./index.styled";
-import SectionName from "../../SectionName";
 import BenefitIcon from "../../../assets/benefits-icon.png";
 import Benefit1 from "../../../assets/benefit-1.png";
 import Benefit2 from "../../../assets/benefit-2.png";
 import Benefit3 from "../../../assets/benefit-3.png";
+import SectionHeader from "../../Section/SectionHeader";
 
 const Benefits = () => {
   return (
     <Wrapper>
       <Container>
-        <Header>
-          <img src={BenefitIcon} alt="" />
-          <Column>
-            <SectionName section={"07 . Benefits"} mobileViewAlignment={"left"} />
-            <span>Benifit of working with Lumanta</span>
-          </Column>
-        </Header>
+        <SectionHeader
+          icon={BenefitIcon}
+          title={"07 . Benefits"}
+          oneliner={"Benifit of working with Lumanta"}
+          leftAlign={true}
+          style={{ justifyContent: "unset", alignSelf: "flex-start" }}
+        />
 
         <TextContent>
           <BenefitItem>

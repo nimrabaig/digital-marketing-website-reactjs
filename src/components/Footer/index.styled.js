@@ -7,6 +7,12 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 10%;
+
+  @media (max-width: 880px) {
+    flex-direction: column;
+    margin: auto !important;
+    padding: 0px !important;
+  }
 `;
 
 export const SubscriptionBox = styled.div`
@@ -18,6 +24,10 @@ export const SubscriptionBox = styled.div`
   justify-content: center;
   align-items: center;
   width: 300px;
+
+  @media (max-width: 880px) {
+    margin-top: 40px;
+  }
 `;
 
 export const Text = styled.div`
@@ -28,6 +38,11 @@ export const Text = styled.div`
   font-weight: 400;
   text-align: left;
   margin-right: auto;
+
+  @media (max-width: 880px) {
+    margin: auto !important;
+    text-align: center;
+  }
 `;
 
 export const SubscriptionText = styled(Text)`
@@ -68,27 +83,64 @@ export const Row = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 880px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 
 export const Phone = styled(Text)`
   background-color: rgba(60, 60, 69, 1);
   border-radius: 4px;
-  color: #FF7503;
+  color: #FF8803;
 font-size: 25px;
 font-weight: 700;
 letter-spacing: 3px;
 padding: 10px;`
 
 export const Link = styled.div`
-color: #FF7503;
+color: #FF8803;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 156.5%; /* 28.17px */
 text-decoration-line: underline;
 text-align: left;
-margin-right: auto;`
+margin-right: auto;
+
+@media (max-width: 880px) {
+  text-align: center;
+margin: auto !important;
+}`
 
 export const Icon = styled.img`
 margin-right: 6px;`
+
+export const Flex = styled.div`
+  display: flex;
+  margin-right: auto;
+
+  @media (max-width: 880px) {
+    justify-content: center;
+    margin: 20px auto !important;
+    text-align: center;
+  }
+
+  @media (max-width: 370px) {
+    justify-content: center !important;
+    margin: 20px auto !important;
+    text-align: center;
+  }
+`;
+
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 880px) {
+  margin-top: 20px;
+  }
+`;

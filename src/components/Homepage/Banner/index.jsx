@@ -6,14 +6,14 @@ import {
   ButtonsContainer,
 } from "./index.styled";
 import Button from "../../Button";
-import SectionName from "../../SectionName";
+import SectionHeader from "../../Section/SectionHeader";
 
 const Banner = () => {
   return (
     <>
       <Wrapper>
         <Content>
-          <SectionName section={"Agency"} style={{ marginRight: "auto" }} />
+          <SectionHeader title={"Agency"} style={{ marginRight: "auto" }} />
           <Tagline>
             Let's Start Your <br />{" "}
             <span style={{ color: "#FF7503" }}>Digital Marketing </span>
