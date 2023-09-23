@@ -45,9 +45,14 @@ export const Column = styled.div`
   align-items: center;
   justify-content: center;
   width: 43%;
+
+  @media (max-width: 500px) {
+    width: 70%;
+  }
 `;
 
 export const EmailInput = styled(Input)`
   background-color: #5b5b61;
   height: 21.5px;
+  width: 50%;
 `;

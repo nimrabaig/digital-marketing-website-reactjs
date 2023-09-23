@@ -82,6 +82,7 @@ export const StepDescription = styled.div`
   line-height: 156.5%; /* 28.17px */
   margin-bottom: 100px;
   text-align: left;
+  margin-right: auto;
 
   @media (max-width: 1000px){
     margin: auto !important;

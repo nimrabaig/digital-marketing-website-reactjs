@@ -24,12 +24,11 @@ export const Banner = styled.div`
 
   @media (max-width: 750px) {
     background-position: top center;
-    height: 600px;
     background-size: 200%;
   }
 
-  @media (max-width: 375px) {
-    height: 278px;
+  @media (max-width: 450px) {
+    height: 245px;
   }
 `;
 
@@ -139,6 +138,9 @@ export const Card = styled.div`
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
+  @media (max-width: 440px) {
+    width: 240px;
+  }
 `;
 
 export const Grid = styled.div`
@@ -151,6 +153,9 @@ export const Grid = styled.div`
   gap: 20px;
   margin: 40px auto;
   justify-content: center;
+  @media (max-width: 440px) {
+    height: 530px !important;
+  }
 `;
 
 export const TeamGrid = styled.div`
@@ -218,7 +223,6 @@ export const TeamCard = styled.div`
   border: 1px solid #dcdcdc;
   background: #fff;
   display: flex;
-  width: 320px;
   flex-direction: column;
   padding: 25px 25px 50px 25px;
   justify-content: center;
@@ -233,9 +237,14 @@ export const TeamCard = styled.div`
       #fff3ca 103.42%
     );
   }
+
+  @media (max-width: 370px) {
+    width: 240px;
+  }
 `;
 
 export const Image = styled.img`
+  width: 100%;
   border-radius: 20px 20px 0px 0px;
 `;
 export const Name = styled(Text)`

@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import BannerImg from "../../assets/contact-us-banner.png";
+import { DropDownList } from "@progress/kendo-react-dropdowns";
 
 export const Wrapper = styled.div`
   margin: auto;
@@ -23,7 +24,6 @@ export const Banner = styled.div`
 
   @media (max-width: 750px) {
     background-position: top center;
-    height: 600px;
     background-size: 200%;
   }
 
@@ -50,12 +50,18 @@ export const Flex = styled.div`
 
   @media (max-width: 750px) {
     flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+    width: 100%;
   }
 `;
 
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 750px) {
+  }
 `;
 
 export const ContactCardOuter = styled.div`
@@ -73,6 +79,11 @@ export const ContactCardOuter = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
+
+  @media (max-width: 400px) {
+    width: 224px;
+    height: 289.656px;
+  }
 `;
 
 export const CardInner = styled.div`
@@ -86,6 +97,10 @@ export const CardInner = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  @media (max-width: 400px) {
+    height: 213.656px;
+    width: 181px;
+  }
 `;
 
 export const Text = styled.div`
@@ -120,7 +135,7 @@ export const FormBackground = styled.div`
 
 export const TextArea = styled.textarea`
   width: 98%;
-  padding: 10px;
+  padding: 4px 8px;;
   border: 1px solid #ccc;
   border-radius: 4px;
   margin: 10px 0px;
@@ -130,6 +145,8 @@ export const TextArea = styled.textarea`
   border-radius: 4px;
   resize: vertical;
   min-height: 100px;
+  font-family: Nunito !important;
+  font-size: 18px;
 
   &::placeholder {
     font-family: Nunito;
@@ -137,7 +154,11 @@ export const TextArea = styled.textarea`
   }
 
   @media (max-width: 750px) {
-    width: 90%;
+    width: 95%;
+  }
+
+  @media (max-width: 370px) {
+    width: 93%;
   }
 `;
 
@@ -230,8 +251,37 @@ export const Ellipse = styled.div`
   img {
     transform: ${(props) => (props.selected ? "rotate(90deg)" : "")};
   }
-  @media (max-width: 750px) {
+  @media (max-width: 630px) {
     height: 30px;
     width: 52px;
   }
+`;
+
+export const Select = styled(DropDownList)`
+  width: 100%;
+  height: 46px;
+  padding: 4px 8px;
+  border-color: rgba(0, 0, 0, 0.08);
+  color: #424242;
+  background-color: #ffffff;
+  line-height: 1.4285714286;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  outline: 0;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.4285714286;
+  font-weight: normal;
+  text-align: start;
+  box-shadow: none;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  font-family: Nunito;
 `;

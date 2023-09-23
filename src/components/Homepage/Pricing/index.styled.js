@@ -98,7 +98,7 @@ export const Button = styled.div`
   display: inline-flex;
   padding: 14px 34px;
   justify-content: center;
-  width: 75%;
+  width: 70%;
   align-items: center;
   border-radius: 7px;
   cursor: pointer;
@@ -119,6 +119,18 @@ export const Oneliner = styled.span`
 
   @media (max-width: 750px) {
     text-align: center;
-    
   }
+`;
+
+export const Tag = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  width: 89px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #ff7503;
+  color: #292930;
 `;

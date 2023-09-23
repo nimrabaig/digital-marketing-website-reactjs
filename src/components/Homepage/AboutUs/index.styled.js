@@ -1,6 +1,10 @@
 import { styled } from "styled-components";
 import AboutUsBg from "../../../assets/about-us.png";
 
+export const Container = styled.div`
+ width: 100%;
+ margin: auto;`;
+
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -10,7 +14,6 @@ export const Wrapper = styled.div`
   background-size: 55% 800px;
   background-repeat: no-repeat;
   background-position: center left;
-  height: 800px;
 
   @media (max-width: 1000px) {
     background: none !important;

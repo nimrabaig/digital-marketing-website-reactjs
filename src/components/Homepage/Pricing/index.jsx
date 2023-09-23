@@ -8,6 +8,7 @@ import {
   Price,
   Text,
   Button,
+  Tag,
 } from "./index.styled";
 import PricingIcon from "../../../assets/pricing-icon.png";
 import { Separator } from "../AboutUs/index.styled";
@@ -19,24 +20,26 @@ import UnCheck from "../../../assets/uncheck.png";
 import SectionHeader from "../../Section/SectionHeader";
 
 const Pricing = () => {
-
-  const CheckList = ({ primary, check, service}) => {
-    return <Row>
-      <img src={check ? Check : UnCheck} alt="" />
-      <Text primary={primary ?? false}>{service}</Text>
-    </Row>
-
-  }
+  const CheckList = ({ primary, check, service }) => {
+    return (
+      <Row>
+        <img src={check ? Check : UnCheck} alt="" />
+        <Text primary={primary ?? false}>{service}</Text>
+      </Row>
+    );
+  };
   return (
     <Wrapper>
-
-      <SectionHeader 
-      icon={PricingIcon}
-      title={"06 . Price & Plan"}
-      oneliner={"The #1 digital marketing services company"}/>
+      <SectionHeader
+        icon={PricingIcon}
+        title={"06 . Price & Plan"}
+        oneliner={"Our Flexible Pricing Plans"}
+      />
 
       <Container>
         <Package>
+          <br />
+          <br />
           <Row>
             <img src={Package1} alt="" width={55} />
             <Column>
@@ -49,16 +52,17 @@ const Pricing = () => {
           </Row>
           <Separator />
 
-          <CheckList check service={"Email Marketing"}/>
-          <CheckList check service={"Content Marketing"}/>
-          <CheckList check service={"Voice OptimizeSEO "}/>
-          <CheckList service={"Consulting Video"}/>
-          <CheckList service={"Marketing Advertising"}/>
+          <CheckList check service={"Email Marketing"} />
+          <CheckList check service={"Content Marketing"} />
+          <CheckList check service={"Voice OptimizeSEO "} />
+          <CheckList service={"Consulting Video"} />
+          <CheckList service={"Marketing Advertising"} />
 
           <Button>Purchase Plan</Button>
         </Package>
 
         <Package primary={true}>
+          <Tag>POPULAR</Tag>
           <Row>
             <img src={Package2} alt="" width={55} />
             <Column>
@@ -73,16 +77,18 @@ const Pricing = () => {
           </Row>
           <Separator />
 
-          <CheckList primary check service={"Email Marketing"}/>
-          <CheckList primary check service={"Content Marketing"}/>
-          <CheckList primary check service={"Voice OptimizeSEO "}/>
-          <CheckList primary check service={"Consulting Video"}/>
-          <CheckList primary service={"Marketing Advertising"}/>
+          <CheckList primary check service={"Email Marketing"} />
+          <CheckList primary check service={"Content Marketing"} />
+          <CheckList primary check service={"Voice OptimizeSEO "} />
+          <CheckList primary check service={"Consulting Video"} />
+          <CheckList primary service={"Marketing Advertising"} />
 
           <Button primary={true}>Purchase Plan</Button>
         </Package>
 
         <Package>
+          <br />
+          <br />
           <Row>
             <img src={Package3} alt="" width={55} />
             <Column>
@@ -95,11 +101,11 @@ const Pricing = () => {
           </Row>
           <Separator />
 
-          <CheckList check service={"Email Marketing"}/>
-          <CheckList check service={"Content Marketing"}/>
-          <CheckList check service={"Voice OptimizeSEO "}/>
-          <CheckList check service={"Consulting Video"}/>
-          <CheckList check service={"Marketing Advertising"}/>
+          <CheckList check service={"Email Marketing"} />
+          <CheckList check service={"Content Marketing"} />
+          <CheckList check service={"Voice OptimizeSEO "} />
+          <CheckList check service={"Consulting Video"} />
+          <CheckList check service={"Marketing Advertising"} />
 
           <Button>Purchase Plan</Button>
         </Package>

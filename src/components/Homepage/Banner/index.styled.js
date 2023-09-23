@@ -4,11 +4,18 @@ import BannerImg from "../../../assets/banner-image.png";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  height: 700px;
+  align-items: center;
+    justify-content: center;
+  height: 100vh;
   width: 100%;
   background-image: url(${BannerImg});
   background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+  background-size: 110%;
+  background-position: center right;
+
+  @media (min-width: 1200px) {
+    background-size: 120%;
+  }
 
   @media (max-width: 1000px) {
     height: 800px;

@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
 
   @media (max-width: 1000px) {
     padding: 40px 0px !important;
+    width: 90%;
   }
 `;
 
@@ -35,7 +36,7 @@ export const Container = styled.div`
 `;
 
 export const SideImage = styled.img`
-  @media (max-width: 1050px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 `;
@@ -91,7 +92,7 @@ export const Card = styled.div`
   }
 
   @media (max-width: 1000px) {
-    width: 90%;
+    /* margin: auto; */
   }
 `;
 
@@ -101,6 +102,7 @@ export const CardHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  width: 93%;
 
   @media (max-width: 1000px) {
     margin-top: 20px;
@@ -115,8 +117,7 @@ export const Heading = styled.div`
   font-style: normal;
   font-weight: 600;
   text-align: left;
-  position: ${(props) => (props.selected ? "" : "absolute")};
-  left: ${(props) => (props.selected ? "" : "30px")};
+  align-self: flex-start;
 
   @media (max-width: 1000px) {
     width: 70%;
@@ -128,8 +129,6 @@ export const Ellipse = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  right: 20px;
   border-radius: 50%;
   cursor: pointer;
   height: 45px;

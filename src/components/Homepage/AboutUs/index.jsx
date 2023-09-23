@@ -6,6 +6,7 @@ import {
   ServiceHeader,
   ServiceText,
   ServiceDetail,
+  Container,
 } from "./index.styled";
 import AboutUsIcon from "../../../assets/at.png";
 import Service1 from "../../../assets/about-us-1.png";
@@ -14,7 +15,7 @@ import SectionHeader from "../../Section/SectionHeader";
 
 const AboutUs = () => {
   return (
-    <>
+    <Container>
       <Wrapper>
         <TextContent>
         <SectionHeader
@@ -22,7 +23,7 @@ const AboutUs = () => {
             title={"02. ABOUT US"}
             leftAlign={true}
             oneliner={
-              "High-impact services to take your business to the next level"
+              "The #1 digital marketing services company"
             }
           />
           <Separator />
@@ -70,7 +71,7 @@ const AboutUs = () => {
           </Services>
         </TextContent>
       </Wrapper>
-    </>
+    </Container>
   );
 };
 

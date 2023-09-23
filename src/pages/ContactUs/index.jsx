@@ -7,6 +7,7 @@ import {
   Grid,
   ContactCardOuter,
   CardInner,
+  Select,
   Tag,
   Column,
   Text,
@@ -16,7 +17,7 @@ import {
   FAQ,
   FAQAnswer,
   FAQContainer,
-  Ellipse
+  Ellipse,
 } from "./index.styled";
 import { Label } from "@progress/kendo-react-labels";
 import Icon from "../../assets/hand-shake-icon.png";
@@ -31,10 +32,16 @@ import Button from "../../components/Button";
 import Subscribe from "../../components/Subscribe";
 import { FAQs } from "../../constants/FAQs";
 import Arrow from "../../assets/arrow.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { cx, css } from "@emotion/css";
+import { SubjectOptions } from "../../constants/Dropdowns";
 
 const ContactUs = () => {
   const [selected, setSelected] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
 
   const SelectedFAQ = ({ index }) => {
     return (
@@ -47,7 +54,10 @@ const ContactUs = () => {
         <FAQQuestion>
           {" "}
           {FAQs[index].question}
-          <Ellipse  selected={selected === index} style={{ position: "relative", right: 0 }}>
+          <Ellipse
+            selected={selected === index}
+            style={{ position: "relative", right: 0 }}
+          >
             <img src={Arrow} alt="" />
           </Ellipse>
         </FAQQuestion>
@@ -74,7 +84,19 @@ const ContactUs = () => {
                 <Separator />
 
                 <Flex>
-                  <img src={Email} alt="" style={{ marginBottom: 26 }} />
+                  <img
+                    src={Email}
+                    alt=""
+                    className={cx(
+                      "",
+                      css`
+                        margin-bottom: 26px;
+                        @media (max-width: 750px) {
+                          margin-bottom: 15px;
+                        }
+                      `
+                    )}
+                  />
                   <Column>
                     <Text weight={600} size={25} color={"#292930"}>
                       Email
@@ -91,7 +113,19 @@ const ContactUs = () => {
                 <Separator />
 
                 <Flex>
-                  <img src={Phone} alt="" style={{ marginBottom: 26 }} />
+                  <img
+                    src={Phone}
+                    alt=""
+                    className={cx(
+                      "",
+                      css`
+                        margin-bottom: 26px;
+                        @media (max-width: 750px) {
+                          margin-bottom: 15px;
+                        }
+                      `
+                    )}
+                  />
                   <Column>
                     <Text weight={600} size={25} color={"#292930"}>
                       Phone
@@ -108,7 +142,19 @@ const ContactUs = () => {
                 <Separator />
 
                 <Flex>
-                  <img src={Location} alt="" style={{ marginBottom: 55 }} />
+                  <img
+                    src={Location}
+                    alt=""
+                    className={cx(
+                      "",
+                      css`
+                        margin-bottom: 55px;
+                        @media (max-width: 750px) {
+                          margin-bottom: 15px;
+                        }
+                      `
+                    )}
+                  />
                   <Column>
                     <Text weight={600} size={25} color={"#292930"}>
                       Location
@@ -135,15 +181,37 @@ const ContactUs = () => {
                   placeholder="your company name here"
                   label="Company*"
                 />
-                <Input
-                  value=""
-                  placeholder="How can we Help"
-                  label="Subject*"
-                />
+                <Column style={{ width: "100%", marginTop: "1em" }}>
+                  <Label
+                    style={{
+                      width: "100%",
+                      fontWeight: 600,
+                      color: "rgba(41, 41, 48, 1)",
+                      fontSize: 20,
+                    }}
+                  >
+                    Subject*
+                  </Label>
+                  <Select
+                    type="text"
+                    placeholder="How can we Help"
+                    data={SubjectOptions}
+                  />
+                </Column>
               </Flex>
               <br />
               <br />
-              <Column style={{ width: "80%" }}>
+              <Column
+                className={cx(
+                  "",
+                  css`
+                    width: 80%;
+                    @media (max-width: 750px) {
+                      width: 100%;
+                    }
+                  `
+                )}
+              >
                 <Label
                   style={{
                     width: "100%",
@@ -163,6 +231,7 @@ const ContactUs = () => {
                 backgroundColor: "rgba(41, 41, 48, 1)",
                 color: "#fff",
                 marginTop: 60,
+                marginBottom: 40,
               }}
             >
               Send Message

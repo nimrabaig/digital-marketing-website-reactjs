@@ -6,15 +6,16 @@ import {
   MenuItem,
   Background,
   MobileMenuIcon,
-  DropDown,
 } from "./index.styled";
 import LumentaLogo from "../../assets/logo.png";
 import Options from "../../assets/menu.png";
 import { MenuItems } from "../../constants/Menu";
 import Button from "../Button";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import SideMenu from "./SideMenu";
 
 const Header = () => {
+  const location = useLocation();
   const navigate = useNavigate();
   const [isHeaderMoved, setHeaderMovement] = useState(false);
   const [isMobileView, setMobileView] = useState(false);
@@ -34,6 +35,7 @@ const Header = () => {
         setMobileView(true);
       } else {
         setMobileView(false);
+        setShowDropdown(false);
       }
     }
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -48,7 +50,7 @@ const Header = () => {
   return (
     <Background moved={isHeaderMoved}>
       <Wrapper>
-        <Logo src={LumentaLogo} alt="" />
+        <Logo src={LumentaLogo} alt="" onClick={() => navigate("/")}/>
         {isMobileView ? (
           <MobileMenuIcon
             src={Options}
@@ -59,14 +61,24 @@ const Header = () => {
         ) : (
           <Menu>
             {MenuItems.map((item, index) => (
-              <MenuItem key={index} onClick={() => navigate(`${item.path}`)}>{item.text}</MenuItem>
+              <MenuItem
+                selected={location.pathname === item.path}
+                key={index}
+                onClick={() => navigate(`${item.path}`)}
+              >
+                {item.text}
+              </MenuItem>
             ))}
             <Button primary={true} style={{ marginLeft: 40 }}>
               Get Started
             </Button>
           </Menu>
         )}
-        {showDropDown && <DropDown />}
+
+        <SideMenu
+          setShowDropdown={setShowDropdown}
+          showDropDown={showDropDown}
+        />
       </Wrapper>
     </Background>
   );

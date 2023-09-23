@@ -28,6 +28,11 @@ export const SubscriptionBox = styled.div`
   @media (max-width: 880px) {
     margin-top: 40px;
   }
+
+  @media (max-width: 300px) {
+    width: 230px;
+    padding: 22px;
+  }
 `;
 
 export const Text = styled.div`
@@ -90,33 +95,49 @@ export const Row = styled.div`
   }
 `;
 
+export const BottomRow = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  margin-top: 20px;
+
+  @media (max-width: 370px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+`;
 
 export const Phone = styled(Text)`
   background-color: rgba(60, 60, 69, 1);
   border-radius: 4px;
-  color: #FF8803;
-font-size: 25px;
-font-weight: 700;
-letter-spacing: 3px;
-padding: 10px;`
+  color: #ff8803;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 10px;
+`;
 
 export const Link = styled.div`
-color: #FF8803;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 156.5%; /* 28.17px */
-text-decoration-line: underline;
-text-align: left;
-margin-right: auto;
+  color: #ff8803;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156.5%; /* 28.17px */
+  text-decoration-line: underline;
+  text-align: left;
+  margin-right: auto;
 
-@media (max-width: 880px) {
-  text-align: center;
-margin: auto !important;
-}`
+  @media (max-width: 880px) {
+    text-align: center;
+    margin: auto !important;
+  }
+`;
 
 export const Icon = styled.img`
-margin-right: 6px;`
+  margin-right: 6px;
+`;
 
 export const Flex = styled.div`
   display: flex;
@@ -140,7 +161,15 @@ export const Column = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-self: flex-start;
   @media (max-width: 880px) {
-  margin-top: 20px;
+    margin-top: 20px;
+    align-self: center;
+  }
+`;
+
+export const BottomColumn = styled(Column)`
+  @media (max-width: 370px) {
+    align-self: center;
   }
 `;

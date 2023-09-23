@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import AboutUs from "../../components/Homepage/AboutUs";
 import { Separator } from "../../components/Homepage/AboutUs/index.styled";
 import Articles from "../../components/Homepage/Articles";
@@ -10,6 +11,11 @@ import Services from "../../components/Homepage/Services";
 import Testimonials from "../../components/Homepage/Testimonials";
 
 const Homepage = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <>
       <Banner />

@@ -38,8 +38,14 @@ import { Ellipse } from "../../components/Homepage/Services/index.styled";
 import Arrow from "../../assets/arrow.png";
 import GetInTouch from "../../components/GetInTouch";
 import SectionHeader from "../../components/Section/SectionHeader";
+import { useEffect } from "react";
 
 const AboutUs = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <Wrapper>
       <Banner />
@@ -139,15 +145,11 @@ const AboutUs = () => {
       </ValuesContainer>
 
       <TeamsContainer>
-        <img
-          src={TeamsIcon}
-          alt=""
-          height={80}
-          width={80}
-          style={{ marginBottom: 20 }}
+        <SectionHeader 
+        icon={TeamsIcon}
+        title={"03 . Our team"}
+        oneliner={"Our team of expert marketers"}
         />
-        <SectionName section={"03 . Our team"} margin={"auto"} />
-        <Oneliner>Our team of expert marketers</Oneliner>
         <TeamGrid>
           {Team.map((emp) => (
             <TeamCard>

@@ -12,6 +12,8 @@ import {
   Icon,
   Flex,
   Column,
+  BottomRow,
+  BottomColumn
 } from "./index.styled";
 import Logo from "../../assets/logo.png";
 import Lumenta from "../../assets/lumenta.png";
@@ -72,15 +74,8 @@ const Footer = () => {
 
           <Separator style={{ width: "100%" }} />
 
-          <Row
-            style={{
-              gap: 40,
-              width: "100%",
-              marginTop: 20,
-              flexDirection: "row",
-            }}
-          >
-            <Column style={{ gap: 15, alignSelf: "flex-start" }}>
+          <BottomRow style={{}}>
+            <BottomColumn style={{ gap: 15}}>
               <Flex>
                 <Icon src={Pages} alt="" />
                 <Text>Pages</Text>
@@ -90,21 +85,21 @@ const Footer = () => {
               <Text>Services</Text>
               <Text>Blog</Text>
               <Text>Contact</Text>
-            </Column>
+            </BottomColumn>
 
-            <Column style={{ gap: 15, alignSelf: "flex-start" }}>
+            <BottomColumn style={{ gap: 15}}>
               <Flex>
                 <Icon src={Links} alt="" />
                 <Text>Important Links</Text>
               </Flex>
               <Text>Pricing</Text>
-              <Text>PDF Quick #1</Text>
-              <Text>PDF Important #2</Text>
+              <Text>Sample #1</Text>
+              <Text>PDF #2</Text>
               <Text>PDF New #3</Text>
-              <Text>PDF Sample#4</Text>
-            </Column>
+              <Text>Sample#4</Text>
+            </BottomColumn>
 
-            <Column style={{ gap: 15, alignSelf: "flex-start" }}>
+            <BottomColumn style={{ gap: 15}}>
               <Flex>
                 <Icon src={Follows} alt="" />
                 <Text>Follows</Text>
@@ -113,8 +108,8 @@ const Footer = () => {
               <Text>Twitter</Text>
               <Text>Instagram</Text>
               <Text>LinkedIn</Text>
-            </Column>
-          </Row>
+            </BottomColumn>
+          </BottomRow>
 
           <Separator style={{ width: "100%" }} />
 
