@@ -4,6 +4,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AboutUs from "../pages/AboutUs";
 import ContactUs from "../pages/ContactUs";
+import Services from "../pages/Services";
+import Service from "../pages/Service";
+import Career from "../pages/Career";
 
 const router = [
   {
@@ -17,7 +20,19 @@ const router = [
   {
     path: "/contact-us",
     element: <ContactUs />
-  }
+  },
+  {
+    path: "/services",
+    element: <Services />
+  },
+  {
+    path: "/service/:id",
+    element: <Service />
+  },
+  {
+    path: "/career",
+    element: <Career />
+  },
 ];
 
 const RouterConfig = () => {
@@ -29,7 +44,7 @@ const RouterConfig = () => {
           <Route exact path={route?.path} element={route?.element} />
         ))}
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 };

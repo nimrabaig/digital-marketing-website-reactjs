@@ -25,15 +25,12 @@ import {
 } from "./index.styled";
 import TeamsIcon from "../../assets/hand-shake-icon.png";
 import IntroImg from "../../assets/about-us-intro.png";
-import { Header, Column } from "../../components/Homepage/AboutUs/index.styled";
-import SectionName from "../../components/SectionName";
 import Icon from "../../assets/at.png";
 import Button from "../../components/Button";
 import Icon1 from "../../assets/dev-scale.png";
 import Icon2 from "../../assets/research.png";
 import ValuesIcon from "../../assets/values-icon.png";
 import ContactUsIon from "../../assets/contact-us-icon.png";
-import { Oneliner } from "../../components/Homepage/Pricing/index.styled";
 import { Ellipse } from "../../components/Homepage/Services/index.styled";
 import Arrow from "../../assets/arrow.png";
 import GetInTouch from "../../components/GetInTouch";
@@ -41,7 +38,6 @@ import SectionHeader from "../../components/Section/SectionHeader";
 import { useEffect } from "react";
 
 const AboutUs = () => {
-
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
@@ -56,16 +52,12 @@ const AboutUs = () => {
         }}
       >
         <TextContent>
-          <Header>
-            <img src={Icon} alt="" />
-            <Column>
-              <SectionName
-                section={"02. ABOUT US"}
-                mobileViewAlignment={"left"}
-              />
-              <Oneliner>Your Trusted Partner in Digital Marketing</Oneliner>
-            </Column>
-          </Header>
+          <SectionHeader
+            icon={Icon}
+            title={"02. ABOUT US"}
+            leftAlign={true}
+            oneliner={"Your Trusted Partner in Digital Marketing"}
+          />
           <LongButtonsContainer
             style={{
               margin: "30px 20px",
@@ -145,10 +137,10 @@ const AboutUs = () => {
       </ValuesContainer>
 
       <TeamsContainer>
-        <SectionHeader 
-        icon={TeamsIcon}
-        title={"03 . Our team"}
-        oneliner={"Our team of expert marketers"}
+        <SectionHeader
+          icon={TeamsIcon}
+          title={"03 . Our team"}
+          oneliner={"Our team of expert marketers"}
         />
         <TeamGrid>
           {Team.map((emp) => (
@@ -164,17 +156,13 @@ const AboutUs = () => {
       </TeamsContainer>
 
       <ContactUsContainer>
-        <img
-          src={ContactUsIon}
-          alt=""
-          height={80}
-          width={80}
-          style={{ marginBottom: 20 }}
+        <SectionHeader
+          icon={ContactUsIon}
+          title={"04 . Contacts us"}
+          oneliner={"Join Us on the Journey"}
         />
-        <SectionName section={"04 . Contacts us"} margin={"auto"} />
-        <Oneliner>Join Us on the Journey</Oneliner>
         <Text
-          style={{ margin: "40px auto", width: "90%", textAlign: "center" }}
+          style={{ margin: "40px auto", width: "80%", textAlign: "center" }}
         >
           These values are not just words; they are the essence of Lumenta. When
           you choose us as your digital marketing partner, you invest in

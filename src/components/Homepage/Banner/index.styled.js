@@ -6,16 +6,12 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
     justify-content: center;
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   background-image: url(${BannerImg});
   background-repeat: no-repeat;
-  background-size: 110%;
+  background-size: cover;
   background-position: center right;
-
-  @media (min-width: 1200px) {
-    background-size: 120%;
-  }
 
   @media (max-width: 1000px) {
     height: 800px;
@@ -48,6 +44,10 @@ export const Tagline = styled.h2`
   margin: 0px;
   width: 100%;
 
+  @media (min-width: 1400px) {
+    font-size: 72px !important;
+  }
+
   @media (max-width: 370px) {
     font-size: 52px !important;
   }
@@ -63,11 +63,17 @@ export const Tagline = styled.h2`
 
 export const SubText = styled.p`
   color: #555;
-  font-size: 18px;
+  font-size: 23px;
   font-style: normal;
   font-weight: 400;
   line-height: 156.5%; /* 28.17px */
   width: 570px;
+
+  @media (min-width: 1400px) {
+    font-size: 34px !important;
+    width: 750px;
+  }
+
   @media (max-width: 1000px) {
     text-align: center;
     padding: 0px 20px;
@@ -90,5 +96,18 @@ export const ButtonsContainer = styled.div`
   }
   @media (max-width: 370px) {
     margin-top: 30px !important;
+  }
+`;
+export const Flex = styled.div`
+  display: flex;
+  margin-right: ${(props) => (props.leftAlign ? "auto" : "")};
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+    width: 100%;
+  }
+
+  @media (max-width: 370px) {
+    justify-content: center !important;
   }
 `;

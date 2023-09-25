@@ -34,6 +34,7 @@ const Pricing = () => {
         icon={PricingIcon}
         title={"06 . Price & Plan"}
         oneliner={"Our Flexible Pricing Plans"}
+        onelinerwidth={"100%"}
       />
 
       <Container>

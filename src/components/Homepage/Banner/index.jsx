@@ -4,16 +4,21 @@ import {
   Tagline,
   SubText,
   ButtonsContainer,
+  Flex,
 } from "./index.styled";
 import Button from "../../Button";
 import SectionHeader from "../../Section/SectionHeader";
+import { Text } from "../../Section/SectionHeader/index.styled";
 
 const Banner = () => {
   return (
     <>
       <Wrapper>
         <Content>
-          <SectionHeader title={"Agency"} style={{ marginRight: "auto" }} />
+          <Flex style={{ marginRight: "auto" }}>
+            <Text style={{ color: "#fec90c" }}>{"//"}&nbsp;</Text>
+            <Text>{"Agency"}</Text>
+          </Flex>
           <Tagline>
             Let's Start Your <br />{" "}
             <span style={{ color: "#FF7503" }}>Digital Marketing </span>

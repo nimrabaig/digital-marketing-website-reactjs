@@ -44,6 +44,7 @@ export const Text = styled.div`
   text-transform: uppercase;
   color: ${(props) => props.color ?? "#000"};
 `;
+
 export const Oneliner = styled(Text)`
   color: ${(props) => props.color ?? "#292930"};
   font-size: 40px;
@@ -52,8 +53,11 @@ export const Oneliner = styled(Text)`
   margin-top: 10px;
   text-transform: none;
   text-align: ${(props) => (props.leftAlign ? "left" : "center")};
+  width: ${props => props.onelinerwidth ?? "75%"};
+  margin: ${props => !props.leftAlign ? "auto !important" : ""};
 
   @media (max-width: 1000px) {
     text-align: center !important;
+    margin: auto !important;
   }
 `;

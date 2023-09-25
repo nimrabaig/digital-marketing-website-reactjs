@@ -26,6 +26,7 @@ export const Background = styled.div`
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   margin: 60px auto;
   min-height: 433px;
   @media (max-width: 750px) {

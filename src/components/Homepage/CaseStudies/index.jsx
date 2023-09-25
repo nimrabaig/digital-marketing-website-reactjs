@@ -117,7 +117,7 @@ const CaseStudies = () => {
               </Card>
             )}
           </SideContainer>
-          <SideImage src={CaseStudiesImage} alt="" height={400} width={"48%"} />
+          <SideImage src={CaseStudiesImage} alt="" width={"48%"} height={"48%"} />
         </Container>
       </Wrapper>
     </Background>

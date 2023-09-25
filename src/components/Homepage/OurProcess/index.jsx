@@ -2,14 +2,13 @@ import { useLayoutEffect, useState } from "react";
 import {
   Background,
   Flex,
-  ProcessDescription,
   ProcessSection,
   Stage,
   Step,
   StepDescription,
   Divider,
 } from "./index.styled";
-import SectionName from "../../SectionName";
+import SectionHeader from "../../../components/Section/SectionHeader";
 import ProcessIcon from "../../../assets/process-icon.png";
 import Process1 from "../../../assets/process-1.png";
 import Process2 from "../../../assets/process-2.png";
@@ -33,20 +32,13 @@ const OurProcess = () => {
 
   return (
     <Background>
-      <img
-        src={ProcessIcon}
-        alt=""
-        height={80}
-        width={80}
-        style={{ marginBottom: 20 }}
+      <SectionHeader 
+      icon={ProcessIcon}
+      title={"03 . Our Process"}
+      oneliner={"A simple, yet powerful and efficient process"}
       />
-      <SectionName section={"03 . Our Process"} margin={"auto"} />
-
-      <ProcessDescription>
-        A simple, yet powerful and efficient process
-      </ProcessDescription>
       {mobileView ? (
-        <Flex>
+        <Flex style={{ marginTop: 40 }}>
           <ProcessSection>
             <Stage style={{ marginTop: 26 }}>1</Stage>
             <img src={Process1} alt="" style={{ margin: 20}} />

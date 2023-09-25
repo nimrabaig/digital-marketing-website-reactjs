@@ -75,7 +75,7 @@ export const Step = styled.div`
 
 export const StepDescription = styled.div`
   color: #555;
-  font-family: Noto Sans;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

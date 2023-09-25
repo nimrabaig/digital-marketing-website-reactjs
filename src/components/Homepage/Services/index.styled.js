@@ -53,6 +53,7 @@ export const Card = styled.div`
   background: linear-gradient(180deg, #36363e 0%, #292930 100%),
     linear-gradient(0deg, #424245, #424245);
   cursor: #fff;
+  cursor: pointer;
 `;
 
 export const Title = styled.div`
@@ -86,7 +87,7 @@ export const ReadMore = styled.div`
   margin: 20px auto;
   border: 1px solid rgba(82, 82, 85, 1);
   background-color: transparent;
-  color: rgba(82, 82, 85, 1);
+  color: #d0d0d0;;
 
   &:hover {
     background-color: #fff;

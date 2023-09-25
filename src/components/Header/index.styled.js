@@ -63,7 +63,7 @@ export const DropDown = styled.div`
   right: 0px;
   border-radius: 25.772px 0px 0px 25.772px;
   border: 3px solid #fff;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(50px);
   transform: ${(props) =>
     props.showDropDown ? "translateX(0%);" : "translateX(100%)"};
