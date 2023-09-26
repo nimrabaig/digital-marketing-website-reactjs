@@ -32,6 +32,8 @@ margin: auto;
 export const Flex = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 30px;
 `;
 
@@ -39,6 +41,7 @@ export const ProcessSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 33.33%;
 `;
 
 export const Stage = styled.div`

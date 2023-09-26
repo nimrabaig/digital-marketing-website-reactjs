@@ -47,7 +47,7 @@ const Services = () => {
             color={"#fff"}
           />
           {!mobileView && (
-            <Button style={{ height: 52, padding: "0px 34px" }}>
+            <Button style={{ height: 52, padding: "0px 34px", width: 200 }}>
               Our Services{" "}
               <Ellipse>
                 <img src={Arrow} alt="" height={10} width={6} />{" "}
@@ -72,7 +72,14 @@ const Services = () => {
           ))}
         </Grid>
         {mobileView && (
-          <Button style={{ height: 52, padding: "0px 34px", margin: "auto" }}>
+          <Button
+            style={{
+              height: 52,
+              padding: "0px 34px",
+              margin: "auto",
+              width: 200,
+            }}
+          >
             Our Services{" "}
             <Ellipse>
               <img src={Arrow} alt="" height={10} width={6} />{" "}

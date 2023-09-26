@@ -31,8 +31,8 @@ const Banner = () => {
             </SubText>
           </Tagline>
           <ButtonsContainer>
-            <Button primary={true}>Our Services</Button>
-            <Button primary={false}>Get Started</Button>
+            <Button primary={true} style={{ width: 91.0469 }}>Our Services</Button>
+            <Button primary={false} style={{ width: 91.0469 }}>Get Started</Button>
           </ButtonsContainer>
         </Content>
       </Wrapper>

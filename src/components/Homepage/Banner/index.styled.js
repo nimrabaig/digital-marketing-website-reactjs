@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-    justify-content: center;
+  justify-content: center;
   height: 110vh;
   width: 100%;
   background-image: url(${BannerImg});
@@ -15,7 +15,13 @@ export const Wrapper = styled.div`
 
   @media (max-width: 1000px) {
     height: 800px;
-    background: linear-gradient(111deg, #E9F7FF 9.95%, #FFDBD4 85.17%);;
+    background: linear-gradient(111deg, #e9f7ff 9.95%, #ffdbd4 85.17%);
+  }
+
+  @media (min-height: 1200px) {
+    height: 800px;
+    padding-top: 100px;
+    background: linear-gradient(111deg, #e9f7ff 9.95%, #ffdbd4 85.17%);
   }
 
   @media (max-width: 640px) {
@@ -33,7 +39,13 @@ export const Content = styled.div`
 
   @media (max-width: 1000px) {
     flex-direction: column;
-    justify-centent: center; 
+    justify-centent: center;
+    margin: 120px auto 20px !important;
+  }
+
+  @media (min-height: 1200px) {
+    flex-direction: column;
+    justify-centent: center;
     margin: 120px auto 20px !important;
   }
 `;
@@ -59,6 +71,10 @@ export const Tagline = styled.h2`
   @media (max-width: 1000px) {
     text-align: center;
   }
+
+  @media (min-height: 1200px) {
+    text-align: center;
+  }
 `;
 
 export const SubText = styled.p`
@@ -75,6 +91,13 @@ export const SubText = styled.p`
   }
 
   @media (max-width: 1000px) {
+    text-align: center;
+    padding: 0px 20px;
+    margin: 20px auto 0px;
+    width: 80%;
+  }
+
+  @media (min-height: 1200px) {
     text-align: center;
     padding: 0px 20px;
     margin: 20px auto 0px;
@@ -97,12 +120,23 @@ export const ButtonsContainer = styled.div`
   @media (max-width: 370px) {
     margin-top: 30px !important;
   }
+
+  @media (min-height: 1200px) {
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px auto 20px !important;
+  }
 `;
 export const Flex = styled.div`
   display: flex;
   margin-right: ${(props) => (props.leftAlign ? "auto" : "")};
 
   @media (max-width: 1000px) {
+    justify-content: center;
+    width: 100%;
+  }
+
+  @media (min-height: 1200px) {
     justify-content: center;
     width: 100%;
   }
