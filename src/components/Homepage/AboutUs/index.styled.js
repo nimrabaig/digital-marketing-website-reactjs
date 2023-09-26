@@ -3,7 +3,8 @@ import AboutUsBg from "../../../assets/about-us.png";
 
 export const Container = styled.div`
  width: 100%;
- margin: auto;`;
+ margin: auto;
+ padding-top: 100px`;
 
 export const Wrapper = styled.div`
   display: flex;
@@ -11,10 +12,13 @@ export const Wrapper = styled.div`
   width: 100%;
   background-image: url(${AboutUsBg});
   background-color: white;
-  background-size: 55% 800px;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center left;
 
+  @media (min-width: 2000px) {
+    background-position-x: 15%;
+  }
   @media (max-width: 1000px) {
     background: none !important;
     height: max-content;

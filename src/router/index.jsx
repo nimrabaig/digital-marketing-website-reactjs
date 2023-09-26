@@ -44,7 +44,7 @@ const RouterConfig = () => {
           <Route exact path={route?.path} element={route?.element} />
         ))}
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 };

@@ -23,6 +23,10 @@ export const Card = styled.div`
   @media (max-width: 1000px) {
     flex-direction: column;
   }
+
+  @media (min-width: 1400px) {
+    width: 70% !important;
+  }
 `;
 
 export const Header = styled.div`
@@ -53,15 +57,25 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 156.5%; /* 28.17px */
-text-align: left;`;
+text-align: left;
+
+
+@media (min-width: 1400px) {
+    font-size: 23px;
+  }`;
 
 export const Date = styled(Text)`
 font-weight: 500;`;
 
 export const Title = styled(Text)`
 width: 100%;
+font-size: 24px;
 font-weight: 600;
-margin-bottom: 20px;`;
+margin-bottom: 20px;
+
+@media (min-width: 1400px) {
+    font-size: 30px;
+  }`;
 
 export const SideImage = styled.img`
 @media (max-width: 1000px){

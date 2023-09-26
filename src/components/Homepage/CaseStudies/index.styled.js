@@ -90,10 +90,6 @@ export const Card = styled.div`
       opacity: 1;
     }
   }
-
-  @media (max-width: 1000px) {
-    /* margin: auto; */
-  }
 `;
 
 export const CardHeader = styled.div`
