@@ -13,8 +13,11 @@ import {
 } from "./index.styled";
 import StarRatings from "react-star-ratings";
 import TestimonialIcon from "../../../assets/testimonials-icon.png";
+import Company1 from "../../../assets/company-1.png";
+import Company2 from "../../../assets/company-2.png";
+import Testimonial1 from "../../../assets/testimonial-1.png";
+import Testimonial2 from "../../../assets/testimonial-2.png";
 import { Separator } from "../AboutUs/index.styled";
-import User1 from "../../../assets/testimonial-1.png";
 import SectionHeader from "../../Section/SectionHeader";
 
 const Testimonials = () => {
@@ -31,8 +34,8 @@ const Testimonials = () => {
           <InnerCard>
             <CardHeader>
               <Comapny>
-                <img src={TestimonialIcon} alt="" height={45} width={45} />
-                <span>Company</span>
+                <img src={Company1} alt="" height={45} width={45} />
+                <span>Amanto</span>
               </Comapny>
               <div style={{ marginTop: 4 }}>
                 <StarRatings
@@ -53,16 +56,14 @@ const Testimonials = () => {
             />
 
             <Text>
-              Lorem Ipsum has been the industry's standard from dummy text ever
-              since the unknown printer to galley of type and make a type
-              specimen book.{" "}
+            Lumenta's SEO work was outstanding improved my site rankings and traffic significantly. Professional, knowledgeable, and highly recommended for online success.{" "}
             </Text>
           </InnerCard>
           <Header style={{ width: "100%", marginLeft: 20 }}>
-            <Avatar src={User1} alt="" />
+            <Avatar src={Testimonial1} alt="" />
             <Column>
-              <ClientName>John Carter</ClientName>
-              <Text>Marketing Lead at Google</Text>
+              <ClientName>Mr. Mubashir</ClientName>
+              <Text>CEO Aamanto Technology</Text>
             </Column>
           </Header>
         </OuterCard>
@@ -70,8 +71,8 @@ const Testimonials = () => {
           <InnerCard>
             <CardHeader>
               <Comapny>
-                <img src={TestimonialIcon} alt="" height={45} width={45} />
-                <span>Company</span>
+                <img src={Company2} alt="" height={45} width={45} />
+                <span>Align</span>
               </Comapny>
               <div style={{ marginTop: 4 }}>
                 <StarRatings
@@ -92,16 +93,14 @@ const Testimonials = () => {
             />
 
             <Text>
-              Lorem Ipsum has been the industry's standard from dummy text ever
-              since the unknown printer to galley of type and make a type
-              specimen book.{" "}
+            Lumenta Digital transformed Align social media presence. Their expertise and strategies drove engagement and growth. Highly recommend their services.{" "}
             </Text>
           </InnerCard>
           <Header style={{ width: "100%", marginLeft: 20 }}>
-            <Avatar src={User1} alt="" />
+            <Avatar src={Testimonial2} alt="" />
             <Column>
-              <ClientName>John Carter</ClientName>
-              <Text>Marketing Lead at Google</Text>
+              <ClientName>Klarisse</ClientName>
+              <Text>Align Project Coordinator</Text>
             </Column>
           </Header>
         </OuterCard>

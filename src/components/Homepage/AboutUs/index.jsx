@@ -23,7 +23,7 @@ const AboutUs = () => {
             title={"02. ABOUT US"}
             leftAlign={true}
             oneliner={
-              "The #1 digital marketing services company"
+              "The progressive digital marketing services company"
             }
           />
           <Separator />

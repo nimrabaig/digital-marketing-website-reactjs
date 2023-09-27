@@ -15,6 +15,7 @@ import {
   SideImage,
   Text,
   Title,
+  Detail
 } from "./index.styled";
 import SectionHeader from "../../Section/SectionHeader";
 
@@ -70,11 +71,11 @@ const Articles = () => {
             <Title>
               How to reach out for guest posts to increase your SEO authority
             </Title>
-            <Text>
+            <Detail>
               Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus
               ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna
               auctor.
-            </Text>
+            </Detail>
             <Button
               style={{
                 border: "1px solid #fff",
