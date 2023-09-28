@@ -99,7 +99,7 @@ const AboutUs = () => {
       <ValuesContainer>
         <SectionHeader
           icon={ValuesIcon}
-          title={"02 . Our values"}
+          title={"03 . Our values"}
           oneliner={"The core values behind our work"}
           color={"#fff"}
         />

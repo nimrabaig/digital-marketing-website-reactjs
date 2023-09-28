@@ -132,7 +132,7 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   width: 250px;
-  /* min-height: 282px; */
+  min-height: 282px;
   padding: 50px 27px 30px;
   justify-content: center;
   align-items: center;

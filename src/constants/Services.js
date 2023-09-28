@@ -239,6 +239,63 @@ export const ServicesData = [
     ],
   },
   {
+    image: Service6,
+    title: "Content Marketing",
+    description:
+      "Engage the audience, and build authority with valuable content in content marketing.",
+    longDescription:
+      "In the dynamic digital realm, content reigns supreme. It's more than mere creation; it's about crafting impactful, engaging, and authoritative content that connects deeply with your audience. At Lumenta, we grasp the potential of content marketing, and we're your guiding light towards a triumphant brand journey. Let us illuminate your path to success through strategic content brilliance. ",
+    about: {
+      title: "Illuminating Your Path to Success with Content Marketing",
+      description:
+        "At Lumenta, we don't just create content; we illuminate your path to success. Our content marketing services are designed to help you engage your audience, build authority in your industry, and achieve your business goals. Are you ready to shine brighter in the digital landscape? Contact us today, and let's embark on a content marketing journey that leads to success. Together, we'll light up the way for your brand. ",
+      bullets: [
+        "Expertise that Illuminates: Our team of seasoned content strategists, writers, and creators are experts in the field of content marketing. We have a deep understanding of what it takes to captivate your target audience and build your brand's authority. ",
+        "Custom-Tailored Content: We know that one size does not fit all. Our content marketing strategies are customized to suit your unique goals, industry, and audience. Whether you're a startup looking to establish your online presence or an established business aiming to reach new heights, we've got you covered. ",
+        "Engagement at the Core: Engagement is the key to success in content marketing. We craft content that not only informs but also entertains and inspires your audience. By engaging your readers, viewers, or listeners, we help you create meaningful connections that drive results.",
+        "Building Authority: Authority is earned through expertise and trust. Through our well-researched, authoritative content, we position your brand as a thought leader in your industry. When your audience sees you as a reliable source of information, you'll gain their trust and loyalty. ",
+      ],
+    },
+    categories: [
+      {
+        image: Service1,
+        title: "Content Strategy",
+        description:
+          " We start by understanding your business, your goals, and your audience. With a well-defined content strategy, we ensure that every piece of content we create serves a purpose in your marketing plan",
+      },
+      {
+        image: Service2,
+        title: "Content Creation",
+        description:
+          "Our talented writers and creators produce a wide range of content, including blog posts, articles, videos, infographics, podcasts, and more. Each piece is meticulously crafted to engage your audience and convey your brand's message.",
+      },
+      {
+        image: Service3,
+        title: "SEO Optimization",
+        description:
+          "We know that great content is only effective when it's discovered. Our SEO experts optimize your content to ensure it ranks well in search engines, increasing your visibility and driving organic traffic.",
+      },
+      {
+        image: Service4,
+        title: "Social Media Integration",
+        description:
+          "In today's social media-driven world, we help you leverage platforms like Facebook, Instagram, Twitter, and LinkedIn to amplify your content and connect with your audience on a personal level. ",
+      },
+      {
+        image: Service5,
+        title: "Analytics and Optimization",
+        description:
+          "We don't stop at content creation. We continuously monitor the performance of your content, analyzing data and making adjustments to optimize results. ",
+      },
+      {
+        image: Service6,
+        title: "Email Marketing",
+        description:
+          "Lumenta excels in Email Marketing Precise campaigns, nurturing leads, fostering loyalty, and crafting conversion-focused email content. Illuminate your brand's success.",
+      },
+    ],
+  },
+  {
     image: Service5,
     title: "Web Development",
     description:
@@ -293,63 +350,6 @@ export const ServicesData = [
         title: "Software Development ",
         description:
           "At Lumenta, we specialize in bespoke software development. Our expert team crafts custom solutions to meet your unique business needs. ",
-      },
-    ],
-  },
-  {
-    image: Service6,
-    title: "Content Marketing",
-    description:
-      "Engage the audience, and build authority with valuable content in content marketing.",
-    longDescription:
-      "In the dynamic digital realm, content reigns supreme. It's more than mere creation; it's about crafting impactful, engaging, and authoritative content that connects deeply with your audience. At Lumenta, we grasp the potential of content marketing, and we're your guiding light towards a triumphant brand journey. Let us illuminate your path to success through strategic content brilliance. ",
-    about: {
-      title: "Illuminating Your Path to Success with Content Marketing",
-      description:
-        "At Lumenta, we don't just create content; we illuminate your path to success. Our content marketing services are designed to help you engage your audience, build authority in your industry, and achieve your business goals. Are you ready to shine brighter in the digital landscape? Contact us today, and let's embark on a content marketing journey that leads to success. Together, we'll light up the way for your brand. ",
-      bullets: [
-        "Expertise that Illuminates: Our team of seasoned content strategists, writers, and creators are experts in the field of content marketing. We have a deep understanding of what it takes to captivate your target audience and build your brand's authority. ",
-        "Custom-Tailored Content: We know that one size does not fit all. Our content marketing strategies are customized to suit your unique goals, industry, and audience. Whether you're a startup looking to establish your online presence or an established business aiming to reach new heights, we've got you covered. ",
-        "Engagement at the Core: Engagement is the key to success in content marketing. We craft content that not only informs but also entertains and inspires your audience. By engaging your readers, viewers, or listeners, we help you create meaningful connections that drive results.",
-        "Building Authority: Authority is earned through expertise and trust. Through our well-researched, authoritative content, we position your brand as a thought leader in your industry. When your audience sees you as a reliable source of information, you'll gain their trust and loyalty. ",
-      ],
-    },
-    categories: [
-      {
-        image: Service1,
-        title: "Content Strategy",
-        description:
-          " We start by understanding your business, your goals, and your audience. With a well-defined content strategy, we ensure that every piece of content we create serves a purpose in your marketing plan",
-      },
-      {
-        image: Service2,
-        title: "Content Creation",
-        description:
-          "Our talented writers and creators produce a wide range of content, including blog posts, articles, videos, infographics, podcasts, and more. Each piece is meticulously crafted to engage your audience and convey your brand's message.",
-      },
-      {
-        image: Service3,
-        title: "SEO Optimization",
-        description:
-          "We know that great content is only effective when it's discovered. Our SEO experts optimize your content to ensure it ranks well in search engines, increasing your visibility and driving organic traffic.",
-      },
-      {
-        image: Service4,
-        title: "Social Media Integration",
-        description:
-          "In today's social media-driven world, we help you leverage platforms like Facebook, Instagram, Twitter, and LinkedIn to amplify your content and connect with your audience on a personal level. ",
-      },
-      {
-        image: Service5,
-        title: "Analytics and Optimization",
-        description:
-          "We don't stop at content creation. We continuously monitor the performance of your content, analyzing data and making adjustments to optimize results. ",
-      },
-      {
-        image: Service6,
-        title: "Email Marketing",
-        description:
-          "Lumenta excels in Email Marketing Precise campaigns, nurturing leads, fostering loyalty, and crafting conversion-focused email content. Illuminate your brand's success.",
       },
     ],
   },
