@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import BannerImg from "../../../assets/banner.jpg";
+import BannerImg from "../../../assets/Banner.png";
 
 export const Wrapper = styled.div`
   display: flex;

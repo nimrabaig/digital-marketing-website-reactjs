@@ -48,7 +48,6 @@ const AboutUs = () => {
   return (
     <Wrapper>
       <Banner />
-
       <Container
         style={{
           backgroundImage: `url(${IntroImg})`,
