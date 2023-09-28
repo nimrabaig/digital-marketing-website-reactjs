@@ -7,6 +7,7 @@ import ContactUs from "../pages/ContactUs";
 import Services from "../pages/Services";
 import Service from "../pages/Service";
 import Career from "../pages/Career";
+import Blogs from "../pages/Blogs";
 
 const router = [
   {
@@ -32,6 +33,10 @@ const router = [
   {
     path: "/career",
     element: <Career />
+  },
+  {
+    path: "/blog",
+    element: <Blogs />
   },
 ];
 
