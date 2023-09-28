@@ -18,16 +18,12 @@ export const ServicesData = [
       description:
         "At Lumenta, we specialize in transforming your business's reach from thousands to millions. Our expert team leverages the power of social media to expand your brand's influence and connect with a global audience. ",
       bullets: [
-        "Mission Statement: A concise statement describing your brand's purpose and goals. ",
-        "History: A brief overview of your brand's journey and milestones. ",
-        "Values: Highlight the core values that drive your brand's decisions and actions. x",
-        "Team: Introduce key team members or employees to add a personal touch. ",
-        "Unique Selling Proposition (USP): Explain what sets your brand apart from competitors. ",
-        "Achievements: Mention any awards, recognition, or significant accomplishments.",
-        "Customer-Centric Focus: Emphasize how your brand benefits customers. ",
-        "Visual Identity: Use brand colors, logos, and images that reflect your brand's personality. ",
-        "Contact Information: Provide ways for customers to reach out or visit your website. ",
-        "Engagement: Encourage followers to connect, ask questions, or provide feedback. ",
+        "Concise and informative description of your brand's purpose and goals",
+        "Brief overview of your brand's history and key milestones",
+        "Highlight of the core values that drive your brand's decisions and actions",
+        "Explanation of what sets your brand apart from competitors",
+        "Emphasis on how your brand benefits customers",
+        "Overview of the visual elements that represent your brand and its overview",
       ],
     },
     categories: [

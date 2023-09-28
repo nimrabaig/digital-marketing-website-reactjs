@@ -73,15 +73,12 @@ export const Grid = styled.div`
 
 export const Card = styled.div`
   position: relative;
-  width: 450px;
-  height: 310px;
   padding: 20px;
   margin: 20px;
   border-radius: 30px;
   border: 1px solid #424245;
   background: linear-gradient(180deg, #36363e 0%, #292930 100%);
   color: #fff;
-  cursor: pointer;
 `;
 
 export const Title = styled.div`

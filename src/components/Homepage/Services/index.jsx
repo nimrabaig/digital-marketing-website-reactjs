@@ -81,6 +81,7 @@ const Services = () => {
               margin: "auto",
               width: 200,
             }}
+            onClick={() => navigate("/services")}
           >
             Our Services{" "}
             <Ellipse>

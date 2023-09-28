@@ -56,7 +56,7 @@ const Pricing = () => {
           <Separator />
 
           <CheckList check service={"Email Marketing"} />
-          <CheckList check service={"Content Marketing"} />
+          <CheckList check service={"Social Media Marketing"} />
           <CheckList check service={"Voice OptimizeSEO "} />
           <CheckList service={"Consulting Video"} />
           <CheckList service={"Marketing Advertising"} />
@@ -81,7 +81,7 @@ const Pricing = () => {
           <Separator />
 
           <CheckList primary check service={"Email Marketing"} />
-          <CheckList primary check service={"Content Marketing"} />
+          <CheckList primary check service={"Social Media Marketing"} />
           <CheckList primary check service={"Voice OptimizeSEO "} />
           <CheckList primary check service={"Consulting Video"} />
           <CheckList primary service={"Marketing Advertising"} />
@@ -107,7 +107,7 @@ const Pricing = () => {
           <Separator />
 
           <CheckList check service={"Email Marketing"} />
-          <CheckList check service={"Content Marketing"} />
+          <CheckList check service={"Social Media Marketing"} />
           <CheckList check service={"Voice OptimizeSEO "} />
           <CheckList check service={"Consulting Video"} />
           <CheckList check service={"Marketing Advertising"} />

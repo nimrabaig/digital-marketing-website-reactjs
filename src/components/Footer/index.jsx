@@ -137,7 +137,12 @@ const Footer = () => {
               </SocialLink>
               <SocialLink>Twitter</SocialLink>
               <SocialLink>Instagram</SocialLink>
-              <SocialLink>LinkedIn</SocialLink>
+              <SocialLink
+                href="https://www.linkedin.com/company/lumenta-digital"
+                target="_blank"
+              >
+                LinkedIn
+              </SocialLink>
             </BottomColumn>
           </BottomRow>
 

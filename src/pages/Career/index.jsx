@@ -15,8 +15,14 @@ import Arrow from "../../assets/arrow.png";
 import Icon from "../../assets/hand-shake-icon.png";
 import { Careers } from "../../constants/Careers";
 import GetInTouch from "../../components/GetInTouch";
+import { useEffect } from "react";
 
 const Career = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+  
   return (
     <Wrapper>
       <Banner />
@@ -38,7 +44,7 @@ const Career = () => {
                 <Description>
                   {service.location} | {service.time}
                 </Description>
-            
+
                 <Description>{service.jobDescription}</Description>
                 <GetInfo>
                   Get Details{" "}
