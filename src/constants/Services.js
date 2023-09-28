@@ -132,10 +132,10 @@ export const ServicesData = [
       title: "Harnessing the Power of Data for Informed Decisions",
       description: "Our Expertise:",
       bullets: [
-        "Cutting-Edge Tools: We leverage the latest analytics tools and technologies to extract meaningful information from your data. ",
-        "Custom Solutions: Our team tailors analytics solutions to your unique needs, ensuring relevance and accuracy. ",
-        "Actionable Insights: We don't just provide data; we offer actionable insights that drive tangible results. ",
-        "Continuous Improvement: We're committed to staying at the forefront of analytics advancements, ensuring your business benefits from the latest trends. ",
+        "We leverage the latest analytics tools and technologies to extract meaningful information from your data. ",
+        "Our team tailors analytics solutions to your unique needs, ensuring relevance and accuracy. ",
+        "We don't just provide data; we offer actionable insights that drive tangible results. ",
+        "We're committed to staying at the forefront of analytics advancements, ensuring your business benefits from the latest trends. ",
       ],
     },
     categories: [
@@ -189,10 +189,10 @@ export const ServicesData = [
       description:
         "Elevate your website rankings and draw organic traffic with Lumenta's expert SEO optimization services. Contact us today to boost your online presence and drive digital success.",
       bullets: [
-        "Proven Results: Our strategies have consistently delivered improved rankings and organic traffic. ",
-        "Transparent Reporting: We provide clear, detailed reports on your SEO performance. ",
-        "Adaptability: We stay ahead of SEO trends to ensure your strategy remains effective. ",
-        "ROI-Focused: Our goal is to maximize your return on investment through enhanced visibility. ",
+        "Our strategies have consistently delivered improved rankings and organic traffic. ",
+        " We provide clear, detailed reports on your SEO performance. ",
+        "We stay ahead of SEO trends to ensure your strategy remains effective. ",
+        "Our goal is to maximize your return on investment through enhanced visibility. ",
       ],
     },
     categories: [
@@ -244,12 +244,12 @@ export const ServicesData = [
     about: {
       title: "Illuminating Your Path to Success with Content Marketing",
       description:
-        "At Lumenta, we don't just create content; we illuminate your path to success. Our content marketing services are designed to help you engage your audience, build authority in your industry, and achieve your business goals. Are you ready to shine brighter in the digital landscape? Contact us today, and let's embark on a content marketing journey that leads to success. Together, we'll light up the way for your brand. ",
+        "Illuminate your path to success with content marketing that engages your audience, builds authority, and achieves your business goals.",
       bullets: [
-        "Expertise that Illuminates: Our team of seasoned content strategists, writers, and creators are experts in the field of content marketing. We have a deep understanding of what it takes to captivate your target audience and build your brand's authority. ",
-        "Custom-Tailored Content: We know that one size does not fit all. Our content marketing strategies are customized to suit your unique goals, industry, and audience. Whether you're a startup looking to establish your online presence or an established business aiming to reach new heights, we've got you covered. ",
-        "Engagement at the Core: Engagement is the key to success in content marketing. We craft content that not only informs but also entertains and inspires your audience. By engaging your readers, viewers, or listeners, we help you create meaningful connections that drive results.",
-        "Building Authority: Authority is earned through expertise and trust. Through our well-researched, authoritative content, we position your brand as a thought leader in your industry. When your audience sees you as a reliable source of information, you'll gain their trust and loyalty. ",
+        "Our team of seasoned content strategists, writers, and creators are experts in the field of content marketing. We have a deep understanding of what it takes to captivate your target audience and build your brand's authority. ",
+        "We know that one size does not fit all. Our content marketing strategies are customized to suit your unique goals, industry, and audience. Whether you're a startup looking to establish your online presence or an established business aiming to reach new heights, we've got you covered. ",
+        "Engagement is the key to success in content marketing. We craft content that not only informs but also entertains and inspires your audience. By engaging your readers, viewers, or listeners, we help you create meaningful connections that drive results.",
+        "Authority is earned through expertise and trust. Through our well-researched, authoritative content, we position your brand as a thought leader in your industry. When your audience sees you as a reliable source of information, you'll gain their trust and loyalty. ",
       ],
     },
     categories: [
@@ -303,11 +303,11 @@ export const ServicesData = [
       description:
         "Lumenta's Innovative Web Design and Development Services redefine online experiences, merging creativity, functionality, and user-friendliness for a digital presence that elevates your brand and fuels business success. ",
       bullets: [
-        "Customized Solutions: From e-commerce to bespoke web applications, we offer tailored development to meet your unique business requirements. ",
-        "Security Assurance: We prioritize website and user data security with robust measures against cyber threats and data breaches. ",
-        "Scalability: Our websites adapt and expand alongside your growing business needs. ",
-        "Performance Excellence: Fast loading times, lower bounce rates, and improved user satisfaction through performance optimization. ",
-        "Continuous Support: Beyond launch, we provide ongoing maintenance and support to keep your website current and technologically advanced. ",
+        "From e-commerce to bespoke web applications, we offer tailored development to meet your unique business requirements. ",
+        " We prioritize website and user data security with robust measures against cyber threats and data breaches. ",
+        "Our websites adapt and expand alongside your growing business needs. ",
+        " Fast loading times, lower bounce rates, and improved user satisfaction through performance optimization. ",
+        " Beyond launch, we provide ongoing maintenance and support to keep your website current and technologically advanced. ",
       ],
     },
     categories: [
