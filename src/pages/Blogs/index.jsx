@@ -35,7 +35,7 @@ const Blogs = () => {
       <BlogsContainer>
         <Header1>
           <Title>Latest posts</Title>
-          <div style={{ display: 'flex', gap: 10}}>
+          <div style={{ display: 'flex', gap: 10 }}>
             <Button>All</Button>
             <Button>Growth</Button>
             <Button>Content</Button>
