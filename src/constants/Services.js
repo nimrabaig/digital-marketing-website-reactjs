@@ -10,9 +10,9 @@ export const ServicesData = [
     image: Service1,
     title: "Social Media Marketings",
     description:
-      "Unlocking insights and driving data-driven decisions with advanced analytics.",
+      " Utilize social media for audience connection and enduring brand loyalty.",
     longDescription:
-      "At Lumenta, our all-encompassing social media marketing services are meticulously crafted to elevate your brand's online presence. With bespoke strategies tailored to various platforms, a data-centric methodology, and a team of seasoned professionals, we are dedicated to amplifying your reach and engagement. Our unwavering commitment yields remarkable outcomes, enhancing brand visibility, catalyzing conversions, and empowering businesses to excel in the digital realm.",
+      "Lumenta's social media marketing services elevate brands' online presence. Bespoke strategies, data-driven insights, and seasoned professionals amplify reach, engagement, and visibility, catalyzing conversions and empowering businesses to excel.",
     about: {
       title: "We take your business reach from thousands to millions. ",
       description:
@@ -129,7 +129,7 @@ export const ServicesData = [
     image: Service3,
     title: "Advanced Analytics",
     description:
-      "Utilize social media for audience connection and enduring brand loyalty.",
+      "Unlocking insights and driving data-driven decisions with advanced analytics.",
     longDescription:
       "In today's data-driven world, making informed decisions is essential for business success. At Lumenta, we specialize in unlocking valuable insights and empowering data-driven decisions through advanced analytics.",
     about: {

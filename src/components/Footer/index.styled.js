@@ -173,3 +173,19 @@ export const BottomColumn = styled(Column)`
     align-self: center;
   }
 `;
+
+export const SocialLink = styled.a`
+color: #fff;
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  margin-right: auto;
+  text-decoration: none;
+
+  @media (max-width: 880px) {
+    margin: auto !important;
+    text-align: center;
+  }
+`

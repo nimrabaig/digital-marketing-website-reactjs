@@ -44,7 +44,7 @@ export const Grid = styled.div`
 
 export const Card = styled.div`
   position: relative;
-  width: 270px;
+  width: 278px;
   height: 400px;
   padding: 20px;
   border-radius: 20px;
@@ -53,7 +53,6 @@ export const Card = styled.div`
   background: linear-gradient(180deg, #36363e 0%, #292930 100%),
     linear-gradient(0deg, #424245, #424245);
   cursor: #fff;
-  cursor: pointer;
 `;
 
 export const Title = styled.div`

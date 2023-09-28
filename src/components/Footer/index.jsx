@@ -14,6 +14,7 @@ import {
   Column,
   BottomRow,
   BottomColumn,
+  SocialLink,
 } from "./index.styled";
 import Logo from "../../assets/logo.png";
 import Lumenta from "../../assets/lumenta.png";
@@ -82,11 +83,33 @@ const Footer = () => {
                 <Icon src={Pages} alt="" />
                 <Text>Pages</Text>
               </Flex>
-              <Text onClick={() => navigate("/")}>Home</Text>
-              <Text onClick={() => navigate("/about-us")}>About</Text>
-              <Text onClick={() => navigate("/services")}>Services</Text>
-              <Text onClick={() => navigate("/blogs")}>Blogs</Text>
-              <Text onClick={() => navigate("/contact-us")}>Contact</Text>
+              <Text style={{ cursor: "pointer" }} onClick={() => navigate("/")}>
+                Home
+              </Text>
+              <Text
+                style={{ cursor: "pointer" }}
+                onClick={() => navigate("/about-us")}
+              >
+                About
+              </Text>
+              <Text
+                style={{ cursor: "pointer" }}
+                onClick={() => navigate("/services")}
+              >
+                Services
+              </Text>
+              <Text
+                style={{ cursor: "pointer" }}
+                onClick={() => navigate("/blogs")}
+              >
+                Blogs
+              </Text>
+              <Text
+                style={{ cursor: "pointer" }}
+                onClick={() => navigate("/contact-us")}
+              >
+                Contact
+              </Text>
             </BottomColumn>
 
             <BottomColumn style={{ gap: 15 }}>
@@ -104,10 +127,17 @@ const Footer = () => {
                 <Icon src={Follows} alt="" />
                 <Text>Follows</Text>
               </Flex>
-              <Text>Facebook</Text>
-              <Text>Twitter</Text>
-              <Text>Instagram</Text>
-              <Text>LinkedIn</Text>
+              <SocialLink
+                href={
+                  "https://www.facebook.com/people/Lumenta-Digital-Inc/61551468568740/?sk=about"
+                }
+                target="_blank"
+              >
+                Facebook
+              </SocialLink>
+              <SocialLink>Twitter</SocialLink>
+              <SocialLink>Instagram</SocialLink>
+              <SocialLink>LinkedIn</SocialLink>
             </BottomColumn>
           </BottomRow>
 

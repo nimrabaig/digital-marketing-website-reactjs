@@ -131,9 +131,9 @@ export const Card = styled.div`
   background: linear-gradient(180deg, #36363e 0%, #292930 100%);
   display: flex;
   flex-direction: column;
-  width: 300px;
-  min-height: 300px;
-  padding: 50px 40px;
+  width: 250px;
+  /* min-height: 282px; */
+  padding: 50px 27px 30px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -144,17 +144,21 @@ export const Card = styled.div`
 `;
 
 export const Grid = styled.div`
-  display: flex;
-  height: 502px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  overflow: hidden;
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  margin: auto;
   width: 90%;
   gap: 20px;
-  margin: 40px auto;
-  justify-content: center;
-  @media (max-width: 440px) {
-    height: 530px !important;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @media (max-width: 1040px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 660px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
 
@@ -256,11 +260,11 @@ export const Name = styled(Text)`
 `;
 
 export const Tag = styled.div`
-background-color: rgba(41, 41, 48, 1);
-                color: #fff;
-                font-weight: 600;
-                font-size: 22;
-                display: inline-flex;
+  background-color: rgba(41, 41, 48, 1);
+  color: #fff;
+  font-weight: 600;
+  font-size: 22;
+  display: inline-flex;
   padding: 14px 34px;
   justify-content: center;
   width: max-content;
@@ -269,4 +273,4 @@ background-color: rgba(41, 41, 48, 1);
   border-radius: 7px;
   cursor: pointer;
   border: 1px solid #292930;
-                `
+`;

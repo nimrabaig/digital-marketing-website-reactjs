@@ -239,8 +239,8 @@ export const Ellipse = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  right: 20px;
+  /* position: absolute;
+  right: 20px; */
   border-radius: 50%;
   cursor: pointer;
   height: 45px;

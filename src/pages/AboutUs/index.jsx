@@ -86,7 +86,7 @@ const AboutUs = () => {
           </TagsContainer>
           <Text>
             Welcome to Lumenta, your premier destination for digital marketing
-            excellence. Established in [Year of Establishment], we are a dynamic
+            excellence. Established in 2023, we are a dynamic
             and results-driven digital marketing agency dedicated to propelling
             your business to online success.
           </Text>
@@ -155,7 +155,7 @@ const AboutUs = () => {
       <ContactUsContainer>
         <SectionHeader
           icon={ContactUsIon}
-          title={"03 . Contacts us"}
+          title={"04 . Contacts us"}
           oneliner={"Join Us on the Journey"}
         />
         <Text

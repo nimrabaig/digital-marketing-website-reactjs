@@ -5,7 +5,7 @@ export const Banner = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 450px;
+  height: 600px;
   align-items: center;
   width: 100%;
   background-image: url(${BannerImg});

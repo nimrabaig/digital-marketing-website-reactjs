@@ -136,6 +136,8 @@ export const WorkFlow = styled.div`
     #ffdbd4 57.52%,
     #fff3ca 103.42%
   );
+      display: flex;
+    justify-content: center;
   margin: auto;
   min-height: 600px;
   width: 70%;
@@ -143,11 +145,13 @@ export const WorkFlow = styled.div`
   display: flex;
   padding: 60px;
   margin-bottom: 100px;
+  margin-top: 100px;
 
   @media (max-width: 750px) {
     flex-direction: column;
     padding: 20px;
     width: 90%;
+    margin-top: 60px;
   }
 `;
 
@@ -162,10 +166,10 @@ export const ProcessFlow = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 60px 10px;
-  max-width: 40%;
+  width: 40%;
 
   @media (max-width: 750px) {
-    max-width: 100%;
+    width: 100%;
     gap: 14px;
   }
 `;
@@ -175,7 +179,7 @@ export const FlowSteps = styled.div`
 `;
 
 export const ProcessDivider = styled(Divider)`
-  height: 62px;
+  height: 115px;
 
   @media (max-width: 1000px) {
     margin: 0px;
