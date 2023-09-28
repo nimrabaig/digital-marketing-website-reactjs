@@ -267,7 +267,7 @@ export const ServicesData = [
         image: Service2,
         title: "Content Creation",
         description:
-          "Our talented writers and creators produce a wide range of content, including blog posts, articles, videos, infographics, podcasts, and more. Each piece is meticulously crafted to engage your audience and convey your brand's message.",
+          "Lumenta's skilled writers and creators produce engaging, informative content that conveys your brand's message, including blog posts, articles, videos, and infographics.",
       },
       {
         image: Service3,
