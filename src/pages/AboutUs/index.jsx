@@ -155,7 +155,7 @@ const AboutUs = () => {
       <ContactUsContainer>
         <SectionHeader
           icon={ContactUsIon}
-          title={"04 . Contacts us"}
+          title={"04 . Join us"}
           oneliner={"Join Us on the Journey"}
         />
         <Text
