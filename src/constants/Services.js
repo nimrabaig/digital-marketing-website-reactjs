@@ -187,7 +187,7 @@ export const ServicesData = [
     description:
       "Elevate website rankings, and draw organic traffic with effective SEO strategies.",
     longDescription:
-      "Lumenta's SEO Optimization services are your key to unlocking the full potential of your online presence. With our effective SEO strategies, we specialize in elevating your website's rankings and drawing organic traffic to maximize your digital impact. Our expert team tailors solutions to your unique needs, conducts comprehensive audits, and monitors performance to ensure continuous improvement. Trust Lumenta to boost your website's visibility and drive organic growth in the digital landscape.",
+      "Lumenta's SEO Optimization services boost your website's visibility and drive organic growth, tailoring solutions to your specific needs and monitoring performance for continuous improvement.",
     about: {
       title: "",
       description:
