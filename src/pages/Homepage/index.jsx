@@ -13,11 +13,11 @@ import { useLocation } from "react-router-dom";
 
 const Homepage = () => {
   const path = useLocation().pathname;
-console.log("path", path)
+  
   useEffect(() => {
-    console.log(window.innerheight)
     if (path === "/pricing") {
-      window.scrollTo({ top: 2000, left: 0, behavior: "smooth" });
+      const element = document.getElementById('pricing');
+      element.scrollIntoView({ behavior: 'smooth' });
     } else
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);

@@ -19,6 +19,7 @@ import Check from "../../../assets/check.png";
 import UnCheck from "../../../assets/uncheck.png";
 import SectionHeader from "../../Section/SectionHeader";
 import { useNavigate } from "react-router-dom";
+import StyledPage from "../../Wrapper";
 
 const Pricing = () => {
   const navigate = useNavigate();
@@ -31,7 +32,8 @@ const Pricing = () => {
     );
   };
   return (
-    <Wrapper id="pricing">
+    <StyledPage id="pricing">
+    <Wrapper>
       <SectionHeader
         icon={PricingIcon}
         title={"06 . Price & Plan"}
@@ -116,6 +118,7 @@ const Pricing = () => {
         </Package>
       </Container>
     </Wrapper>
+    </StyledPage>
   );
 };
 

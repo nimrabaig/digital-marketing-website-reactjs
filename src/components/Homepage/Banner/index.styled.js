@@ -39,7 +39,6 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   margin: 120px 100px;
-  width: 90%;
 
   @media (max-width: 1000px) {
     flex-direction: column;

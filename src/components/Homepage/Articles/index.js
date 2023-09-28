@@ -19,10 +19,12 @@ import {
 } from "./index.styled";
 import SectionHeader from "../../Section/SectionHeader";
 import { useNavigate } from "react-router-dom";
+import StyledPage from "../../Wrapper";
 
 const Articles = () => {
   const navigate = useNavigate()
   return (
+    <StyledPage>
     <Wrapper>
       <SectionHeader
         icon={ArticleIcon}
@@ -106,6 +108,7 @@ const Articles = () => {
         </Button>
       </Container>
     </Wrapper>
+    </StyledPage>
   );
 };
 

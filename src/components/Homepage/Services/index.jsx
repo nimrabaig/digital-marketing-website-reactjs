@@ -14,6 +14,7 @@ import Arrow from "../../../assets/arrow.png";
 import { ServicesData } from "../../../constants/Services";
 import { useLayoutEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import StyledPage from "../../Wrapper";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -37,6 +38,7 @@ const Services = () => {
 
   return (
     <Background>
+      <StyledPage>
       <Wrapper>
         <Container>
           <SectionHeader
@@ -90,6 +92,7 @@ const Services = () => {
           </Button>
         )}
       </Wrapper>
+      </StyledPage>
     </Background>
   );
 };

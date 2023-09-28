@@ -2,10 +2,7 @@ import { styled } from "styled-components";
 import BenefitsBg from "../../../assets/benefits-bg.png";
 
 export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-    margin: auto;
+  width: 100%;
     background-image: url(${BenefitsBg});
     background-color: white;
     background-size: 55% 820px;
@@ -26,6 +23,8 @@ export const Wrapper = styled.div`
 
 export const Container = styled.div`
   display: flex;
+  width: 90%;
+     margin: auto;
   justify-content: space-between;
   @media (max-width: 1000px) {
     flex-direction: column;

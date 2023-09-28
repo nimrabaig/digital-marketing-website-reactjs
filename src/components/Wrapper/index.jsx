@@ -5,21 +5,20 @@ const StyledPage = ({ children }) => {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-
-    @media (min-width: 1470px) {
-      max-width: 1470px;
-    }
-    @media (min-width: 1280px) {
-      max-width: 1280px;
-    }
-    @media (min-width: 1025px) {
-      max-width: 1025px;
+    @media (min-width: 640px) {
+      max-width: 640px;
     }
     @media (min-width: 770px) {
       max-width: 770px;
     }
-    @media (min-width: 640px) {
-      max-width: 640px;
+    @media (min-width: 1025px) {
+      max-width: 1025px;
+    }
+    @media (min-width: 1280px) {
+      max-width: 1280px;
+    }
+    @media (min-width: 1470px) {
+      max-width: 1470px;
     }
   `;
 
