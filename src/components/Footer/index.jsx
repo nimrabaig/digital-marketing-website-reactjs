@@ -117,8 +117,8 @@ const Footer = () => {
                 <Icon src={Links} alt="" />
                 <Text>Important Links</Text>
               </Flex>
-              <Text>Pricing</Text>
-              <Text onClick={() => navigate("/career")}>Career</Text>
+              <Text style={{ cursor: "pointer" }} onClick={() => navigate("/pricing")}>Pricing</Text>
+              <Text style={{ cursor: "pointer" }} onClick={() => navigate("/career")}>Career</Text>
               <Text>Case Study PDF</Text>
             </BottomColumn>
 

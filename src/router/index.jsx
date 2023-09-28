@@ -15,6 +15,10 @@ const router = [
     element: <Homepage />,
   }, 
   {
+    path: "/pricing",
+    element: <Homepage />,
+  }, 
+  {
     path: "/about-us",
     element: <AboutUs />
   },

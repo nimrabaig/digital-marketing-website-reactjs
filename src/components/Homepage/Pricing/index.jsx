@@ -31,7 +31,7 @@ const Pricing = () => {
     );
   };
   return (
-    <Wrapper>
+    <Wrapper id="pricing">
       <SectionHeader
         icon={PricingIcon}
         title={"06 . Price & Plan"}

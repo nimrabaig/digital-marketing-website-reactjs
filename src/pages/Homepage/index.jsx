@@ -9,10 +9,16 @@ import OurProcess from "../../components/Homepage/OurProcess";
 import Pricing from "../../components/Homepage/Pricing";
 import Services from "../../components/Homepage/Services";
 import Testimonials from "../../components/Homepage/Testimonials";
+import { useLocation } from "react-router-dom";
 
 const Homepage = () => {
-
+  const path = useLocation().pathname;
+console.log("path", path)
   useEffect(() => {
+    console.log(window.innerheight)
+    if (path === "/pricing") {
+      window.scrollTo({ top: 2000, left: 0, behavior: "smooth" });
+    } else
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
