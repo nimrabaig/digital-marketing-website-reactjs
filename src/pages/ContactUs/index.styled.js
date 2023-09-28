@@ -37,7 +37,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 60px auto;
   width: 100%;
 `;
 
