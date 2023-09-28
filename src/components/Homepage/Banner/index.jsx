@@ -7,7 +7,6 @@ import {
   Flex,
 } from "./index.styled";
 import Button from "../../Button";
-import SectionHeader from "../../Section/SectionHeader";
 import { Text } from "../../Section/SectionHeader/index.styled";
 
 const Banner = () => {

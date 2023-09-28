@@ -14,14 +14,17 @@ export const Card = styled.div`
   display: inline-flex;
   padding: 50px;
   width: 100%;
+  max-height: 298px;
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
   border-radius: 10px;
   background-color: ${(props) => props.bg};
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1050px) {
     flex-direction: column;
+    max-height: max-content;
+    width: 300px;
   }
 
   @media (min-width: 1400px) {
@@ -44,40 +47,52 @@ export const Header = styled.div`
 `;
 
 export const Category = styled.div`
-border: 1px solid rgba(41, 41, 48, 1);
-border-radius: 20px;
-color: rgba(41, 41, 48, 1);
-width: max-content;
-padding: 10px 20px;`
+  border: 1px solid rgba(41, 41, 48, 1);
+  border-radius: 20px;
+  color: rgba(41, 41, 48, 1);
+  width: max-content;
+  padding: 10px 20px;
+`;
 
 export const Text = styled.div`
-color: #555;
-font-family: Nunito;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 156.5%; /* 28.17px */
-text-align: left;
+  color: #555;
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156.5%; /* 28.17px */
+  text-align: left;
 
-
-@media (min-width: 1400px) {
+  @media (min-width: 2000px) {
     font-size: 23px;
-  }`;
+  }
+`;
 
 export const Date = styled(Text)`
-font-weight: 500;`;
+  font-weight: 500;
+`;
 
 export const Title = styled(Text)`
-width: 100%;
-font-size: 24px;
-font-weight: 600;
-margin-bottom: 20px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
 
-@media (min-width: 1400px) {
+  @media (min-width: 2000px) {
     font-size: 30px;
-  }`;
+  }
+`;
+
+export const Detail = styled(Text)`
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 62px;
+`;
 
 export const SideImage = styled.img`
-@media (max-width: 1000px){
-  width: 300px;
-}`
+  @media (max-width: 1050px) {
+    width: 300px;
+  }
+`;

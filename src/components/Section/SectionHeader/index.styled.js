@@ -6,6 +6,7 @@ export const Header = styled.div`
   gap: 30px;
   justify-content: center;
   flex-direction: ${(props) => (props.leftAlign ? "row" : "column")};
+  width: 100%;
 
   @media (max-width: 1000px) {
     flex-direction: column !important;

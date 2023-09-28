@@ -19,17 +19,14 @@ export const Column = styled.div`
 
 export const CardContainer = styled.div`
   display: flex;
-  height: 446px;
   flex-direction: row;
   width:90%;
-  flex-wrap: wrap;
-  overflow: hidden;
   gap: 20px;
   margin: 40px auto;
   justify-content: center;
 
-  @media (max-width: 530px) {
-    height: 488px;
+  @media (max-width: 945px) {
+    flex-direction: column;
   }
 
   @media (max-width: 430px) {
@@ -67,7 +64,7 @@ export const CardHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   
-  @media (max-width: 930px) {
+  @media (max-width: 1030px) {
   flex-direction: column;
 }`
 

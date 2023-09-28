@@ -7,7 +7,7 @@ import {
   Background,
   MobileMenuIcon,
 } from "./index.styled";
-import LumentaLogo from "../../assets/logo.png";
+import LumentaLogo from "../../assets/header-logo.png";
 import Options from "../../assets/menu.png";
 import { MenuItems } from "../../constants/Menu";
 import Button from "../Button";
@@ -31,7 +31,7 @@ const Header = () => {
     }
 
     function handleWidth() {
-      if (window.innerWidth <= 750) {
+      if (window.innerWidth <= 880) {
         setMobileView(true);
       } else {
         setMobileView(false);

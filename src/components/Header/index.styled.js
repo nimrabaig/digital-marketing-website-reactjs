@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
 
 export const Logo = styled.img`
   height: 50px;
-  width: 50px;
+  width: 145px;
   cursor: pointer;
 `;
 

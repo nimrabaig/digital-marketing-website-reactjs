@@ -2,9 +2,10 @@ import { styled } from "styled-components";
 import AboutUsBg from "../../../assets/about-us.png";
 
 export const Container = styled.div`
- width: 100%;
- margin: auto;
- padding-top: 100px`;
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+`;
 
 export const Wrapper = styled.div`
   display: flex;
@@ -14,10 +15,15 @@ export const Wrapper = styled.div`
   background-color: white;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center left;
+  background-size: 68%;
 
+  @media (min-width: 1500px) {
+    background-size: 50%;
+    height: max-content;
+  }
   @media (min-width: 2000px) {
-    background-position-x: 15%;
+    background-size: 38% !important;
+    background-position-x: 20%;
   }
   @media (max-width: 1000px) {
     background: none !important;
@@ -104,6 +110,10 @@ export const ServiceText = styled.span`
   font-style: normal;
   font-weight: 600;
   text-align: left !important;
+
+  @media (min-width: 1500px) {
+    font-size: 23px;
+  }
 `;
 
 export const ServiceDetail = styled.span`
@@ -124,4 +134,9 @@ export const ServiceDetail = styled.span`
     margin: 20px auto !important;
     text-align: center;
   }
+
+  @media (min-width: 1500px) {
+    font-size: 23px;
+  }
 `;
+
