@@ -18,8 +18,10 @@ import Package3 from "../../../assets/package-3.png";
 import Check from "../../../assets/check.png";
 import UnCheck from "../../../assets/uncheck.png";
 import SectionHeader from "../../Section/SectionHeader";
+import { useNavigate } from "react-router-dom";
 
 const Pricing = () => {
+  const navigate = useNavigate();
   const CheckList = ({ primary, check, service }) => {
     return (
       <Row>
@@ -44,9 +46,9 @@ const Pricing = () => {
           <Row>
             <img src={Package1} alt="" width={55} />
             <Column>
-              <PackageType>Starter</PackageType>
+              <PackageType>Basic</PackageType>
               <Row>
-                <Price>$29</Price>
+                <Price>$500</Price>
                 <Text style={{ marginTop: 13 }}>/Per Month</Text>
               </Row>
             </Column>
@@ -59,7 +61,7 @@ const Pricing = () => {
           <CheckList service={"Consulting Video"} />
           <CheckList service={"Marketing Advertising"} />
 
-          <Button>Purchase Plan</Button>
+          <Button onClick={() => navigate("/contact-us")}>Purchase Plan</Button>
         </Package>
 
         <Package primary={true}>
@@ -67,9 +69,9 @@ const Pricing = () => {
           <Row>
             <img src={Package2} alt="" width={55} />
             <Column>
-              <PackageType primary={true}>Starter</PackageType>
+              <PackageType primary={true}>Basic Plus</PackageType>
               <Row>
-                <Price primary={true}>$49</Price>
+                <Price primary={true}>$800</Price>
                 <Text primary={true} style={{ marginTop: 13 }}>
                   /Per Month
                 </Text>
@@ -84,7 +86,9 @@ const Pricing = () => {
           <CheckList primary check service={"Consulting Video"} />
           <CheckList primary service={"Marketing Advertising"} />
 
-          <Button primary={true}>Purchase Plan</Button>
+          <Button primary={true} onClick={() => navigate("/contact-us")}>
+            Purchase Plan
+          </Button>
         </Package>
 
         <Package>
@@ -93,9 +97,9 @@ const Pricing = () => {
           <Row>
             <img src={Package3} alt="" width={55} />
             <Column>
-              <PackageType>Starter</PackageType>
+              <PackageType>Premium</PackageType>
               <Row>
-                <Price>$99</Price>
+                <Price>$1000</Price>
                 <Text style={{ marginTop: 13 }}>/Per Month</Text>
               </Row>
             </Column>
@@ -108,7 +112,7 @@ const Pricing = () => {
           <CheckList check service={"Consulting Video"} />
           <CheckList check service={"Marketing Advertising"} />
 
-          <Button>Purchase Plan</Button>
+          <Button onClick={() => navigate("/contact-us")}>Purchase Plan</Button>
         </Package>
       </Container>
     </Wrapper>

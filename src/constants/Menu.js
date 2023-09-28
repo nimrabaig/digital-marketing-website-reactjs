@@ -23,7 +23,7 @@ export const MenuItems = [
   },
   {
     text: "Blog",
-    path: "/blog",
+    path: "/blogs",
     icon: Blog
   },
 

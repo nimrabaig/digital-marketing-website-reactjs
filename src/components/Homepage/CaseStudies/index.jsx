@@ -19,8 +19,10 @@ import { useState } from "react";
 
 import { CaseStudiesData } from "../../../constants/CaseStudies";
 import SectionHeader from "../../Section/SectionHeader";
+import { useNavigate } from "react-router-dom";
 
 const CaseStudies = () => {
+  const navigate = useNavigate();
   const [selected, setSelected] = useState(0);
 
   const Preview = ({ index }) => {
@@ -51,20 +53,21 @@ const CaseStudies = () => {
             icon={CaseStudiesIcon}
             title={"05 . Case Sudies"}
             oneliner={
-              "Various Projects Done. Browse our latest case study on Marketing Agency"
+              "Browse our latest case study on Marketing Agency"
             }
             color={"#fff"}
             leftAlign={true}
           />
 
-          <Button style={{ height: 52, padding: "0px 34px", minWidth: 134 }}>
+          <Button
+            onClick={() => navigate("/case-studies")}
+            style={{ height: 52, padding: "0px 34px", minWidth: 134 }}
+          >
             More Case Studies
           </Button>
         </Container>
 
-        <Container
-          style={{ width: "90%", gap: "0px", marginTop: 20 }}
-        >
+        <Container style={{ width: "90%", gap: "0px", marginTop: 20 }}>
           <SideContainer>
             {selected === 0 ? (
               <Preview index={0} />
@@ -117,7 +120,12 @@ const CaseStudies = () => {
               </Card>
             )}
           </SideContainer>
-          <SideImage src={CaseStudiesImage} alt="" width={"48%"} height={"48%"} />
+          <SideImage
+            src={CaseStudiesImage}
+            alt=""
+            width={"48%"}
+            height={"48%"}
+          />
         </Container>
       </Wrapper>
     </Background>

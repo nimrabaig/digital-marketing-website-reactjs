@@ -19,9 +19,10 @@ import {
   TeamCard,
   Name,
   Image,
-  LongButtonsContainer,
+  TagsContainer,
   ValuesButtonContainer,
   TeamGrid,
+  Tag,
 } from "./index.styled";
 import TeamsIcon from "../../assets/hand-shake-icon.png";
 import IntroImg from "../../assets/about-us-intro.png";
@@ -36,8 +37,10 @@ import Arrow from "../../assets/arrow.png";
 import GetInTouch from "../../components/GetInTouch";
 import SectionHeader from "../../components/Section/SectionHeader";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AboutUs = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
@@ -58,24 +61,18 @@ const AboutUs = () => {
             leftAlign={true}
             oneliner={"Your Trusted Partner in Digital Marketing"}
           />
-          <LongButtonsContainer
+          <TagsContainer
             style={{
               margin: "30px 20px",
               gap: 20,
             }}
           >
-            <Button
-              style={{
-                backgroundColor: "rgba(41, 41, 48, 1)",
-                color: "#fff",
-                fontWeight: 600,
-                fontSize: 22,
-              }}
+            <Tag
             >
               <img src={Icon1} alt="" style={{ marginRight: 22 }} height={30} />
               Development Scale
-            </Button>
-            <Button
+            </Tag>
+            <Tag
               style={{
                 backgroundColor: "rgba(41, 41, 48, 1)",
                 color: "#fff",
@@ -85,8 +82,8 @@ const AboutUs = () => {
             >
               <img src={Icon2} alt="" style={{ marginRight: 10 }} height={30} />
               Research & Strategy
-            </Button>
-          </LongButtonsContainer>
+            </Tag>
+          </TagsContainer>
           <Text>
             Welcome to Lumenta, your premier destination for digital marketing
             excellence. Established in [Year of Establishment], we are a dynamic
@@ -94,7 +91,7 @@ const AboutUs = () => {
             your business to online success.
           </Text>
           <ButtonContainer>
-            <Button style={{ marginTop: 20 }}>Get In Touch</Button>
+            <Button style={{ marginTop: 20 }} onClick={() => navigate("/contact-us")}>Get In Touch</Button>
           </ButtonContainer>
         </TextContent>
       </Container>
@@ -126,8 +123,8 @@ const AboutUs = () => {
         </Grid>
 
         <ValuesButtonContainer>
-          <SecondaryButton>Get In Touch</SecondaryButton>
-          <PrimaryButton>
+          <SecondaryButton onClick={() => navigate("/contact-us")}>Get In Touch</SecondaryButton>
+          <PrimaryButton onClick={() => navigate("/services")}>
             Our Services{" "}
             <Ellipse>
               <img src={Arrow} alt="" height={10} width={6} />
@@ -136,7 +133,7 @@ const AboutUs = () => {
         </ValuesButtonContainer>
       </ValuesContainer>
 
-      <TeamsContainer>
+      {/* <TeamsContainer>
         <SectionHeader
           icon={TeamsIcon}
           title={"03 . Our team"}
@@ -153,12 +150,12 @@ const AboutUs = () => {
         </TeamGrid>
 
         <GetInTouch />
-      </TeamsContainer>
+      </TeamsContainer> */}
 
       <ContactUsContainer>
         <SectionHeader
           icon={ContactUsIon}
-          title={"04 . Contacts us"}
+          title={"03 . Contacts us"}
           oneliner={"Join Us on the Journey"}
         />
         <Text

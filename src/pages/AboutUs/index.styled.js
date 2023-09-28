@@ -90,7 +90,7 @@ export const ValuesButtonContainer = styled(ButtonContainer)`
   }
 `;
 
-export const LongButtonsContainer = styled(ButtonContainer)`
+export const TagsContainer = styled(ButtonContainer)`
   @media (max-width: 1120px) {
     flex-direction: column;
   }
@@ -254,3 +254,19 @@ export const Name = styled(Text)`
   font-weight: 700;
   line-height: 114.5%; /* 28.625px */
 `;
+
+export const Tag = styled.div`
+background-color: rgba(41, 41, 48, 1);
+                color: #fff;
+                font-weight: 600;
+                font-size: 22;
+                display: inline-flex;
+  padding: 14px 34px;
+  justify-content: center;
+  width: max-content;
+  align-items: center;
+  text-align: center;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 1px solid #292930;
+                `

@@ -8,8 +8,10 @@ import {
 } from "./index.styled";
 import Button from "../../Button";
 import { Text } from "../../Section/SectionHeader/index.styled";
+import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Wrapper>
@@ -30,8 +32,20 @@ const Banner = () => {
             </SubText>
           </Tagline>
           <ButtonsContainer>
-            <Button primary={true} style={{ width: 91.0469 }}>Our Services</Button>
-            <Button primary={false} style={{ width: 91.0469 }}>Get Started</Button>
+            <Button
+              primary={true}
+              style={{ width: 91.0469 }}
+              onClick={() => navigate("/services")}
+            >
+              Our Services
+            </Button>
+            <Button
+              primary={false}
+              style={{ width: 91.0469 }}
+              onClick={() => navigate("/contact-us")}
+            >
+              Get Started
+            </Button>
           </ButtonsContainer>
         </Content>
       </Wrapper>

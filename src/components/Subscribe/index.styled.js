@@ -55,4 +55,7 @@ export const EmailInput = styled(Input)`
   background-color: #5b5b61;
   height: 21.5px;
   width: 50%;
+  @media (max-width: 750px) {
+    width: 70%;
+  }
 `;

@@ -7,7 +7,7 @@ export const Background = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  width: 90%;
+  width: 80%;
   margin: auto;
   display: flex;
   padding: 40px;

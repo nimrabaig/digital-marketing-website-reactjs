@@ -24,9 +24,11 @@ const Testimonials = () => {
   return (
     <Wrapper>
       <SectionHeader 
+      style={{ justifyContent: "flex-start"}}
       icon={TestimonialIcon}
       title={"04. Testimonials"}
       oneliner={"We work with customers across all industries"}
+      onelinerwidth={"100%"}
       leftAlign={true}/>
 
       <CardContainer>

@@ -27,14 +27,20 @@ const SideMenu = ({ setShowDropdown, showDropDown }) => {
             }}
           >
             <SVGLoader
-              iconFillColor={location.pathname === item.path ? "#FF7503" : "#292930"}
+              iconFillColor={
+                location.pathname === item.path ? "#FF7503" : "#292930"
+              }
               iconName={item.text}
             />
             <span>{item.text}</span>
           </MobileMenuItem>
         ))}
       </SideMenuContainer>
-      <Button primary={true} style={{ margin: 40 }}>
+      <Button
+        primary={true}
+        style={{ margin: 40 }}
+        onClick={() => navigate("/contact-us")}
+      >
         Get Started
       </Button>
     </DropDown>

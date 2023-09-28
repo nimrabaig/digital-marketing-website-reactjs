@@ -15,17 +15,16 @@ import {
   SideImage,
   Text,
   Title,
-  Detail
+  Detail,
 } from "./index.styled";
-import SectionHeader1 from "../../Section/SectionHeader1";
+import SectionHeader from "../../Section/SectionHeader";
 
-const Articles1 = () => {
+const Articles = () => {
   return (
     <Wrapper>
-      <SectionHeader1
+      <SectionHeader
         icon={ArticleIcon}
         title={"08 . Articles"}
-        leftAlign={true}
         oneliner={"Browse our content on growth marketing"}
       />
 
@@ -62,7 +61,7 @@ const Articles1 = () => {
           <SideImage src={Article1} alt="" />
         </Card>
 
-        {/* <Card bg={"rgba(233, 247, 255, 1)"}>
+        <Card bg={"rgba(233, 247, 255, 1)"}>
           <SideImage src={Article2} alt="" />
           <Column>
             <Header>
@@ -90,9 +89,9 @@ const Articles1 = () => {
               </Ellipse>
             </Button>
           </Column>
-        </Card> */}
+        </Card>
 
-        {/* <Button
+        <Button
           style={{
             backgroundColor: "rgba(41, 41, 48, 1)",
             color: "#fff",
@@ -101,10 +100,10 @@ const Articles1 = () => {
         >
           More Articles
           <img src={WhiteArrow} alt="" style={{ marginLeft: 20 }} />{" "}
-        </Button> */}
+        </Button>
       </Container>
     </Wrapper>
   );
 };
 
-export default Articles1;
+export default Articles;

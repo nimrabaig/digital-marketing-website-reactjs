@@ -1,7 +1,9 @@
 import { Background, Container, Flex, Text } from "./index.styled";
 import Button from "../Button";
+import { useNavigate } from "react-router-dom";
 
 const GetInTouch = () => {
+  const navigate = useNavigate();
   return (
     <Background>
       <Container>
@@ -11,18 +13,19 @@ const GetInTouch = () => {
         </Text>
 
         <Flex>
-          <Button style={{
-            backgroundColor: "#292930",
-            color: "#fff"
-          }}>
+          <Button
+            style={{
+              backgroundColor: "#292930",
+              color: "#fff",
+            }}
+            onClick={() => navigate("/contact-us")}
+          >
             Get In Touch
           </Button>
-          <Button>
-            Get Started
-          </Button>
+          <Button onClick={() => navigate("/contact-us")}>Get Started</Button>
         </Flex>
       </Container>
-      </Background>
+    </Background>
   );
 };
 

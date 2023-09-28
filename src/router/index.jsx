@@ -35,8 +35,16 @@ const router = [
     element: <Career />
   },
   {
-    path: "/blog",
+    path: "/blogs",
     element: <Blogs />
+  },
+  {
+    path: "/blog/:id",
+    element: <></>
+  },
+  {
+    path: "/case-studies",
+    element: <></>
   },
 ];
 

@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
   margin: auto;
-  width: 90%;
+  width: 85%;
 `;
 
 export const Header = styled.div`
@@ -27,10 +27,11 @@ export const CardContainer = styled.div`
 
   @media (max-width: 945px) {
     flex-direction: column;
+    align-items: center;
   }
 
   @media (max-width: 430px) {
-    height: 557px;
+    height: max-content;
   }
 `;
 
@@ -40,10 +41,9 @@ export const OuterCard = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  width: 433px;
   border-radius: 7px;
   background: linear-gradient(151deg, #fff8f8 10.38%, #f5f7ff 95.44%);
-  min-height: 250px;
+  min-width: 233px;
 `;
 
 export const InnerCard = styled.div`

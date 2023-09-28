@@ -4,7 +4,7 @@ import BenefitsBg from "../../../assets/benefits-bg.png";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 80%;
     margin: auto;
     background-image: url(${BenefitsBg});
     background-color: white;
@@ -40,7 +40,7 @@ export const TextContent = styled.div`
   justify-content: center;
   align-items: center;
   margin: 43px 100px;
-  width: 45%;
+  width:60%;
   margin-left: auto;
   margin-right: 100px;
 

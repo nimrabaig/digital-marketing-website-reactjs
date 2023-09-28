@@ -27,6 +27,10 @@ export const Wrapper = styled.div`
   @media (max-width: 640px) {
     height: 1000px;
   }
+
+  @media (max-width: 300px) {
+    height: 1100px;
+  }
 `;
 
 export const Content = styled.div`
