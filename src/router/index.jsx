@@ -46,6 +46,10 @@ const router = [
     path: "/case-studies",
     element: <></>
   },
+  {
+    path: "/case-studies/:id",
+    element: <></>
+  },
 ];
 
 const RouterConfig = () => {

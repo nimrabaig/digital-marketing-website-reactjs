@@ -18,8 +18,10 @@ import {
   Detail,
 } from "./index.styled";
 import SectionHeader from "../../Section/SectionHeader";
+import { useNavigate } from "react-router-dom";
 
 const Articles = () => {
+  const navigate = useNavigate()
   return (
     <Wrapper>
       <SectionHeader
@@ -97,6 +99,7 @@ const Articles = () => {
             color: "#fff",
             marginTop: 20,
           }}
+          onClick={() => navigate("/case-studies")}
         >
           More Articles
           <img src={WhiteArrow} alt="" style={{ marginLeft: 20 }} />{" "}

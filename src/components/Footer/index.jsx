@@ -13,7 +13,7 @@ import {
   Flex,
   Column,
   BottomRow,
-  BottomColumn
+  BottomColumn,
 } from "./index.styled";
 import Logo from "../../assets/logo.png";
 import Lumenta from "../../assets/lumenta.png";
@@ -24,8 +24,10 @@ import { Separator } from "../Homepage/Benefits/index.styled.js";
 import Follows from "../../assets/follows.png";
 import Links from "../../assets/links.png";
 import Button from "../Button";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <Background style={{ minHeight: 650 }}>
       <Wrapper>
@@ -36,7 +38,7 @@ const Footer = () => {
           <SubscriptionText>
             Industry's standard from dummy and make a type book.{" "}
           </SubscriptionText>
-          <Input value="" placeholder="Enter Your Email..." />
+          <Input placeholder="Enter Your Email..." />
           <Button
             style={{
               backgroundColor: "rgba(255, 117, 3, 1)",
@@ -57,7 +59,7 @@ const Footer = () => {
                 <Text>Get in touch with</Text>
               </Flex>
               <Phone>+14169965329</Phone>
-              <Text>nextlevel@marketing.com</Text>
+              <Text>info@lumentadigital.com</Text>
             </Column>
 
             <Column style={{ gap: 15, width: "50%" }}>
@@ -74,32 +76,30 @@ const Footer = () => {
 
           <Separator style={{ width: "100%" }} />
 
-          <BottomRow style={{}}>
-            <BottomColumn style={{ gap: 15}}>
+          <BottomRow>
+            <BottomColumn style={{ gap: 15 }}>
               <Flex>
                 <Icon src={Pages} alt="" />
                 <Text>Pages</Text>
               </Flex>
-              <Text>Home</Text>
-              <Text>About</Text>
-              <Text>Services</Text>
-              <Text>Blog</Text>
-              <Text>Contact</Text>
+              <Text onClick={() => navigate("/")}>Home</Text>
+              <Text onClick={() => navigate("/about-us")}>About</Text>
+              <Text onClick={() => navigate("/services")}>Services</Text>
+              <Text onClick={() => navigate("/blogs")}>Blogs</Text>
+              <Text onClick={() => navigate("/contact-us")}>Contact</Text>
             </BottomColumn>
 
-            <BottomColumn style={{ gap: 15}}>
+            <BottomColumn style={{ gap: 15 }}>
               <Flex>
                 <Icon src={Links} alt="" />
                 <Text>Important Links</Text>
               </Flex>
               <Text>Pricing</Text>
-              <Text>Sample #1</Text>
-              <Text>PDF #2</Text>
-              <Text>PDF New #3</Text>
-              <Text>Sample#4</Text>
+              <Text onClick={() => navigate("/career")}>Career</Text>
+              <Text>Case Study PDF</Text>
             </BottomColumn>
 
-            <BottomColumn style={{ gap: 15}}>
+            <BottomColumn style={{ gap: 15 }}>
               <Flex>
                 <Icon src={Follows} alt="" />
                 <Text>Follows</Text>
