@@ -13,6 +13,14 @@ export const Wrapper = styled.div`
   background-size: cover;
   background-position: center right;
 
+  @media (max-width: 300px) {
+    height: 1100px;
+  }
+
+  @media (max-width: 640px) {
+    height: 1000px;
+  }
+
   @media (max-width: 1000px) {
     height: 800px;
     background: linear-gradient(111deg, #e9f7ff 9.95%, #ffdbd4 85.17%);
@@ -24,13 +32,7 @@ export const Wrapper = styled.div`
     background: linear-gradient(111deg, #e9f7ff 9.95%, #ffdbd4 85.17%);
   }
 
-  @media (max-width: 640px) {
-    height: 1000px;
-  }
 
-  @media (max-width: 300px) {
-    height: 1100px;
-  }
 `;
 
 export const Content = styled.div`
@@ -38,6 +40,8 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-self: flex-start;
+  width: 90%;
   margin: 120px 100px;
 
   @media (max-width: 1000px) {
@@ -50,6 +54,10 @@ export const Content = styled.div`
     flex-direction: column;
     justify-centent: center;
     margin: 120px auto 20px !important;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 120px 10% !important;
   }
 `;
 

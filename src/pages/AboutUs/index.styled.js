@@ -11,12 +11,12 @@ export const Banner = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 700px;
   align-items: center;
   width: 100%;
   background-image: url(${BannerImg});
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 
   @media (max-width: 1250px) {
     height: 350px;
@@ -41,8 +41,9 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   background-position: center left;
   height: 800px;
+  margin-top: 100px;
 
-  @media (max-width: 750px) {
+  @media (max-width: 1000px) {
     background: none !important;
     margin-bottom: 100px;
   }
@@ -56,7 +57,7 @@ export const TextContent = styled.div`
   margin: 43px 100px 40px auto;
   width: 50%;
 
-  @media (max-width: 750px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
     margin: 90px auto 20px !important;
     width: 90%;
@@ -75,7 +76,7 @@ export const ButtonContainer = styled.div`
   margin-bottom: 60px;
   gap: 20px;
 
-  @media (max-width: 750px) {
+  @media (max-width: 1000px) {
     justify-content: center;
     align-items: center;
   }
@@ -91,7 +92,7 @@ export const ValuesButtonContainer = styled(ButtonContainer)`
 `;
 
 export const TagsContainer = styled(ButtonContainer)`
-  @media (max-width: 1120px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
   }
 `;
@@ -263,7 +264,7 @@ export const Tag = styled.div`
   background-color: rgba(41, 41, 48, 1);
   color: #fff;
   font-weight: 600;
-  font-size: 22;
+  font-size: 24;
   display: inline-flex;
   padding: 14px 34px;
   justify-content: center;

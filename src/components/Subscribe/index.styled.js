@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
   background-image: url(${Bg});
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   min-height: 700px;
   display: flex;
   flex-direction: column;

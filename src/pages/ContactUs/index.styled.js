@@ -11,12 +11,12 @@ export const Banner = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 700px;
   align-items: center;
   width: 100%;
   background-image: url(${BannerImg});
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 
   @media (max-width: 1024px) {
     height: 350px;
@@ -230,6 +230,8 @@ export const FAQAnswer = styled.div`
   line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
+  display: flex;
+  width: 100%;
 
   @media (max-width: 750px) {
     font-size: 18px;

@@ -38,6 +38,7 @@ import GetInTouch from "../../components/GetInTouch";
 import SectionHeader from "../../components/Section/SectionHeader";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import StyledPage from "../../components/Wrapper";
 
 const AboutUs = () => {
   const navigate = useNavigate();
@@ -48,6 +49,7 @@ const AboutUs = () => {
   return (
     <Wrapper>
       <Banner />
+      <StyledPage>
       <Container
         style={{
           backgroundImage: `url(${IntroImg})`,
@@ -58,7 +60,9 @@ const AboutUs = () => {
             icon={Icon}
             title={"02. ABOUT US"}
             leftAlign={true}
+          style={{ justifyContent: "unset", alignSelf: "flex-start" }}
             oneliner={"Your Trusted Partner in Digital Marketing"}
+            onelinerwidth={"100%"}
           />
           <TagsContainer
             style={{
@@ -66,8 +70,7 @@ const AboutUs = () => {
               gap: 20,
             }}
           >
-            <Tag
-            >
+            <Tag>
               <img src={Icon1} alt="" style={{ marginRight: 22 }} height={30} />
               Development Scale
             </Tag>
@@ -76,7 +79,6 @@ const AboutUs = () => {
                 backgroundColor: "rgba(41, 41, 48, 1)",
                 color: "#fff",
                 fontWeight: 600,
-                fontSize: 22,
               }}
             >
               <img src={Icon2} alt="" style={{ marginRight: 10 }} height={30} />
@@ -85,15 +87,21 @@ const AboutUs = () => {
           </TagsContainer>
           <Text>
             Welcome to Lumenta, your premier destination for digital marketing
-            excellence. Established in 2023, we are a dynamic
-            and results-driven digital marketing agency dedicated to propelling
-            your business to online success.
+            excellence. Established in 2023, we are a dynamic and results-driven
+            digital marketing agency dedicated to propelling your business to
+            online success.
           </Text>
           <ButtonContainer>
-            <Button style={{ marginTop: 20 }} onClick={() => navigate("/contact-us")}>Get In Touch</Button>
+            <Button
+              style={{ marginTop: 20 }}
+              onClick={() => navigate("/contact-us")}
+            >
+              Get In Touch
+            </Button>
           </ButtonContainer>
         </TextContent>
       </Container>
+      </StyledPage>
 
       <ValuesContainer>
         <SectionHeader
@@ -122,7 +130,9 @@ const AboutUs = () => {
         </Grid>
 
         <ValuesButtonContainer>
-          <SecondaryButton onClick={() => navigate("/contact-us")}>Get In Touch</SecondaryButton>
+          <SecondaryButton onClick={() => navigate("/contact-us")}>
+            Get In Touch
+          </SecondaryButton>
           <PrimaryButton onClick={() => navigate("/services")}>
             Our Services{" "}
             <Ellipse>
@@ -148,8 +158,9 @@ const AboutUs = () => {
           ))}
         </TeamGrid>
 
-        <GetInTouch />
+      
       </TeamsContainer> */}
+      <GetInTouch />
 
       <ContactUsContainer>
         <SectionHeader

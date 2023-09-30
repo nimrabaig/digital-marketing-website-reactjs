@@ -43,11 +43,11 @@ const Articles = () => {
               How to increase your Twitter reach by over 200% with this simple
               trick
             </Title>
-            <Text>
+            <Detail>
               Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus
               ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna
               auctor.
-            </Text>
+            </Detail>
             <Button
               style={{
                 border: "1px solid #fff",

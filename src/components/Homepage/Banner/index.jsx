@@ -16,7 +16,7 @@ const Banner = () => {
   return (
     <>
       <Wrapper>
-        <StyledPage>
+        {/* <StyledPage> */}
           <Content>
             <Flex style={{ marginRight: "auto" }}>
               <Text style={{ color: "#fec90c" }}>{"//"}&nbsp;</Text>
@@ -36,7 +36,6 @@ const Banner = () => {
             <ButtonsContainer>
               <Button
                 primary={true}
-                style={{ width: 91.0469 }}
                 onClick={() => navigate("/services")}
               >
                 Our Services
@@ -50,7 +49,7 @@ const Banner = () => {
               </Button>
             </ButtonsContainer>
           </Content>
-        </StyledPage>
+        {/* </StyledPage> */}
       </Wrapper>
     </>
   );
