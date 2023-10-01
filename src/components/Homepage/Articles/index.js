@@ -22,10 +22,7 @@ import { useNavigate } from "react-router-dom";
 import StyledPage from "../../Wrapper";
 
 const Articles = () => {
-<<<<<<< HEAD
-=======
   const navigate = useNavigate()
->>>>>>> 44eb69e290f7521084891690ca7003b7cec8b5f1
   return (
     <StyledPage>
     <Wrapper>
