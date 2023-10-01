@@ -16,6 +16,10 @@ const router = [
     element: <Homepage />,
   }, 
   {
+    path: "/pricing",
+    element: <Homepage />,
+  }, 
+  {
     path: "/about-us",
     element: <AboutUs />
   },
@@ -36,12 +40,20 @@ const router = [
     element: <Career />
   },
   {
-    path: "/blog",
+    path: "/blogs",
     element: <Blogs />
   },
   {
+    path: "/blog/:id",
+    element: <></>
+  },
+  {
     path: "/case-studies",
-    element: <CaseStudies />
+    element: <></>
+  },
+  {
+    path: "/case-studies/:id",
+    element: <></>
   },
 ];
 

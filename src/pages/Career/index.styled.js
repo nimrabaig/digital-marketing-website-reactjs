@@ -4,6 +4,7 @@ import BannerImg from "../../assets/career-banner.png";
 export const Wrapper = styled.div`
   margin: auto;
   width: 100%;
+  background-color: #292930;
 `;
 
 export const Banner = styled.div`
@@ -56,6 +57,10 @@ export const Ellipse = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 450px) {
+    margin-left: 10px;
+  }
 `;
 
 export const Grid = styled.div`
@@ -73,15 +78,12 @@ export const Grid = styled.div`
 
 export const Card = styled.div`
   position: relative;
-  width: 450px;
-  height: 310px;
   padding: 20px;
   margin: 20px;
   border-radius: 30px;
   border: 1px solid #424245;
   background: linear-gradient(180deg, #36363e 0%, #292930 100%);
   color: #fff;
-  cursor: pointer;
 `;
 
 export const Title = styled.div`
@@ -106,7 +108,6 @@ export const Description = styled.div`
 
 export const GetInfo = styled.div`
   display: inline-flex;
-  padding: 14px 34px;
   justify-content: center;
   align-self: flex-start;
   align-items: center;
@@ -116,6 +117,12 @@ export const GetInfo = styled.div`
   border: 1px solid rgba(82, 82, 85, 1);
   background-color: #fff;
   color: #292930;
+  padding: 14px 34px;
+
+  @media (max-width: 450px) {
+    width: 112px;
+    padding: 10px 30px;
+  }
 
   &:hover {
     background-color: #fff;

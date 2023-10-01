@@ -9,10 +9,16 @@ import OurProcess from "../../components/Homepage/OurProcess";
 import Pricing from "../../components/Homepage/Pricing";
 import Services from "../../components/Homepage/Services";
 import Testimonials from "../../components/Homepage/Testimonials";
+import { useLocation } from "react-router-dom";
 
 const Homepage = () => {
-
+  const path = useLocation().pathname;
+  
   useEffect(() => {
+    if (path === "/pricing") {
+      const element = document.getElementById('pricing');
+      element.scrollIntoView({ behavior: 'smooth' });
+    } else
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 

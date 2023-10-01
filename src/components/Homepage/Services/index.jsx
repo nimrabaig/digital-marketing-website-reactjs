@@ -13,8 +13,11 @@ import {
 import Arrow from "../../../assets/arrow.png";
 import { ServicesData } from "../../../constants/Services";
 import { useLayoutEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import StyledPage from "../../Wrapper";
 
 const Services = () => {
+  const navigate = useNavigate();
   const [slicedData, setSliceddata] = useState(ServicesData);
   const [mobileView, setMobielView] = useState(false);
   useLayoutEffect(() => {
@@ -35,6 +38,7 @@ const Services = () => {
 
   return (
     <Background>
+      <StyledPage>
       <Wrapper>
         <Container>
           <SectionHeader
@@ -47,7 +51,7 @@ const Services = () => {
             color={"#fff"}
           />
           {!mobileView && (
-            <Button style={{ height: 52, padding: "0px 34px", width: 200 }}>
+            <Button onClick={() => navigate("/services")} style={{ height: 52, padding: "0px 34px", width: 200 }}>
               Our Services{" "}
               <Ellipse>
                 <img src={Arrow} alt="" height={10} width={6} />{" "}
@@ -57,12 +61,12 @@ const Services = () => {
         </Container>
 
         <Grid>
-          {slicedData.map((service) => (
+          {slicedData.map((service, index) => (
             <Card>
               <img src={service.image} alt="" />
               <Title>{service.title}</Title>
               <Description>{service.description}</Description>
-              <ReadMore>
+              <ReadMore onClick={() => navigate(`/service/${index}`)}>
                 Read More{" "}
                 <Ellipse>
                   <img src={Arrow} alt="" height={10} width={6} />{" "}
@@ -79,6 +83,7 @@ const Services = () => {
               margin: "auto",
               width: 200,
             }}
+            onClick={() => navigate("/services")}
           >
             Our Services{" "}
             <Ellipse>
@@ -87,6 +92,7 @@ const Services = () => {
           </Button>
         )}
       </Wrapper>
+      </StyledPage>
     </Background>
   );
 };

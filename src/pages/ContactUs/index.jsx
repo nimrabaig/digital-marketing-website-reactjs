@@ -261,7 +261,7 @@ const ContactUs = () => {
                   }}
                 >
                   <FAQQuestion>
-                    {faq?.question}
+                    <div>{faq?.question}</div>
                     <Ellipse style={{ position: "relative", right: 0 }}>
                       <img src={Arrow} alt="" />
                     </Ellipse>

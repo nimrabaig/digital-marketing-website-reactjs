@@ -15,14 +15,21 @@ import {
   SideImage,
   Text,
   Title,
-  Detail
+  Detail,
 } from "./index.styled";
-import SectionHeader1 from "../../Section/SectionHeader1";
+import SectionHeader from "../../Section/SectionHeader";
+import { useNavigate } from "react-router-dom";
+import StyledPage from "../../Wrapper";
 
 const Articles = () => {
+<<<<<<< HEAD
+=======
+  const navigate = useNavigate()
+>>>>>>> 44eb69e290f7521084891690ca7003b7cec8b5f1
   return (
+    <StyledPage>
     <Wrapper>
-      <SectionHeader1
+      <SectionHeader
         icon={ArticleIcon}
         title={"08 . Articles"}
         oneliner={"Browse our content on growth marketing"}
@@ -39,11 +46,11 @@ const Articles = () => {
               How to increase your Twitter reach by over 200% with this simple
               trick
             </Title>
-            <Text>
+            <Detail>
               Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus
               ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna
               auctor.
-            </Text>
+            </Detail>
             <Button
               style={{
                 border: "1px solid #fff",
@@ -97,12 +104,14 @@ const Articles = () => {
             color: "#fff",
             marginTop: 20,
           }}
+          onClick={() => navigate("/case-studies")}
         >
           More Articles
           <img src={WhiteArrow} alt="" style={{ marginLeft: 20 }} />{" "}
         </Button>
       </Container>
     </Wrapper>
+    </StyledPage>
   );
 };
 

@@ -5,12 +5,12 @@ export const Banner = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 450px;
+  height: 700px;
   align-items: center;
   width: 100%;
   background-image: url(${BannerImg});
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 
   @media (max-width: 1024px) {
     height: 350px;

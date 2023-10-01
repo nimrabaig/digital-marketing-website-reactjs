@@ -63,7 +63,7 @@ export const PackageType = styled.div`
   color: ${(props) => (props.primary ? "#fff" : "#292930")};
   text-align: center;
   font-family: Nunito;
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 110.5%; /* 27.625px */
@@ -74,7 +74,7 @@ export const Price = styled.div`
   color: ${(props) => (props.primary ? "#fff" : "#292930")};
   text-align: center;
   font-family: Nunito;
-  font-size: 50px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 900;
   line-height: 110.5%; /* 55.25px */

@@ -6,7 +6,7 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  width: 90%;
+  /* width: 90%; */
   margin: 60px auto;
 `;
 
@@ -27,9 +27,9 @@ export const Card = styled.div`
     width: 300px;
   }
 
-  @media (min-width: 1400px) {
+  /* @media (min-width: 1400px) {
     width: 70% !important;
-  }
+  } */
 `;
 
 export const Header = styled.div`
@@ -77,10 +77,6 @@ export const Title = styled(Text)`
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px;
-
-  @media (min-width: 2000px) {
-    font-size: 30px;
-  }
 `;
 
 export const Detail = styled(Text)`
@@ -89,6 +85,10 @@ export const Detail = styled(Text)`
   -webkit-box-orient: vertical;
   overflow: hidden;
   height: 62px;
+
+  @media (min-width: 1400px) {
+    height: 90px;
+  }
 `;
 
 export const SideImage = styled.img`

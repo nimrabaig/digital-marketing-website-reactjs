@@ -10,24 +10,20 @@ export const ServicesData = [
     image: Service1,
     title: "Social Media Marketings",
     description:
-      "Unlocking insights and driving data-driven decisions with advanced analytics.",
+      " Utilize social media for audience connection and enduring brand loyalty.",
     longDescription:
-      "At Lumenta, our all-encompassing social media marketing services are meticulously crafted to elevate your brand's online presence. With bespoke strategies tailored to various platforms, a data-centric methodology, and a team of seasoned professionals, we are dedicated to amplifying your reach and engagement. Our unwavering commitment yields remarkable outcomes, enhancing brand visibility, catalyzing conversions, and empowering businesses to excel in the digital realm.",
+      "Lumenta's social media marketing services elevate brands' online presence. Bespoke strategies, data-driven insights, and seasoned professionals amplify reach, engagement, and visibility, catalyzing conversions and empowering businesses to excel.",
     about: {
       title: "We take your business reach from thousands to millions. ",
       description:
         "At Lumenta, we specialize in transforming your business's reach from thousands to millions. Our expert team leverages the power of social media to expand your brand's influence and connect with a global audience. ",
       bullets: [
-        "Mission Statement: A concise statement describing your brand's purpose and goals. ",
-        "History: A brief overview of your brand's journey and milestones. ",
-        "Values: Highlight the core values that drive your brand's decisions and actions. x",
-        "Team: Introduce key team members or employees to add a personal touch. ",
-        "Unique Selling Proposition (USP): Explain what sets your brand apart from competitors. ",
-        "Achievements: Mention any awards, recognition, or significant accomplishments.",
-        "Customer-Centric Focus: Emphasize how your brand benefits customers. ",
-        "Visual Identity: Use brand colors, logos, and images that reflect your brand's personality. ",
-        "Contact Information: Provide ways for customers to reach out or visit your website. ",
-        "Engagement: Encourage followers to connect, ask questions, or provide feedback. ",
+        "Concise and informative description of your brand's purpose and goals",
+        "Brief overview of your brand's history and key milestones",
+        "Highlight of the core values that drive your brand's decisions and actions",
+        "Explanation of what sets your brand apart from competitors",
+        "Emphasis on how your brand benefits customers",
+        "Overview of the visual elements that represent your brand and its overview",
       ],
     },
     categories: [
@@ -129,17 +125,17 @@ export const ServicesData = [
     image: Service3,
     title: "Advanced Analytics",
     description:
-      "Utilize social media for audience connection and enduring brand loyalty.",
+      "Unlocking insights and driving data-driven decisions with advanced analytics.",
     longDescription:
       "In today's data-driven world, making informed decisions is essential for business success. At Lumenta, we specialize in unlocking valuable insights and empowering data-driven decisions through advanced analytics.",
     about: {
       title: "Harnessing the Power of Data for Informed Decisions",
       description: "Our Expertise:",
       bullets: [
-        "Cutting-Edge Tools: We leverage the latest analytics tools and technologies to extract meaningful information from your data. ",
-        "Custom Solutions: Our team tailors analytics solutions to your unique needs, ensuring relevance and accuracy. ",
-        "Actionable Insights: We don't just provide data; we offer actionable insights that drive tangible results. ",
-        "Continuous Improvement: We're committed to staying at the forefront of analytics advancements, ensuring your business benefits from the latest trends. ",
+        "We leverage the latest analytics tools and technologies to extract meaningful information from your data. ",
+        "Our team tailors analytics solutions to your unique needs, ensuring relevance and accuracy. ",
+        "We don't just provide data; we offer actionable insights that drive tangible results. ",
+        "We're committed to staying at the forefront of analytics advancements, ensuring your business benefits from the latest trends. ",
       ],
     },
     categories: [
@@ -187,16 +183,16 @@ export const ServicesData = [
     description:
       "Elevate website rankings, and draw organic traffic with effective SEO strategies.",
     longDescription:
-      "Lumenta's SEO Optimization services are your key to unlocking the full potential of your online presence. With our effective SEO strategies, we specialize in elevating your website's rankings and drawing organic traffic to maximize your digital impact. Our expert team tailors solutions to your unique needs, conducts comprehensive audits, and monitors performance to ensure continuous improvement. Trust Lumenta to boost your website's visibility and drive organic growth in the digital landscape.",
+      "Lumenta's SEO Optimization services boost your website's visibility and drive organic growth, tailoring solutions to your specific needs and monitoring performance for continuous improvement.",
     about: {
       title: "",
       description:
         "Elevate your website rankings and draw organic traffic with Lumenta's expert SEO optimization services. Contact us today to boost your online presence and drive digital success.",
       bullets: [
-        "Proven Results: Our strategies have consistently delivered improved rankings and organic traffic. ",
-        "Transparent Reporting: We provide clear, detailed reports on your SEO performance. ",
-        "Adaptability: We stay ahead of SEO trends to ensure your strategy remains effective. ",
-        "ROI-Focused: Our goal is to maximize your return on investment through enhanced visibility. ",
+        "Our strategies have consistently delivered improved rankings and organic traffic. ",
+        " We provide clear, detailed reports on your SEO performance. ",
+        "We stay ahead of SEO trends to ensure your strategy remains effective. ",
+        "Our goal is to maximize your return on investment through enhanced visibility. ",
       ],
     },
     categories: [
@@ -239,6 +235,63 @@ export const ServicesData = [
     ],
   },
   {
+    image: Service6,
+    title: "Content Marketing",
+    description:
+      "Engage the audience, and build authority with valuable content in content marketing.",
+    longDescription:
+      "In the dynamic digital realm, content reigns supreme. It's more than mere creation; it's about crafting impactful, engaging, and authoritative content that connects deeply with your audience. At Lumenta, we grasp the potential of content marketing, and we're your guiding light towards a triumphant brand journey. Let us illuminate your path to success through strategic content brilliance. ",
+    about: {
+      title: "Illuminating Your Path to Success with Content Marketing",
+      description:
+        "Illuminate your path to success with content marketing that engages your audience, builds authority, and achieves your business goals.",
+      bullets: [
+        "Our team of seasoned content strategists, writers, and creators are experts in the field of content marketing. We have a deep understanding of what it takes to captivate your target audience and build your brand's authority. ",
+        "We know that one size does not fit all. Our content marketing strategies are customized to suit your unique goals, industry, and audience. Whether you're a startup looking to establish your online presence or an established business aiming to reach new heights, we've got you covered. ",
+        "Engagement is the key to success in content marketing. We craft content that not only informs but also entertains and inspires your audience. By engaging your readers, viewers, or listeners, we help you create meaningful connections that drive results.",
+        "Authority is earned through expertise and trust. Through our well-researched, authoritative content, we position your brand as a thought leader in your industry. When your audience sees you as a reliable source of information, you'll gain their trust and loyalty. ",
+      ],
+    },
+    categories: [
+      {
+        image: Service1,
+        title: "Content Strategy",
+        description:
+          " We start by understanding your business, your goals, and your audience. With a well-defined content strategy, we ensure that every piece of content we create serves a purpose in your marketing plan",
+      },
+      {
+        image: Service2,
+        title: "Content Creation",
+        description:
+          "Lumenta's skilled writers and creators produce engaging, informative content that conveys your brand's message, including blog posts, articles, videos, and infographics.",
+      },
+      {
+        image: Service3,
+        title: "SEO Optimization",
+        description:
+          "We know that great content is only effective when it's discovered. Our SEO experts optimize your content to ensure it ranks well in search engines, increasing your visibility and driving organic traffic.",
+      },
+      {
+        image: Service4,
+        title: "Social Media Integration",
+        description:
+          "In today's social media-driven world, we help you leverage platforms like Facebook, Instagram, Twitter, and LinkedIn to amplify your content and connect with your audience on a personal level. ",
+      },
+      {
+        image: Service5,
+        title: "Analytics and Optimization",
+        description:
+          "We don't stop at content creation. We continuously monitor the performance of your content, analyzing data and making adjustments to optimize results. ",
+      },
+      {
+        image: Service6,
+        title: "Email Marketing",
+        description:
+          "Lumenta excels in Email Marketing Precise campaigns, nurturing leads, fostering loyalty, and crafting conversion-focused email content. Illuminate your brand's success.",
+      },
+    ],
+  },
+  {
     image: Service5,
     title: "Web Development",
     description:
@@ -250,11 +303,11 @@ export const ServicesData = [
       description:
         "Lumenta's Innovative Web Design and Development Services redefine online experiences, merging creativity, functionality, and user-friendliness for a digital presence that elevates your brand and fuels business success. ",
       bullets: [
-        "Customized Solutions: From e-commerce to bespoke web applications, we offer tailored development to meet your unique business requirements. ",
-        "Security Assurance: We prioritize website and user data security with robust measures against cyber threats and data breaches. ",
-        "Scalability: Our websites adapt and expand alongside your growing business needs. ",
-        "Performance Excellence: Fast loading times, lower bounce rates, and improved user satisfaction through performance optimization. ",
-        "Continuous Support: Beyond launch, we provide ongoing maintenance and support to keep your website current and technologically advanced. ",
+        "From e-commerce to bespoke web applications, we offer tailored development to meet your unique business requirements. ",
+        " We prioritize website and user data security with robust measures against cyber threats and data breaches. ",
+        "Our websites adapt and expand alongside your growing business needs. ",
+        " Fast loading times, lower bounce rates, and improved user satisfaction through performance optimization. ",
+        " Beyond launch, we provide ongoing maintenance and support to keep your website current and technologically advanced. ",
       ],
     },
     categories: [
@@ -293,63 +346,6 @@ export const ServicesData = [
         title: "Software Development ",
         description:
           "At Lumenta, we specialize in bespoke software development. Our expert team crafts custom solutions to meet your unique business needs. ",
-      },
-    ],
-  },
-  {
-    image: Service6,
-    title: "Content Marketing",
-    description:
-      "Engage the audience, and build authority with valuable content in content marketing.",
-    longDescription:
-      "In the dynamic digital realm, content reigns supreme. It's more than mere creation; it's about crafting impactful, engaging, and authoritative content that connects deeply with your audience. At Lumenta, we grasp the potential of content marketing, and we're your guiding light towards a triumphant brand journey. Let us illuminate your path to success through strategic content brilliance. ",
-    about: {
-      title: "Illuminating Your Path to Success with Content Marketing",
-      description:
-        "At Lumenta, we don't just create content; we illuminate your path to success. Our content marketing services are designed to help you engage your audience, build authority in your industry, and achieve your business goals. Are you ready to shine brighter in the digital landscape? Contact us today, and let's embark on a content marketing journey that leads to success. Together, we'll light up the way for your brand. ",
-      bullets: [
-        "Expertise that Illuminates: Our team of seasoned content strategists, writers, and creators are experts in the field of content marketing. We have a deep understanding of what it takes to captivate your target audience and build your brand's authority. ",
-        "Custom-Tailored Content: We know that one size does not fit all. Our content marketing strategies are customized to suit your unique goals, industry, and audience. Whether you're a startup looking to establish your online presence or an established business aiming to reach new heights, we've got you covered. ",
-        "Engagement at the Core: Engagement is the key to success in content marketing. We craft content that not only informs but also entertains and inspires your audience. By engaging your readers, viewers, or listeners, we help you create meaningful connections that drive results.",
-        "Building Authority: Authority is earned through expertise and trust. Through our well-researched, authoritative content, we position your brand as a thought leader in your industry. When your audience sees you as a reliable source of information, you'll gain their trust and loyalty. ",
-      ],
-    },
-    categories: [
-      {
-        image: Service1,
-        title: "Content Strategy",
-        description:
-          " We start by understanding your business, your goals, and your audience. With a well-defined content strategy, we ensure that every piece of content we create serves a purpose in your marketing plan",
-      },
-      {
-        image: Service2,
-        title: "Content Creation",
-        description:
-          "Our talented writers and creators produce a wide range of content, including blog posts, articles, videos, infographics, podcasts, and more. Each piece is meticulously crafted to engage your audience and convey your brand's message.",
-      },
-      {
-        image: Service3,
-        title: "SEO Optimization",
-        description:
-          "We know that great content is only effective when it's discovered. Our SEO experts optimize your content to ensure it ranks well in search engines, increasing your visibility and driving organic traffic.",
-      },
-      {
-        image: Service4,
-        title: "Social Media Integration",
-        description:
-          "In today's social media-driven world, we help you leverage platforms like Facebook, Instagram, Twitter, and LinkedIn to amplify your content and connect with your audience on a personal level. ",
-      },
-      {
-        image: Service5,
-        title: "Analytics and Optimization",
-        description:
-          "We don't stop at content creation. We continuously monitor the performance of your content, analyzing data and making adjustments to optimize results. ",
-      },
-      {
-        image: Service6,
-        title: "Email Marketing",
-        description:
-          "Lumenta excels in Email Marketing Precise campaigns, nurturing leads, fostering loyalty, and crafting conversion-focused email content. Illuminate your brand's success.",
       },
     ],
   },

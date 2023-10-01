@@ -37,10 +37,15 @@ import { cx, css } from "@emotion/css";
 import Flow1 from "../../assets/flow-1.png";
 import Flow2 from "../../assets/flow-2.png";
 import Flow3 from "../../assets/flow-3.png";
+import { useEffect } from "react";
 
 const Service = () => {
   const params = useParams();
-  console.log("fewfj", ServicesData[params.id]);
+  
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <StyledContainer>
       <Banner>
@@ -64,7 +69,7 @@ const Service = () => {
 
           <Grid>
             {ServicesData[params.id].categories.map((service) => (
-              <Card>
+              <Card style={{ height: 412}}>
                 <img src={service.image} alt="" />
                 <Title>{service.title}</Title>
                 <Description>{service.description}</Description>
@@ -81,6 +86,7 @@ const Service = () => {
             title={"02 . about this service"}
             oneliner={ServicesData[params.id].about.title}
             leftAlign={true}
+            style={{ justifyContent: "flex-start"}}
             onelinerwidth={"100%"}
           />
           <Separator />

@@ -1,4 +1,4 @@
-import { BlogData } from "../../constants/Blogs"
+import { BlogData } from "../../constants/Blogs";
 import {
   Banner,
   Wrapper,
@@ -13,13 +13,16 @@ import {
   Column,
   Title,
   Header1,
+  HeaderContainer,
 } from "./index.styled";
 import TeamsIcon from "../../assets/hand-shake-icon.png";
-import SectionHeader from "../../components/Section/SectionHeader";
+import SectionHeader1 from "../../components/Section/SectionHeader1";
 import { useEffect } from "react";
-import Articles1 from "../../components/Homepage/Articles1";
+import Article from "../../components/Homepage/Articles/Article";
 import Subscribe from "../../components/Subscribe";
 import Button from "../../components/Button";
+import { Container } from "../../components/Homepage/Articles/index.styled";
+import ArticleIcon from "../../assets/articles-icon.png";
 
 const Blogs = () => {
   useEffect(() => {
@@ -29,13 +32,26 @@ const Blogs = () => {
   return (
     <Wrapper>
       <Banner />
-      <Articles1 />
+      <HeaderContainer>
+        <SectionHeader1
+          icon={ArticleIcon}
+          title={"01 . Articles"}
+          leftAlign={true}
+          onelinerwidth={"100%"}
+          oneliner={"Browse our content on growth marketing"}
+        />
+
+        <Container>
+          <Article />
+        </Container>
+      </HeaderContainer>
+
       <Subscribe />
 
       <BlogsContainer>
         <Header1>
           <Title>Latest posts</Title>
-          <div style={{ display: 'flex', gap: 10 }}>
+          <div style={{ display: "flex", gap: 10 }}>
             <Button>All</Button>
             <Button>Growth</Button>
             <Button>Content</Button>
@@ -57,7 +73,6 @@ const Blogs = () => {
             </BlogCard>
           ))}
         </BlogGrid>
-
       </BlogsContainer>
     </Wrapper>
   );

@@ -11,12 +11,12 @@ export const Banner = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 700px;
   align-items: center;
   width: 100%;
   background-image: url(${BannerImg});
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 
   @media (max-width: 1250px) {
     height: 350px;
@@ -41,8 +41,9 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   background-position: center left;
   height: 800px;
+  margin-top: 100px;
 
-  @media (max-width: 750px) {
+  @media (max-width: 1000px) {
     background: none !important;
     margin-bottom: 100px;
   }
@@ -56,7 +57,7 @@ export const TextContent = styled.div`
   margin: 43px 100px 40px auto;
   width: 50%;
 
-  @media (max-width: 750px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
     margin: 90px auto 20px !important;
     width: 90%;
@@ -75,7 +76,7 @@ export const ButtonContainer = styled.div`
   margin-bottom: 60px;
   gap: 20px;
 
-  @media (max-width: 750px) {
+  @media (max-width: 1000px) {
     justify-content: center;
     align-items: center;
   }
@@ -90,8 +91,8 @@ export const ValuesButtonContainer = styled(ButtonContainer)`
   }
 `;
 
-export const LongButtonsContainer = styled(ButtonContainer)`
-  @media (max-width: 1120px) {
+export const TagsContainer = styled(ButtonContainer)`
+  @media (max-width: 1000px) {
     flex-direction: column;
   }
 `;
@@ -131,9 +132,9 @@ export const Card = styled.div`
   background: linear-gradient(180deg, #36363e 0%, #292930 100%);
   display: flex;
   flex-direction: column;
-  width: 300px;
-  min-height: 300px;
-  padding: 50px 40px;
+  width: 250px;
+  min-height: 282px;
+  padding: 50px 27px 30px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -144,17 +145,21 @@ export const Card = styled.div`
 `;
 
 export const Grid = styled.div`
-  display: flex;
-  height: 502px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  overflow: hidden;
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  margin: auto;
   width: 90%;
   gap: 20px;
-  margin: 40px auto;
-  justify-content: center;
-  @media (max-width: 440px) {
-    height: 530px !important;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @media (max-width: 1040px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 660px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
 
@@ -253,4 +258,20 @@ export const Name = styled(Text)`
   font-size: 25px;
   font-weight: 700;
   line-height: 114.5%; /* 28.625px */
+`;
+
+export const Tag = styled.div`
+  background-color: rgba(41, 41, 48, 1);
+  color: #fff;
+  font-weight: 600;
+  font-size: 24;
+  display: inline-flex;
+  padding: 14px 34px;
+  justify-content: center;
+  width: max-content;
+  align-items: center;
+  text-align: center;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 1px solid #292930;
 `;

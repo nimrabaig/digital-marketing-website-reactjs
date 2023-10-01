@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
   background-image: url(${Bg});
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   min-height: 700px;
   display: flex;
   flex-direction: column;
@@ -55,4 +56,7 @@ export const EmailInput = styled(Input)`
   background-color: #5b5b61;
   height: 21.5px;
   width: 50%;
+  @media (max-width: 750px) {
+    width: 70%;
+  }
 `;

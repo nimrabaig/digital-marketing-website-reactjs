@@ -4,7 +4,7 @@ export const Background = styled.div`
   background: linear-gradient(111deg, #E9F7FF 9.66%, #FFDBD4 57.52%, #FFF3CA 103.42%);
   margin: 100px auto;
   min-height: 1000px;
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;

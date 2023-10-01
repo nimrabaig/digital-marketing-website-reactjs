@@ -19,9 +19,10 @@ import {
   TeamCard,
   Name,
   Image,
-  LongButtonsContainer,
+  TagsContainer,
   ValuesButtonContainer,
   TeamGrid,
+  Tag,
 } from "./index.styled";
 import TeamsIcon from "../../assets/hand-shake-icon.png";
 import IntroImg from "../../assets/about-us-intro.png";
@@ -36,8 +37,11 @@ import Arrow from "../../assets/arrow.png";
 import GetInTouch from "../../components/GetInTouch";
 import SectionHeader from "../../components/Section/SectionHeader";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import StyledPage from "../../components/Wrapper";
 
 const AboutUs = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
@@ -45,7 +49,7 @@ const AboutUs = () => {
   return (
     <Wrapper>
       <Banner />
-
+      <StyledPage>
       <Container
         style={{
           backgroundImage: `url(${IntroImg})`,
@@ -56,53 +60,53 @@ const AboutUs = () => {
             icon={Icon}
             title={"02. ABOUT US"}
             leftAlign={true}
+          style={{ justifyContent: "unset", alignSelf: "flex-start" }}
             oneliner={"Your Trusted Partner in Digital Marketing"}
+            onelinerwidth={"100%"}
           />
-          <LongButtonsContainer
+          <TagsContainer
             style={{
               margin: "30px 20px",
               gap: 20,
             }}
           >
-            <Button
-              style={{
-                backgroundColor: "rgba(41, 41, 48, 1)",
-                color: "#fff",
-                fontWeight: 600,
-                fontSize: 22,
-              }}
-            >
+            <Tag>
               <img src={Icon1} alt="" style={{ marginRight: 22 }} height={30} />
               Development Scale
-            </Button>
-            <Button
+            </Tag>
+            <Tag
               style={{
                 backgroundColor: "rgba(41, 41, 48, 1)",
                 color: "#fff",
                 fontWeight: 600,
-                fontSize: 22,
               }}
             >
               <img src={Icon2} alt="" style={{ marginRight: 10 }} height={30} />
               Research & Strategy
-            </Button>
-          </LongButtonsContainer>
+            </Tag>
+          </TagsContainer>
           <Text>
             Welcome to Lumenta, your premier destination for digital marketing
-            excellence. Established in [Year of Establishment], we are a dynamic
-            and results-driven digital marketing agency dedicated to propelling
-            your business to online success.
+            excellence. Established in 2023, we are a dynamic and results-driven
+            digital marketing agency dedicated to propelling your business to
+            online success.
           </Text>
           <ButtonContainer>
-            <Button style={{ marginTop: 20 }}>Get In Touch</Button>
+            <Button
+              style={{ marginTop: 20 }}
+              onClick={() => navigate("/contact-us")}
+            >
+              Get In Touch
+            </Button>
           </ButtonContainer>
         </TextContent>
       </Container>
+      </StyledPage>
 
       <ValuesContainer>
         <SectionHeader
           icon={ValuesIcon}
-          title={"02 . Our values"}
+          title={"03 . Our values"}
           oneliner={"The core values behind our work"}
           color={"#fff"}
         />
@@ -126,8 +130,10 @@ const AboutUs = () => {
         </Grid>
 
         <ValuesButtonContainer>
-          <SecondaryButton>Get In Touch</SecondaryButton>
-          <PrimaryButton>
+          <SecondaryButton onClick={() => navigate("/contact-us")}>
+            Get In Touch
+          </SecondaryButton>
+          <PrimaryButton onClick={() => navigate("/services")}>
             Our Services{" "}
             <Ellipse>
               <img src={Arrow} alt="" height={10} width={6} />
@@ -136,7 +142,7 @@ const AboutUs = () => {
         </ValuesButtonContainer>
       </ValuesContainer>
 
-      <TeamsContainer>
+      {/* <TeamsContainer>
         <SectionHeader
           icon={TeamsIcon}
           title={"03 . Our team"}
@@ -152,13 +158,14 @@ const AboutUs = () => {
           ))}
         </TeamGrid>
 
-        <GetInTouch />
-      </TeamsContainer>
+      
+      </TeamsContainer> */}
+      <GetInTouch />
 
       <ContactUsContainer>
         <SectionHeader
           icon={ContactUsIon}
-          title={"04 . Contacts us"}
+          title={"04 . Join us"}
           oneliner={"Join Us on the Journey"}
         />
         <Text

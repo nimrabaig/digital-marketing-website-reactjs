@@ -7,7 +7,6 @@ export const Background = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  width: 90%;
   margin: auto;
   display: flex;
   padding: 40px;
@@ -27,6 +26,7 @@ export const Container = styled.div`
   gap: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
+  margin: auto;
 
   @media (max-width: 1000px) {
     flex-direction: column;

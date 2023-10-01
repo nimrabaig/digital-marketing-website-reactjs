@@ -6,16 +6,16 @@ import {
   ServiceHeader,
   ServiceText,
   ServiceDetail,
-  Container,
 } from "./index.styled";
 import AboutUsIcon from "../../../assets/at.png";
 import Service1 from "../../../assets/about-us-1.png";
 import Service2 from "../../../assets/about-us-2.png";
 import SectionHeader from "../../Section/SectionHeader";
+import StyledPage from "../../Wrapper";
 
 const AboutUs = () => {
   return (
-    <Container>
+    <StyledPage style={{ paddingTop: 100 }}>
       <Wrapper>
         <TextContent>
         <SectionHeader
@@ -71,7 +71,7 @@ const AboutUs = () => {
           </Services>
         </TextContent>
       </Wrapper>
-    </Container>
+    </StyledPage>
   );
 };
 

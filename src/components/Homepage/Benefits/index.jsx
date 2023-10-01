@@ -13,15 +13,17 @@ import Benefit1 from "../../../assets/benefit-1.png";
 import Benefit2 from "../../../assets/benefit-2.png";
 import Benefit3 from "../../../assets/benefit-3.png";
 import SectionHeader from "../../Section/SectionHeader";
+import StyledPage from "../../Wrapper";
 
 const Benefits = () => {
   return (
+    <StyledPage>
     <Wrapper>
       <Container>
         <SectionHeader
           icon={BenefitIcon}
           title={"07 . Benefits"}
-          oneliner={"Benifit of working with Lumanta"}
+          oneliner={"Benefit of working with Lumanta"}
           leftAlign={true}
           style={{ justifyContent: "unset", alignSelf: "flex-start" }}
         />
@@ -74,6 +76,7 @@ const Benefits = () => {
         </TextContent>
       </Container>
     </Wrapper>
+    </StyledPage>
   );
 };
 
