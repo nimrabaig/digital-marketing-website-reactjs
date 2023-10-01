@@ -26,7 +26,6 @@ export const MenuItems = [
     path: "/blog",
     icon: Blog
   },
-
   {
     text: "Contact",
     path: "/contact-us",

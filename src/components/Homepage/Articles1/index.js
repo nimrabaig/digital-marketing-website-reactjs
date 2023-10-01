@@ -18,7 +18,7 @@ import {
 } from "./index.styled";
 import SectionHeader from "../../Section/SectionHeader";
 
-const Articles = () => {
+const Articles1 = () => {
   return (
     <Wrapper>
       <SectionHeader
@@ -60,7 +60,7 @@ const Articles = () => {
           <SideImage src={Article1} alt="" />
         </Card>
 
-        <Card bg={"rgba(233, 247, 255, 1)"}>
+        {/* <Card bg={"rgba(233, 247, 255, 1)"}>
           <SideImage src={Article2} alt="" />
           <Column>
             <Header>
@@ -88,9 +88,9 @@ const Articles = () => {
               </Ellipse>
             </Button>
           </Column>
-        </Card>
+        </Card> */}
 
-        <Button
+        {/* <Button
           style={{
             backgroundColor: "rgba(41, 41, 48, 1)",
             color: "#fff",
@@ -99,10 +99,10 @@ const Articles = () => {
         >
           More Articles
           <img src={WhiteArrow} alt="" style={{ marginLeft: 20 }} />{" "}
-        </Button>
+        </Button> */}
       </Container>
     </Wrapper>
   );
 };
 
-export default Articles;
+export default Articles1;

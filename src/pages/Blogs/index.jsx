@@ -17,7 +17,7 @@ import {
 import TeamsIcon from "../../assets/hand-shake-icon.png";
 import SectionHeader from "../../components/Section/SectionHeader";
 import { useEffect } from "react";
-import Articles1 from "../../components/Homepage/Articles";
+import Articles1 from "../../components/Homepage/Articles1";
 import Subscribe from "../../components/Subscribe";
 import Button from "../../components/Button";
 
