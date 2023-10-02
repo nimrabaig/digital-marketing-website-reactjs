@@ -49,7 +49,7 @@ const router = [
   },
   {
     path: "/case-studies",
-    element: <></>
+    element: <CaseStudies/>
   },
   {
     path: "/case-studies/:id",

@@ -10,12 +10,22 @@ export const Container = styled.div`
   margin: 60px auto;
 `;
 
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 10px;
+`;
+
 export const Card = styled.div`
   display: inline-flex;
   padding: 50px;
   width: 100%;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 40px;
   border-radius: 10px;
   background-color: ${(props) => props.bg};
@@ -28,6 +38,14 @@ export const Card = styled.div`
     width: 70% !important;
   }
 `;
+
+export const HeaderImage = styled.div`
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+`
 
 export const Header = styled.div`
   display: flex;
@@ -72,6 +90,7 @@ width: 100%;
 font-size: 24px;
 font-weight: 600;
 margin-bottom: 20px;
+margin-top: 20px;
 
 @media (min-width: 1400px) {
     font-size: 24px;
