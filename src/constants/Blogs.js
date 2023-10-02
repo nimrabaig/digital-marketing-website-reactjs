@@ -9,23 +9,27 @@ export const BlogData = [
     tag: 'Marketing',
     date: 'September 1, 2023',
     title: "How to increase your Twitter reach by over 200% with this simple trick",
+    url: "1"
   },
   {
     image: Blog2,
     tag: 'Social Media',
     date: 'September 1, 2023',
     title: "How to increase your Twitter reach by over 200% with this simple trick",
+    url: "2"
   },
   {
     image: Blog3,
     tag: 'Growth',
     date: 'September 1, 2023',
     title: "How to increase your Twitter reach by over 200% with this simple trick",
+    url: "3"
   },
   {
     image: Blog4,
     tag: 'Content',
     date: 'September 1, 2023',
     title: "How to increase your Twitter reach by over 200% with this simple trick",
+    url: "4"
   },
 ]

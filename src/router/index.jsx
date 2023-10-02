@@ -8,6 +8,7 @@ import Services from "../pages/Services";
 import Service from "../pages/Service";
 import Career from "../pages/Career";
 import Blogs from "../pages/Blogs";
+import Blog from "../pages/Blog";
 import CaseStudies from "../pages/CaseStudies";
 import CaseStudy from "../pages/CaseStudy";
 
@@ -45,8 +46,8 @@ const router = [
     element: <Blogs />
   },
   {
-    path: "/blog/:id",
-    element: <></>
+    path: "/blogs/:id",
+    element: <Blog/>
   },
   {
     path: "/case-studies",

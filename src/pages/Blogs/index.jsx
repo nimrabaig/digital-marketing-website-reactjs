@@ -23,11 +23,14 @@ import Subscribe from "../../components/Subscribe";
 import Button from "../../components/Button";
 import { Container } from "../../components/Homepage/Articles/index.styled";
 import ArticleIcon from "../../assets/articles-icon.png";
+import { useNavigate } from "react-router-dom";
 
 const Blogs = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
+
+  const navigate = useNavigate()
 
   return (
     <Wrapper>
@@ -60,7 +63,7 @@ const Blogs = () => {
         </Header1>
         <BlogGrid>
           {BlogData.map((item) => (
-            <BlogCard>
+            <BlogCard onClick={() => navigate('/blogs/1')}>
               <Image src={item.image} alt="" />
               <Column>
                 <Header>

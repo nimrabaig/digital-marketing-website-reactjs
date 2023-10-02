@@ -96,6 +96,7 @@ const CaseStudy = () => {
   padding-bottom: 60px;
   border-bottom: 1px solid rgba(204, 204, 204, 1);
   margin-bottom: 90px;
+  margin-top: 20px;
 `
   const OverlayInfoDiv = styled.div`
   
@@ -144,16 +145,16 @@ const CaseStudy = () => {
       <OverlayContent>
         <OverlayTextCompany>
           <img src={Google} alt="" />{"  "}
-          <div> - September 14, 2023</div>
+          <div> - October 1, 2023</div>
         </OverlayTextCompany>
-        <OverlayHeading>How we helped Google to increase conversion rate on G-Suite by 25% in less than 30 days </OverlayHeading>
+        <OverlayHeading>Unlocking Success: How Organic Facebook Likes Transformed SProStaffing's Online Presence</OverlayHeading>
         <img src={Cs1} alt="" style={{ width: '100%', height: 'auto' }} />
       </OverlayContent>
       <NonOverlayContent>
         <OverlayInfo>
           <OverlayInfoDiv>
             <OverlayInfoDivTitle>Client</OverlayInfoDivTitle>
-            <OverlayInfoDivDesc>YouTube</OverlayInfoDivDesc>
+            <OverlayInfoDivDesc>SProStaffing</OverlayInfoDivDesc>
           </OverlayInfoDiv>
           <OverlayInfoDiv>
             <OverlayInfoDivTitle>Services</OverlayInfoDivTitle>
@@ -161,32 +162,32 @@ const CaseStudy = () => {
           </OverlayInfoDiv>
           <OverlayInfoDiv>
             <OverlayInfoDivTitle>Platforms</OverlayInfoDivTitle>
-            <OverlayInfoDivDesc>YouTube Creators</OverlayInfoDivDesc>
+            <OverlayInfoDivDesc>Facebook</OverlayInfoDivDesc>
           </OverlayInfoDiv>
           <OverlayInfoDiv>
             <OverlayInfoDivTitle>Results</OverlayInfoDivTitle>
             <OverlayInfoDivCount>85m+</OverlayInfoDivCount>
-            <OverlayInfoDivDesc>More Visitors Per Year</OverlayInfoDivDesc>
+            <OverlayInfoDivDesc>More Likes Per Year</OverlayInfoDivDesc>
           </OverlayInfoDiv>
         </OverlayInfo>
         <OverlayPara>
           <OverlayParaHeading>Project Overview</OverlayParaHeading>
           <OverlayParaPara>
-            Veniam quae. Nostrum facere repellendus minus quod aut aliquam neque reiciendis. Qui beatae vel magnam repudiandae ipsum repellat repudiandae. Voluptate at dolores ut dolor sint occaecati similique. Velit eius ab delectus temporibus.
-          </OverlayParaPara>
-          <OverlayParaPara>&#8226;  Dolor duis lorem enim eu turpis potenti nulla semper velit sed</OverlayParaPara>
-          <OverlayParaPara>&#8226;  Lorem a eget blandit ac neque amet amet non dapibus pulvinar</OverlayParaPara>
-          <OverlayParaPara>&#8226;  Pellentesque non integer ac id imperdiet blandit sit bibendum</OverlayParaPara>
-          <OverlayParaPara>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit nunc donec vel sem ut ipsum odio duis vel sem et ornare consequat. Bibendum nibh et eget magna at habitant mauris nisi pellentesque morbi massa in eleifend tempus pellentesque sed pellentesque ridiculus aliquam maecenas turpis vulputate pellentesque maecenas egestas platea dictumst.
+            SProStaffing, a leading recruitment agency, sought to expand its online reach and engagement to attract both candidates and potential clients. Recognizing the power of social media in the digital age, they aimed to harness the potential of Facebook to establish a robust online community. Organic likes were deemed crucial to foster genuine connections and trust within the industry.
           </OverlayParaPara>
           <OverlayParaPara>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit mollis justo integer vitae aliquet elit velit dictum. Commodo facilisi sapien natoque eu elit odio est libero scelerisque urna aliquet id mauris suspendisse.
+            In this digital era, social media stands as a formidable platform to connect, engage, and establish meaningful relationships with a broader audience. Among the various platforms available, Facebook emerged as a central hub for industry professionals, job seekers, and enterprises. Harnessing the potential of Facebook, SProStaffing embarked on a journey to bolster its online community and build a credible brand image.
           </OverlayParaPara>
-          <OverlayParaPara>1. The unbanked population, combat counterfeiting and improve cross-border.</OverlayParaPara>
-          <OverlayParaPara>2. Transactions to name a few. Even if we disregard the notion of bitcoin as a speculative</OverlayParaPara>
-          <OverlayParaPara>3. Even if we disregard the notion of bitcoin as a speculative asset or store of value.</OverlayParaPara>
-          <OverlayParaPara>Veniam quae. Nostrum facere repellendus minus quod aut aliquam neque reiciendis. Qui beatae vel magnam repudiandae ipsum repellat repudiandae. Voluptate at dolores ut dolor sint occaecati similique. Velit eius ab delectus temporibus.</OverlayParaPara>          
+          <OverlayParaPara><b>Key Points:</b></OverlayParaPara>
+          <OverlayParaPara>&#8226; &nbsp;&nbsp; Utilized organic methods to attract a targeted audience interested in the staffing industry.</OverlayParaPara>
+          <OverlayParaPara>&#8226; &nbsp;&nbsp; Fostered authentic interactions and meaningful engagement through genuine likes and follows.</OverlayParaPara>
+          <OverlayParaPara>&#8226; &nbsp;&nbsp; Curated content aligning with SProStaffing's brand message and industry trends.</OverlayParaPara>
+          <OverlayParaPara>&#8226; &nbsp;&nbsp; Shared industry insights, job opportunities, and success stories to resonate with the audience.</OverlayParaPara>
+          <OverlayParaPara>&#8226; &nbsp;&nbsp; Nurtured a community of industry professionals, job seekers, and potential clients.</OverlayParaPara>
+          <OverlayParaPara>&#8226; &nbsp;&nbsp; Encouraged discussions, feedback, and networking within the Facebook community.</OverlayParaPara>
+          <OverlayParaPara><b>How Organic Likes Transformed the Business? </b></OverlayParaPara>
+          <OverlayParaPara>&#8226; &nbsp;&nbsp; <b>Increased Visibility and Credibility:</b> The surge in organic likes bolstered SProStaffing's visibility, establishing credibility in the industry. Potential candidates and clients were more inclined to engage with a brand having a substantial and genuine online following.</OverlayParaPara>
+          <OverlayParaPara>&#8226; &nbsp;&nbsp; <b>Business Growth and Opportunities:</b> The heightened online presence attracted a larger talent pool, strengthening SProStaffing's ability to match candidates with suitable job opportunities. SProStaffing witnessed an upsurge in business inquiries and collaborations, directly contributing to its growth and market influence.</OverlayParaPara>
         </OverlayPara>
       </NonOverlayContent>
     </Container>
