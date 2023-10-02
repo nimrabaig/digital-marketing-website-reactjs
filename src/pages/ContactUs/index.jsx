@@ -35,9 +35,51 @@ import Arrow from "../../assets/arrow.png";
 import { useEffect, useState } from "react";
 import { cx, css } from "@emotion/css";
 import { SubjectOptions } from "../../constants/Dropdowns";
+import axios from 'axios'
 
 const ContactUs = () => {
+
+  const toNullIfEmpty = (value) => {
+    const trimmedValue = value.trim();
+    return trimmedValue === '' ? null : trimmedValue;
+  };
+
+  const endpoint = 'https://adz7rajlui.execute-api.ca-central-1.amazonaws.com/graphql'
+  const mutation = `
+  mutation ContactUs($name: String!, $email: String!, $company: String!, $subject: String!, $message: String!) {
+    ContactUs(name: $name, email: $email, company: $company, subject: $subject, message: $message)
+  }
+`
+
   const [selected, setSelected] = useState(0);
+
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [company, setCompany] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
+
+
+  const handleSubmit = async () => {
+    try {
+      const response = await axios.post(endpoint, {
+        query: mutation,
+        variables: {
+          name: toNullIfEmpty(name),
+          email: toNullIfEmpty(email),
+          company: toNullIfEmpty(company),
+          subject: toNullIfEmpty(subject),
+          message: toNullIfEmpty(message)
+        }
+      });
+      console.log(response?.data?.data?.ContactUs?.message);
+      alert(response?.data?.data?.ContactUs?.message)
+    } catch (error) {
+      alert('Please fill out all the fields')
+      console.error('Error executing mutation:', error);
+    }
+  }
+
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -171,13 +213,27 @@ const ContactUs = () => {
           <FormBackground>
             <Form>
               <Flex>
-                <Input value="" placeholder="John David" label="Full Name*" />
-                <Input value="" placeholder="john@gmail.com" label="Email*" />
+                <Input
+                  name="name"
+                  value={name}
+                  onChange={e => setName(e.target.value)}
+                  placeholder="John David"
+                  label="Full Name*"
+                />
+                <Input
+                  name="email"
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
+                  placeholder="john@gmail.com"
+                  label="Email*"
+                />
               </Flex>
               <br />
               <Flex>
                 <Input
-                  value=""
+                  name="company"
+                  value={company}
+                  onChange={e => setCompany(e.target.value)}
                   placeholder="your company name here"
                   label="Company*"
                 />
@@ -194,6 +250,8 @@ const ContactUs = () => {
                   </Label>
                   <Select
                     type="text"
+                    value={subject}
+                    onChange={e => setSubject(e.target.value)}
                     placeholder="How can we Help"
                     data={SubjectOptions}
                   />
@@ -222,7 +280,12 @@ const ContactUs = () => {
                 >
                   Message*
                 </Label>
-                <TextArea placeholder="Hello there,I would like to talk about how to..." />
+                <TextArea
+                  name="message"
+                  value={message}
+                  onChange={e => setMessage(e.target.value)}
+                  placeholder="Hello there,I would like to talk about how to..."
+                />
               </Column>
             </Form>
 
@@ -233,6 +296,7 @@ const ContactUs = () => {
                 marginTop: 60,
                 marginBottom: 40,
               }}
+              onClick={() => handleSubmit()}
             >
               Send Message
             </Button>

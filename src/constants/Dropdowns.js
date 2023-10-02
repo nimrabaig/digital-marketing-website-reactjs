@@ -6,5 +6,6 @@ export const SubjectOptions = [
   "Email Marketing",
   "General Inquiry",
   "Analytics and Reporting",
+  "Social Media",
   "Other"
 ]
