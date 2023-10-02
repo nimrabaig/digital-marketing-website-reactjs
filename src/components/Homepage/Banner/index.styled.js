@@ -17,12 +17,8 @@ export const Wrapper = styled.div`
     height: 1100px;
   }
 
-  @media (max-width: 640px) {
-    height: 1000px;
-  }
-
   @media (max-width: 1000px) {
-    height: 800px;
+    height: 1000px;
     background: linear-gradient(111deg, #e9f7ff 9.95%, #ffdbd4 85.17%);
   }
 
