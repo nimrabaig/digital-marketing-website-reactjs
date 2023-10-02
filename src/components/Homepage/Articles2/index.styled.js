@@ -13,10 +13,10 @@ export const Container = styled.div`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: flex-start;
   align-items: center;
   background-color: #fff;
-  padding: 35px;
+  padding: 30px;
   border-radius: 10px;
 `;
 

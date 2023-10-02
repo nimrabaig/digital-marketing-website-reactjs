@@ -9,6 +9,7 @@ import Service from "../pages/Service";
 import Career from "../pages/Career";
 import Blogs from "../pages/Blogs";
 import CaseStudies from "../pages/CaseStudies";
+import CaseStudy from "../pages/CaseStudy";
 
 const router = [
   {
@@ -53,7 +54,7 @@ const router = [
   },
   {
     path: "/case-studies/:id",
-    element: <></>
+    element: <CaseStudy/>
   },
 ];
 

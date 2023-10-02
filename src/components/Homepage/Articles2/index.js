@@ -25,8 +25,12 @@ import {
   HeaderImage,
 } from "./index.styled";
 import SectionHeader from "../../Section/SectionHeader";
+import { useNavigate } from "react-router-dom";
 
 const Articles2 = () => {
+
+  const navigate = useNavigate();
+  
   return (
     <Wrapper>
       <SectionHeader
@@ -93,6 +97,7 @@ const Articles2 = () => {
                 color: "#fff",
                 marginTop: 20,
               }}
+              onClick={() => navigate(`/case-studies/1`)}
             >
               Read Case Study
               <img src={WhiteArrow} alt="" style={{ marginLeft: 20 }} />{" "}
@@ -125,6 +130,7 @@ const Articles2 = () => {
                 color: "#fff",
                 marginTop: 20,
               }}
+              onClick={() => navigate(`/case-studies/1`)}
             >
               Read Case Study
               <img src={WhiteArrow} alt="" style={{ marginLeft: 20 }} />{" "}
@@ -157,6 +163,7 @@ const Articles2 = () => {
                 color: "#fff",
                 marginTop: 20,
               }}
+              onClick={() => navigate(`/case-studies/1`)}
             >
               Read Case Study
               <img src={WhiteArrow} alt="" style={{ marginLeft: 20 }} />{" "}
