@@ -32,92 +32,96 @@ const Pricing = () => {
     );
   };
   return (
-    <StyledPage id="pricing">
-    <Wrapper>
-      <SectionHeader
-        icon={PricingIcon}
-        title={"06 . Price & Plan"}
-        oneliner={"Our Flexible Pricing Plans"}
-        onelinerwidth={"100%"}
-      />
+    <StyledPage>
+      <Wrapper id="pricing">
+        <SectionHeader
+          icon={PricingIcon}
+          title={"06 . Price & Plan"}
+          oneliner={"Our Flexible Pricing Plans"}
+          onelinerwidth={"100%"}
+        />
 
-      <Container>
-        <Package>
-          <br />
-          <br />
-          <Row>
-            <img src={Package1} alt="" width={55} />
-            <Column>
-              <PackageType>Basic</PackageType>
-              <Row>
-                <Price>$500</Price>
-                <Text style={{ marginTop: 13 }}>/Per Month</Text>
-              </Row>
-            </Column>
-          </Row>
-          <Separator />
+        <Container>
+          <Package>
+            <br />
+            <br />
+            <Row>
+              <img src={Package1} alt="" width={55} />
+              <Column>
+                <PackageType>Basic</PackageType>
+                <Row>
+                  <Price>$500</Price>
+                  <Text style={{ marginTop: 13 }}>/Per Month</Text>
+                </Row>
+              </Column>
+            </Row>
+            <Separator />
 
-          <CheckList check service={"Email Marketing"} />
-          <CheckList check service={"Social Media Marketing"} />
-          <CheckList check service={"Voice OptimizeSEO "} />
-          <CheckList service={"Consulting Video"} />
-          <CheckList service={"Marketing Advertising"} />
+            <CheckList check service={"Email Marketing"} />
+            <CheckList check service={"Social Media Marketing"} />
+            <CheckList check service={"Voice OptimizeSEO "} />
+            <CheckList service={"Consulting Video"} />
+            <CheckList service={"Marketing Advertising"} />
 
-          <Button onClick={() => navigate("/contact-us")}>Purchase Plan</Button>
-        </Package>
+            <Button onClick={() => navigate("/contact-us")}>
+              Purchase Plan
+            </Button>
+          </Package>
 
-        <Package primary={true}>
-          <Tag>POPULAR</Tag>
-          <Row>
-            <img src={Package2} alt="" width={55} />
-            <Column>
-              <PackageType primary={true}>Basic Plus</PackageType>
-              <Row>
-                <Price primary={true}>$800</Price>
-                <Text primary={true} style={{ marginTop: 13 }}>
-                  /Per Month
-                </Text>
-              </Row>
-            </Column>
-          </Row>
-          <Separator />
+          <Package primary={true}>
+            <Tag>POPULAR</Tag>
+            <Row>
+              <img src={Package2} alt="" width={55} />
+              <Column>
+                <PackageType primary={true}>Basic Plus</PackageType>
+                <Row>
+                  <Price primary={true}>$800</Price>
+                  <Text primary={true} style={{ marginTop: 13 }}>
+                    /Per Month
+                  </Text>
+                </Row>
+              </Column>
+            </Row>
+            <Separator />
 
-          <CheckList primary check service={"Email Marketing"} />
-          <CheckList primary check service={"Social Media Marketing"} />
-          <CheckList primary check service={"Voice OptimizeSEO "} />
-          <CheckList primary check service={"Consulting Video"} />
-          <CheckList primary service={"Marketing Advertising"} />
+            <CheckList primary check service={"Email Marketing"} />
+            <CheckList primary check service={"Social Media Marketing"} />
+            <CheckList primary check service={"Voice OptimizeSEO "} />
+            <CheckList primary check service={"Consulting Video"} />
+            <CheckList primary service={"Marketing Advertising"} />
 
-          <Button primary={true} onClick={() => navigate("/contact-us")}>
-            Purchase Plan
-          </Button>
-        </Package>
+            <Button primary={true} onClick={() => navigate("/contact-us")}>
+              Purchase Plan
+            </Button>
+          </Package>
 
-        <Package>
-          <br />
-          <br />
-          <Row>
-            <img src={Package3} alt="" width={55} />
-            <Column>
-              <PackageType>Premium</PackageType>
-              <Row>
-                <Price>$1000</Price>
-                <Text style={{ marginTop: 13 }}>/Per Month</Text>
-              </Row>
-            </Column>
-          </Row>
-          <Separator />
+          <Package>
+            <br />
+            <br />
+            <Row>
+              <img src={Package3} alt="" width={55} />
+              <Column>
+                <PackageType>Premium</PackageType>
+                <Row>
+                  <Price>$1000</Price>
+                  <Text style={{ marginTop: 13 }}>/Per Month</Text>
+                </Row>
+              </Column>
+            </Row>
+            <Separator />
 
-          <CheckList check service={"Email Marketing"} />
-          <CheckList check service={"Social Media Marketing"} />
-          <CheckList check service={"Voice OptimizeSEO "} />
-          <CheckList check service={"Consulting Video"} />
-          <CheckList check service={"Marketing Advertising"} />
+            <CheckList check service={"Email Marketing"} />
+            <CheckList check service={"Social Media Marketing"} />
+            <CheckList check service={"Voice OptimizeSEO "} />
+            <CheckList check service={"Consulting Video"} />
+            <CheckList check service={"Marketing Advertising"} />
 
-          <Button onClick={() => navigate("/contact-us")}>Purchase Plan</Button>
-        </Package>
-      </Container>
-    </Wrapper>
+            <Button onClick={() => navigate("/contact-us")}>
+              Purchase Plan
+            </Button>
+          </Package>
+        </Container>
+      </Wrapper>
     </StyledPage>
   );
 };
