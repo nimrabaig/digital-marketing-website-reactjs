@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import BannerImg from "../../../assets/Banner.png";
 
 export const Wrapper = styled.div`
-  display: flex;
+   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -31,8 +31,6 @@ export const Wrapper = styled.div`
     padding-top: 100px;
     background: linear-gradient(111deg, #e9f7ff 9.95%, #ffdbd4 85.17%);
   }
-
-
 `;
 
 export const Content = styled.div`
@@ -67,7 +65,7 @@ export const Tagline = styled.h2`
   margin: 0px;
   width: 100%;
 
-  @media (min-width: 1400px) {
+  @media (min-width: 2000px) {
     font-size: 72px !important;
   }
 
@@ -96,9 +94,9 @@ export const SubText = styled.p`
   line-height: 156.5%; /* 28.17px */
   width: 570px;
 
-  @media (min-width: 1400px) {
+  @media (min-width: 2000px) {
     font-size: 34px !important;
-    width: 750px;
+    /* width: 750px; */
   }
 
   @media (max-width: 1000px) {
