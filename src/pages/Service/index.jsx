@@ -34,9 +34,6 @@ import AboutIcon from "../../assets/at.png";
 import Check from "../../assets/bullet-check.png";
 import { Separator } from "../../components/Homepage/AboutUs/index.styled";
 import { cx, css } from "@emotion/css";
-import Flow1 from "../../assets/flow-1.png";
-import Flow2 from "../../assets/flow-2.png";
-import Flow3 from "../../assets/flow-3.png";
 import { useEffect } from "react";
 
 const Service = () => {
@@ -70,7 +67,7 @@ const Service = () => {
           <Grid>
             {ServicesData[params.id].categories.map((service) => (
               <Card style={{ height: 412}}>
-                <img src={service.image} alt="" />
+                <img src={service.icon} alt="" />
                 <Title>{service.title}</Title>
                 <Description>{service.description}</Description>
               </Card>
@@ -125,27 +122,18 @@ const Service = () => {
       <WorkFlow>
         <ProcessFlow>
           <WorkFlowHeading>
-            Our bulletproof process to win on Social Media
+            {`Our bulletproof process to win on ${ServicesData[params.id].title}`}
           </WorkFlowHeading>
           <br />
           <ServiceText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            sollicitudinbibendum senectus scelerisque non. Turpis matis morbi
-            vivera ipsum adipiscing Mauris volutpat Ipsum duis tempor.
+            {ServicesData[params.id].process.description1}
+            <br />
+            <br />
+            {ServicesData[params.id].process.description2}
+            <br />
+            <br />
+            {ServicesData[params.id].process.description3}
           </ServiceText>
-          <br />
-          <Bullet>
-            <img src={Check} alt="" />
-            <ServiceText>Dolor duis lorem enim eu nulla semper</ServiceText>
-          </Bullet>
-          <Bullet>
-            <img src={Check} alt="" />
-            <ServiceText>Dolor duis lorem enim eu nulla semper</ServiceText>
-          </Bullet>
-          <Bullet>
-            <img src={Check} alt="" />
-            <ServiceText>Dolor duis lorem enim eu nulla semper</ServiceText>
-          </Bullet>
         </ProcessFlow>
         <FlowSteps>
           <ProcessFlow
@@ -156,40 +144,40 @@ const Service = () => {
               maxWidth: "",
             }}
           >
-            <img src={Flow1} alt="" />
+            <img src={ServicesData[params.id].process.steps[0].icon} alt="" />
             <ProcessDivider />
-            <img src={Flow2} alt="" />
+            <img src={ServicesData[params.id].process.steps[1].icon} alt="" />
             <ProcessDivider />
-            <img src={Flow3} alt="" />
+            <img src={ServicesData[params.id].process.steps[2].icon} alt="" />
           </ProcessFlow>
           <ProcessFlow style={{ maxWidth: "70%" }}>
             <Title
               style={{ color: "rgba(41, 41, 48, 1)", alignSelf: "flex-start" }}
             >
-              Social Media Content Plan
+              {ServicesData[params.id].process.steps[0].heading}
             </Title>
             <StepDescription>
-              consectetur amet dolor sit comeneer ilremsilom dolce issilm acalrm
+            {ServicesData[params.id].process.steps[0].description}
             </StepDescription>
 
             <br />
             <Title
               style={{ color: "rgba(41, 41, 48, 1)", alignSelf: "flex-start" }}
             >
-              Publishing & Execution
+              {ServicesData[params.id].process.steps[1].heading}
             </Title>
             <StepDescription>
-              consectetur amet dolor sit comeneer ilremsilom dolce issilm acalrm
+            {ServicesData[params.id].process.steps[1].description}
             </StepDescription>
 
             <br />
             <Title
               style={{ color: "rgba(41, 41, 48, 1)", alignSelf: "flex-start" }}
             >
-              Measure & Scale
+              {ServicesData[params.id].process.steps[2].heading}
             </Title>
             <StepDescription>
-              consectetur amet dolor sit comeneer ilremsilom dolce issilm acalrm
+            {ServicesData[params.id].process.steps[2].description}
             </StepDescription>
           </ProcessFlow>
         </FlowSteps>

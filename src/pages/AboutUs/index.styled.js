@@ -11,12 +11,13 @@ export const Banner = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 700px;
+  height: 600px;
   align-items: center;
   width: 100%;
   background-image: url(${BannerImg});
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   @media (max-width: 1250px) {
     height: 350px;

@@ -16,7 +16,8 @@ export const Banner = styled.div`
   width: 100%;
   background-image: url(${BannerImg});
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
 
   @media (max-width: 1250px) {
     height: 350px;
