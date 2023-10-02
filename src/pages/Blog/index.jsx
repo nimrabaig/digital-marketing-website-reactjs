@@ -160,6 +160,9 @@ const Blog = () => {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  b{
+    color: rgba(48, 48, 48, 1)
+  }
 `
 
   return (
@@ -170,7 +173,7 @@ const Blog = () => {
           <Category>Marketing</Category>
           <Dates>October 1, 2023</Dates>
         </OverlayTextCompany>
-        <OverlayHeading>How we helped Google to increase conversion rate on G-Suite by 25% in less than 30 days </OverlayHeading>
+        <OverlayHeading>Title: Ethics in Digital Marketing</OverlayHeading>
         <img src={Blog1} alt="" style={{ width: '100%', height: 'auto' }} />
       </OverlayContent>
       <NonOverlayContent>
@@ -192,27 +195,83 @@ const Blog = () => {
           </OverlayInfoDiv>
         </OverlayInfo>
         <OverlayPara>
-          <OverlayParaHeading>Project Overview</OverlayParaHeading>
+          <OverlayParaHeading>Title: Ethics in Digital Marketing </OverlayParaHeading>
           <OverlayParaPara>
-            Veniam quae. Nostrum facere repellendus minus quod aut aliquam neque reiciendis. Qui beatae vel magnam repudiandae ipsum repellat repudiandae. Voluptate at dolores ut dolor sint occaecati similique. Velit eius ab delectus temporibus.
+            In the ever-evolving world of digital marketing, where technology and creativity intersect to capture consumers' attention, one thing should never be compromised: ethics. The power of digital marketing is immense, and with great power comes great responsibility. In this blog, we'll explore the critical importance of ethics in digital marketing and why businesses should make ethical considerations a cornerstone of their online strategies.
           </OverlayParaPara>
-          <OverlayParaPara>&#8226;  Dolor duis lorem enim eu turpis potenti nulla semper velit sed</OverlayParaPara>
-          <OverlayParaPara>&#8226;  Lorem a eget blandit ac neque amet amet non dapibus pulvinar</OverlayParaPara>
-          <OverlayParaPara>&#8226;  Pellentesque non integer ac id imperdiet blandit sit bibendum</OverlayParaPara>
+          <OverlayParaPara><b>The Digital Marketing Revolution </b></OverlayParaPara>
           <OverlayParaPara>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit nunc donec vel sem ut ipsum odio duis vel sem et ornare consequat. Bibendum nibh et eget magna at habitant mauris nisi pellentesque morbi massa in eleifend tempus pellentesque sed pellentesque ridiculus aliquam maecenas turpis vulputate pellentesque maecenas egestas platea dictumst.
+            Digital marketing has completely transformed the way businesses connect with their audiences. From social media campaigns to email marketing and influencer partnerships, the digital landscape offers a plethora of tools and platforms to engage potential customers. It's cost-effective, highly targeted, and measurable, making it an attractive choice for businesses of all sizes.
+          </OverlayParaPara>
+          <OverlayParaPara><b>Why Ethics Matter in Digital Marketing</b></OverlayParaPara>
+          <OverlayParaPara>
+            In the race to gain a competitive edge and maximize profits, it's easy for some marketers to overlook ethical concerns. However, this shortsighted approach can lead to severe consequences. Here's why ethics matter in digital marketing:
           </OverlayParaPara>
           <OverlayParaPara>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit mollis justo integer vitae aliquet elit velit dictum. Commodo facilisi sapien natoque eu elit odio est libero scelerisque urna aliquet id mauris suspendisse.
+            <b>Trust and Reputation:</b> Building trust with your audience is paramount. Unethical practices, such as misleading advertising or deceptive content, can quickly erode trust and tarnish a brand's reputation.
           </OverlayParaPara>
-          <OverlayParaPara>1. The unbanked population, combat counterfeiting and improve cross-border.</OverlayParaPara>
-          <OverlayParaPara>2. Transactions to name a few. Even if we disregard the notion of bitcoin as a speculative</OverlayParaPara>
-          <OverlayParaPara>3. Even if we disregard the notion of bitcoin as a speculative asset or store of value.</OverlayParaPara>
-          <OverlayParaPara>Veniam quae. Nostrum facere repellendus minus quod aut aliquam neque reiciendis. Qui beatae vel magnam repudiandae ipsum repellat repudiandae. Voluptate at dolores ut dolor sint occaecati similique. Velit eius ab delectus temporibus.</OverlayParaPara>
+          <OverlayParaPara>
+            <b>Long-Term Success:</b> Ethical digital marketing isn't just about playing by the rules; it's about building sustainable, long-term success. Engaging in unethical practices may yield short-term gains but can result in long-term losses.
+          </OverlayParaPara>
+          <OverlayParaPara>
+            <b>Legal Consequences:</b> Some unethical tactics can lead to legal troubles. Violating privacy laws or engaging in false advertising can result in costly legal battles.
+          </OverlayParaPara>
+          <OverlayParaPara><b>Ethical Principles in Digital Marketing</b></OverlayParaPara>
+          <OverlayParaPara>
+            To navigate the digital marketing landscape responsibly, marketers should adhere to several key ethical principles:
+          </OverlayParaPara>
+          <OverlayParaPara>
+            <b>Transparency:</b> Be transparent about sponsored content, paid partnerships, and advertisements. Ensure that consumers know when they are viewing promotional material.
+          </OverlayParaPara>
+          <OverlayParaPara>
+            <b>Privacy:</b> Respect user data and privacy. Always obtain informed consent before collecting and using personal information.
+          </OverlayParaPara>
+          <OverlayParaPara>
+            <b>Honesty:</b> Avoid false or misleading claims. Don't use deceptive tactics or create fake reviews. Honesty is a cornerstone of ethical marketing.
+          </OverlayParaPara>
+          <OverlayParaPara>
+            <b>Fairness:</b> Treat all customers and competitors fairly. Unfair competition tactics can harm not only your reputation but the entire industry.
+          </OverlayParaPara>
+          <OverlayParaPara><b>Common Ethical Dilemmas</b></OverlayParaPara>
+          <OverlayParaPara>
+            In the digital marketing world, ethical dilemmas can be complex. Some common ethical dilemmas include:
+          </OverlayParaPara>
+          <OverlayParaPara>
+            <b>Targeting Vulnerable Audiences:</b> Is it ethical to aggressively target vulnerable demographics, such as children or older people?
+          </OverlayParaPara>
+          <OverlayParaPara>
+            <b>Clickbait Content:</b> Should you create sensationalistic clickbait content to drive traffic, even if it misrepresents the actual content?
+          </OverlayParaPara>
+          <OverlayParaPara>
+            <b>Manipulating User Data:</b> Is collecting and using user data without their explicit consent ethical, even if it helps improve targeting?
+          </OverlayParaPara>
+          <OverlayParaPara>
+            <b>Aggressive Retargeting:</b> How much retargeting is too much? When does it become intrusive rather than helpful?
+          </OverlayParaPara>
+          <OverlayParaPara><b>Best Practices for Ethical Digital Marketing</b></OverlayParaPara>
+          <OverlayParaPara>
+            Here are some best practices to ensure ethical conduct in your digital marketing efforts:
+          </OverlayParaPara>
+          <OverlayParaPara>
+            <b>Create Clear Policies:</b> Develop and communicate clear privacy policies to users. Please explain how you handle their data.
+          </OverlayParaPara>
+          <OverlayParaPara>
+            <b>Opt-In and Opt-Out Options:</b> Provide users with clear opt-in and opt-out options, respecting their data collection and marketing communications choices.
+          </OverlayParaPara>
+          <OverlayParaPara>
+            <b>Avoid Deception:</b> Do not engage in deceptive practices, such as fake reviews or misleading advertising. Build trust through honesty.
+          </OverlayParaPara>
+          <OverlayParaPara>
+            <b>Regular Review:</b> Regularly review your digital marketing strategies for ethical compliance. Stay updated with evolving regulations and industry standards.
+          </OverlayParaPara>
+          <OverlayParaPara></OverlayParaPara>
+          <OverlayParaPara></OverlayParaPara>
+
+
         </OverlayPara>
-        
+
       </NonOverlayContent>
-    </Container>
+    </Container >
   );
 };
 
