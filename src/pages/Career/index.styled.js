@@ -4,9 +4,13 @@ import BannerImg from "../../assets/career-banner.png";
 export const Wrapper = styled.div`
   margin: auto;
   width: 100%;
-  background-color: #292930;
+  background-color: #292930
 `;
 
+export const Footer = styled.div`
+  margin: auto;
+  width: 100%;;
+`;
 export const Banner = styled.div`
   position: relative;
   display: flex;
