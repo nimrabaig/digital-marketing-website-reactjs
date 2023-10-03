@@ -35,30 +35,28 @@ import Arrow from "../../assets/arrow.png";
 import { useEffect, useState } from "react";
 import { cx, css } from "@emotion/css";
 import { SubjectOptions } from "../../constants/Dropdowns";
-import axios from 'axios'
+import axios from "axios";
 
 const ContactUs = () => {
-
   const toNullIfEmpty = (value) => {
     const trimmedValue = value.trim();
-    return trimmedValue === '' ? null : trimmedValue;
+    return trimmedValue === "" ? null : trimmedValue;
   };
 
-  const endpoint = 'https://adz7rajlui.execute-api.ca-central-1.amazonaws.com/graphql'
+  const endpoint =
+    "https://adz7rajlui.execute-api.ca-central-1.amazonaws.com/graphql";
   const mutation = `
   mutation ContactUs($name: String!, $email: String!, $company: String!, $subject: String!, $message: String!) {
     ContactUs(name: $name, email: $email, company: $company, subject: $subject, message: $message)
   }
-`
+`;
 
   const [selected, setSelected] = useState(0);
-
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [company, setCompany] = useState('')
-  const [subject, setSubject] = useState('')
-  const [message, setMessage] = useState('')
-
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [company, setCompany] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = async () => {
     try {
@@ -69,17 +67,16 @@ const ContactUs = () => {
           email: toNullIfEmpty(email),
           company: toNullIfEmpty(company),
           subject: toNullIfEmpty(subject),
-          message: toNullIfEmpty(message)
-        }
+          message: toNullIfEmpty(message),
+        },
       });
       console.log(response?.data?.data?.ContactUs?.message);
-      alert(response?.data?.data?.ContactUs?.message)
+      alert(response?.data?.data?.ContactUs?.message);
     } catch (error) {
-      alert('Please fill out all the fields')
-      console.error('Error executing mutation:', error);
+      alert("Please fill out all the fields");
+      console.error("Error executing mutation:", error);
     }
-  }
-
+  };
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -172,7 +169,7 @@ const ContactUs = () => {
                     <Text weight={600} size={25} color={"#292930"}>
                       Phone
                     </Text>
-                    <Text>+14169965329</Text>
+                    <Text>++16138072399</Text>
                   </Column>
                 </Flex>
               </CardInner>
@@ -216,14 +213,14 @@ const ContactUs = () => {
                 <Input
                   name="name"
                   value={name}
-                  onChange={e => setName(e.target.value)}
+                  onChange={(e) => setName(e.target.value)}
                   placeholder="John David"
                   label="Full Name*"
                 />
                 <Input
                   name="email"
                   value={email}
-                  onChange={e => setEmail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="john@gmail.com"
                   label="Email*"
                 />
@@ -233,7 +230,7 @@ const ContactUs = () => {
                 <Input
                   name="company"
                   value={company}
-                  onChange={e => setCompany(e.target.value)}
+                  onChange={(e) => setCompany(e.target.value)}
                   placeholder="your company name here"
                   label="Company*"
                 />
@@ -251,7 +248,7 @@ const ContactUs = () => {
                   <Select
                     type="text"
                     value={subject}
-                    onChange={e => setSubject(e.target.value)}
+                    onChange={(e) => setSubject(e.target.value)}
                     placeholder="How can we Help"
                     data={SubjectOptions}
                   />
@@ -283,7 +280,7 @@ const ContactUs = () => {
                 <TextArea
                   name="message"
                   value={message}
-                  onChange={e => setMessage(e.target.value)}
+                  onChange={(e) => setMessage(e.target.value)}
                   placeholder="Hello there,I would like to talk about how to..."
                 />
               </Column>

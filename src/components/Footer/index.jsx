@@ -59,7 +59,7 @@ const Footer = () => {
                 <Icon src={Call} alt="" />
                 <Text>Get in touch with</Text>
               </Flex>
-              <Phone>+14169965329</Phone>
+              <Phone>+16138072399</Phone>
               <Text>info@lumentadigital.com</Text>
             </Column>
 
