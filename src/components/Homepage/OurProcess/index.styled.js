@@ -11,7 +11,7 @@ export const Background = styled.div`
   align-items: center;
   padding: 60px 40px;
   @media (max-width: 1000px) {
-    width: 1000px;
+    padding: 60px 0px;
   }
 `;
 

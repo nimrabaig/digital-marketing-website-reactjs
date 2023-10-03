@@ -36,7 +36,7 @@ const Pricing = () => {
       <Wrapper id="pricing">
         <SectionHeader
           icon={PricingIcon}
-          title={"06 . Price & Plan"}
+          title={"05 . Price & Plan"}
           oneliner={"Our Flexible Pricing Plans"}
           onelinerwidth={"100%"}
         />

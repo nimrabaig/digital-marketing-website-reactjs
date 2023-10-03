@@ -13,7 +13,7 @@ export const Container = styled.div`
 export const Card = styled.div`
   display: inline-flex;
   padding: 50px;
-  width: 100%;
+  width: 90%;
   max-height: 298px;
   justify-content: center;
   align-items: flex-start;
@@ -86,9 +86,13 @@ export const Detail = styled(Text)`
   overflow: hidden;
   height: 62px;
 
-  @media (min-width: 1400px) {
-    height: 90px;
+  @media (min-width: 1000px) {
+    height: 108px;
   }
+
+  /* @media (min-width: 1400px) {
+    height: 108px;
+  } */
 `;
 
 export const SideImage = styled.img`

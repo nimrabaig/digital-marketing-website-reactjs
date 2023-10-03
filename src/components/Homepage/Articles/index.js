@@ -5,7 +5,7 @@ import WhiteArrow from "../../../assets/white-arrow.png";
 import { Ellipse } from "../Services/index.styled";
 import ArticleIcon from "../../../assets/articles-icon.png";
 import Article1 from "../../../assets/article-1.png";
-import Article2 from "../../../assets/article-2.png";
+// import Article2 from "../../../assets/article-2.png";
 import {
   Card,
   Category,
@@ -13,7 +13,6 @@ import {
   Date,
   Header,
   SideImage,
-  Text,
   Title,
   Detail,
 } from "./index.styled";
@@ -28,7 +27,7 @@ const Articles = () => {
       <Wrapper>
         <SectionHeader
           icon={ArticleIcon}
-          title={"08 . Articles"}
+          title={"07 . Articles"}
           oneliner={"Browse our content on growth marketing"}
         />
 

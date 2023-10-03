@@ -22,7 +22,7 @@ const Benefits = () => {
       <Container>
         <SectionHeader
           icon={BenefitIcon}
-          title={"07 . Benefits"}
+          title={"06 . Benefits"}
           oneliner={"Benefit of working with Lumanta"}
           leftAlign={true}
           style={{ justifyContent: "unset", alignSelf: "flex-start" }}

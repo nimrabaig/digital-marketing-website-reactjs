@@ -29,7 +29,7 @@ const Homepage = () => {
       <Services />
       <AboutUs />
       <OurProcess />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <CaseStudies />
       <Pricing />
       <Benefits />
