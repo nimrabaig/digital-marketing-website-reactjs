@@ -119,7 +119,7 @@ const ContactUs = () => {
           <Grid>
             <ContactCardOuter>
               <CardInner>
-                <Tag>Contact</Tag>
+                <Tag>Email</Tag>
                 <Separator />
 
                 <Flex>
@@ -148,7 +148,7 @@ const ContactUs = () => {
 
             <ContactCardOuter>
               <CardInner>
-                <Tag>Call</Tag>
+                <Tag>Contact</Tag>
                 <Separator />
 
                 <Flex>
