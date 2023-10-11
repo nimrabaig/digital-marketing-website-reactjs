@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import BannerImg from "../../../assets/Banner.png";
 
 export const Wrapper = styled.div`
-  display: flex;
+   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -17,22 +17,20 @@ export const Wrapper = styled.div`
     height: 1100px;
   }
 
-  @media (max-width: 640px) {
-    height: 1000px;
-  }
-
   @media (max-width: 1000px) {
-    height: 800px;
+    height: 1000px;
     background: linear-gradient(111deg, #e9f7ff 9.95%, #ffdbd4 85.17%);
   }
 
   @media (min-height: 1200px) {
-    height: 800px;
+    height: 1200px;
     padding-top: 100px;
-    background: linear-gradient(111deg, #e9f7ff 9.95%, #ffdbd4 85.17%);
   }
 
-
+  @media (min-height: 1600px) {
+    height: 1400px;
+    padding-top: 100px;
+  }
 `;
 
 export const Content = styled.div`
@@ -50,13 +48,13 @@ export const Content = styled.div`
     margin: 120px auto 20px !important;
   }
 
-  @media (min-height: 1200px) {
+  /* @media (min-height: 1600px) {
     flex-direction: column;
     justify-centent: center;
     margin: 120px auto 20px !important;
-  }
+  } */
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1600px) {
     margin: 120px 10% !important;
   }
 `;
@@ -67,7 +65,7 @@ export const Tagline = styled.h2`
   margin: 0px;
   width: 100%;
 
-  @media (min-width: 1400px) {
+  @media (min-width: 2000px) {
     font-size: 72px !important;
   }
 
@@ -83,9 +81,9 @@ export const Tagline = styled.h2`
     text-align: center;
   }
 
-  @media (min-height: 1200px) {
+  /* @media (min-height: 1600px) {
     text-align: center;
-  }
+  } */
 `;
 
 export const SubText = styled.p`
@@ -96,9 +94,9 @@ export const SubText = styled.p`
   line-height: 156.5%; /* 28.17px */
   width: 570px;
 
-  @media (min-width: 1400px) {
+  @media (min-width: 2000px) {
     font-size: 34px !important;
-    width: 750px;
+    /* width: 750px; */
   }
 
   @media (max-width: 1000px) {
@@ -108,12 +106,12 @@ export const SubText = styled.p`
     width: 80%;
   }
 
-  @media (min-height: 1200px) {
+  /* @media (min-height: 1600px) {
     text-align: center;
     padding: 0px 20px;
     margin: 20px auto 0px;
     width: 80%;
-  }
+  } */
 `;
 
 export const ButtonsContainer = styled.div`
@@ -132,11 +130,11 @@ export const ButtonsContainer = styled.div`
     margin-top: 30px !important;
   }
 
-  @media (min-height: 1200px) {
+  /* @media (min-height: 1600px) {
     flex-direction: column;
     justify-content: center;
     margin: 40px auto 20px !important;
-  }
+  } */
 `;
 export const Flex = styled.div`
   display: flex;
@@ -147,10 +145,10 @@ export const Flex = styled.div`
     width: 100%;
   }
 
-  @media (min-height: 1200px) {
+  /* @media (min-height: 1600px) {
     justify-content: center;
     width: 100%;
-  }
+  } */
 
   @media (max-width: 370px) {
     justify-content: center !important;

@@ -13,13 +13,14 @@ import { useLocation } from "react-router-dom";
 
 const Homepage = () => {
   const path = useLocation().pathname;
-  
+
   useEffect(() => {
     if (path === "/pricing") {
-      const element = document.getElementById('pricing');
-      element.scrollIntoView({ behavior: 'smooth' });
-    } else
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+      const element = document.getElementById("pricing");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
   return (
@@ -28,14 +29,14 @@ const Homepage = () => {
       <Services />
       <AboutUs />
       <OurProcess />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <CaseStudies />
       <Pricing />
       <Benefits />
-      <Separator style={{ margin: "20px auto 100px" }}/>
+      <Separator style={{ margin: "20px auto 100px" }} />
       <Articles />
     </>
-  )
-}
+  );
+};
 
 export default Homepage;

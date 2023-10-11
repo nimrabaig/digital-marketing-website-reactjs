@@ -38,7 +38,7 @@ export const MenuItem = styled.div`
   color: #292930;
   font-size: 18px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: ${props => props.selected ? "600" : "300"};
   line-height: 160%; /* 28.8px */
   text-transform: capitalize;
   margin: auto 20px;

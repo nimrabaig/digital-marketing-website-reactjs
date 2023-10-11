@@ -59,7 +59,7 @@ const Footer = () => {
                 <Icon src={Call} alt="" />
                 <Text>Get in touch with</Text>
               </Flex>
-              <Phone>+14169965329</Phone>
+              <Phone>+16138072399</Phone>
               <Text>info@lumentadigital.com</Text>
             </Column>
 
@@ -117,8 +117,18 @@ const Footer = () => {
                 <Icon src={Links} alt="" />
                 <Text>Important Links</Text>
               </Flex>
-              <Text style={{ cursor: "pointer" }} onClick={() => navigate("/pricing")}>Pricing</Text>
-              <Text style={{ cursor: "pointer" }} onClick={() => navigate("/career")}>Career</Text>
+              <Text
+                style={{ cursor: "pointer" }}
+                onClick={() => navigate("/pricing")}
+              >
+                Pricing
+              </Text>
+              <Text
+                style={{ cursor: "pointer" }}
+                onClick={() => navigate("/career")}
+              >
+                Career
+              </Text>
               <Text>Case Study PDF</Text>
             </BottomColumn>
 
@@ -136,7 +146,12 @@ const Footer = () => {
                 Facebook
               </SocialLink>
               <SocialLink>Twitter</SocialLink>
-              <SocialLink>Instagram</SocialLink>
+              <SocialLink
+                href="https://instagram.com/lumentadigital?igshid=MzRlODBiNWFlZA=="
+                target="_blank"
+              >
+                Instagram
+              </SocialLink>
               <SocialLink
                 href="https://www.linkedin.com/company/lumenta-digital"
                 target="_blank"

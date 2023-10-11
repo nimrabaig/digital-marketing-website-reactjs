@@ -52,7 +52,7 @@ const CaseStudies = () => {
           <Container>
             <SectionHeader
               icon={CaseStudiesIcon}
-              title={"05 . Case Sudies"}
+              title={"04 . Case Sudies"}
               oneliner={"Browse our latest case study on Marketing Agency"}
               color={"#fff"}
               leftAlign={true}

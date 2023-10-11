@@ -78,6 +78,9 @@ export const Price = styled.div`
   font-style: normal;
   font-weight: 900;
   line-height: 110.5%; /* 55.25px */
+  @media (max-width: 1060px) {
+    font-size: 32px;
+  }
 `;
 
 export const Text = styled.div`
@@ -89,9 +92,9 @@ export const Text = styled.div`
   font-weight: 400;
   line-height: 244%; /* 43.92px */
 
-  @media (max-width: 1060px) {
+  /* @media (max-width: 1060px) {
     font-size: 14px;
-  }
+  } */
 `;
 
 export const Button = styled.div`
