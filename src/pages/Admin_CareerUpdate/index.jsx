@@ -93,18 +93,18 @@ const Admin_CareerUpdate = () => {
                 title: dataItem.title,
                 content: content,
                 coverPhoto: dataItem?.coverPhoto ? dataItem?.coverPhoto[0]?.getRawFile() : null,
-                authorName: 'dataItem.authorName',
+                authorName: dataItem.authorName,
                 authorProfilePicture: dataItem?.authorProfilePicture ? dataItem?.authorProfilePicture[0]?.getRawFile() : null,
                 categoryId: dataItem.categoryId.id,
                 jobTypeId: dataItem.jobCategory.id,
-                city: 'dataItem.city',
-                province: 'dataItem.province',
-                country: 'dataItem.country',
-                authorDesignation: 'dataItem.authorDesignation',
-                authorFacebookUrl: 'dataItem.authorFacebookUrl',
-                authorInstagramUrl: 'dataItem.authorInstagramUrl',
-                authorTwitterUrl: 'dataItem.authorTwitterUrl',
-                authorLinkedinUrl: 'dataItem.authorLinkedinUrl'
+                city: dataItem.city,
+                province: dataItem.province,
+                country: dataItem.country,
+                authorDesignation: dataItem.authorDesignation,
+                authorFacebookUrl: dataItem.authorFacebookUrl,
+                authorInstagramUrl: dataItem.authorInstagramUrl,
+                authorTwitterUrl: dataItem.authorTwitterUrl,
+                authorLinkedinUrl: dataItem.authorLinkedinUrl
             }
         })
         console.log(res)
@@ -113,6 +113,10 @@ const Admin_CareerUpdate = () => {
         }
         setBtnDisabled(false)
     }
+
+    useEffect(() => {
+      job.refetch()
+    }, [])
 
     return (
         <Admin_Main
