@@ -35,7 +35,6 @@ import Arrow from "../../assets/arrow.png";
 import { useEffect, useState } from "react";
 import { cx, css } from "@emotion/css";
 import { SubjectOptions } from "../../constants/Dropdowns";
-import axios from "axios";
 
 const ContactUs = () => {
   const toNullIfEmpty = (value) => {
