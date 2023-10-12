@@ -11,13 +11,6 @@ import Blogs from "../pages/Blogs";
 import Blog from "../pages/Blog";
 import CaseStudies from "../pages/CaseStudies";
 import CaseStudy from "../pages/CaseStudy";
-import Admin_BlogCreate from "../pages/Admin_BlogCreate";
-import Admin_Dashboard from "../pages/Admin_Dashboard";
-import Admin_BlogView from "../pages/Admin_BlogView";
-import Admin_BlogUpdate from "../pages/Admin_BlogUpdate";
-import Admin_CareerCreate from "../pages/Admin_CareerCreate";
-import Admin_CareerView from "../pages/Admin_CareerView";
-import Admin_CareerUpdate from "../pages/Admin_CareerUpdate";
 
 const router = [
   {
@@ -63,35 +56,7 @@ const router = [
   {
     path: "/case-studies/:id",
     element: <CaseStudy/>
-  },
-  {
-    path: "/admin",
-    element: <Admin_Dashboard/>
-  },
-  {
-    path: "/admin/blogs/create",
-    element: <Admin_BlogCreate/>
-  },
-  {
-    path: "/admin/blogs/update/:id",
-    element: <Admin_BlogUpdate/>
-  },
-  {
-    path: "/admin/blogs/list",
-    element: <Admin_BlogView/>
-  },
-  {
-    path: "/admin/careers/create",
-    element: <Admin_CareerCreate/>
-  },
-  {
-    path: "/admin/careers/update/:id",
-    element: <Admin_CareerUpdate/>
-  },
-  {
-    path: "/admin/careers/list",
-    element: <Admin_CareerView/>
-  },
+  }
 ];
 
 const RouterConfig = () => {
