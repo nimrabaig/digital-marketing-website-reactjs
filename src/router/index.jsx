@@ -7,6 +7,7 @@ import ContactUs from "../pages/ContactUs";
 import Services from "../pages/Services";
 import Service from "../pages/Service";
 import Career from "../pages/Career";
+import CareerDetail from "../pages/CareerDetail";
 import Blogs from "../pages/Blogs";
 import Blog from "../pages/Blog";
 import CaseStudies from "../pages/CaseStudies";
@@ -40,6 +41,10 @@ const router = [
   {
     path: "/career",
     element: <Career />
+  },
+  {
+    path: "/career/:id",
+    element: <CareerDetail />
   },
   {
     path: "/blogs",

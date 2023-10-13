@@ -1,65 +1,18 @@
-import {
-  Banner,
-  StyledContainer,
-  Column,
-  Heading,
-  SubHeading,
-  AboutSection,
-  Bullet,
-  ServiceText,
-  TextContainer,
-  WorkFlow,
-  WorkFlowHeading,
-  ProcessFlow,
-  FlowSteps,
-  ProcessDivider,
-  StepDescription,
-} from "./index.styled";
-import {
-  Card,
-  Title,
-  Description,
-  Grid,
-  Background,
-} from "../../components/Homepage/Services/index.styled";
-import {
-  Container,
-  Wrapper,
-} from "../../components/Homepage/CaseStudies/index.styled";
-import ServicesIcon from "../../assets/services-icon.png";
-import SectionHeader from "../../components/Section/SectionHeader";
-import { ServicesData } from "../../constants/Services";
-import { useParams } from "react-router-dom";
-import AboutIcon from "../../assets/at.png";
-import Check from "../../assets/bullet-check.png";
-import { Separator } from "../../components/Homepage/AboutUs/index.styled";
-import { cx, css } from "@emotion/css";
-import Flow1 from "../../assets/flow-1.png";
-import Flow2 from "../../assets/flow-2.png";
-import Flow3 from "../../assets/flow-3.png";
-import { useEffect } from "react";
+import { useQuery } from '@apollo/client'
+import { useParams } from 'react-router-dom'
+import { GET_JOB } from '../../helpers/Queries'
 import CaseStudiesBanner from "../../assets/case-studies-details.png";
-import Google from "../../assets/google.png"
-import Blog1 from "../../assets/blog-1.png"
-import Natasha from "../../assets/Natasha.png"
 import In from "../../assets/In.png"
 import Insta from "../../assets/Insta.png"
 import Fb from "../../assets/Fb.png"
 import Twiter from "../../assets/Twiter.png"
-import { styled } from "styled-components";
-import { useQuery } from "@apollo/client";
-import { GET_BLOG } from "../../helpers/Queries";
-import { formatDate } from "../../helpers/Utils";
+import styled from 'styled-components'
+import { formatDate } from '../../helpers/Utils';
 
-const Blog = () => {
+const CareerDetail = () => {
+
   const params = useParams()
-
-  const blog = useQuery(GET_BLOG, { variables: { viewBlogPostId: parseInt(params?.id) } })
-  console.log(blog?.data?.ViewBlogPost)
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  }, []);
+  const job = useQuery(GET_JOB, { variables: { viewJobPostId: parseInt(params?.id) } })
 
   const Container = styled.div`
 
@@ -172,52 +125,52 @@ const Blog = () => {
 `
 
   return (
+    <>
     <Container>
       <Banner />
       <OverlayContent>
         <OverlayTextCompany>
-          <Category>{blog?.data?.ViewBlogPost?.category?.name}</Category>
-          <Dates>{formatDate(blog?.data?.ViewBlogPost?.createdAt)}</Dates>
+          <Category>{job?.data?.ViewJobPost?.category?.name}</Category>
+          <Dates>{formatDate(job?.data?.ViewJobPost?.createdAt)}</Dates>
         </OverlayTextCompany>
-        <OverlayHeading>{blog?.data?.ViewBlogPost?.title}</OverlayHeading>
-        <img src={blog?.data?.ViewBlogPost?.coverPhotoURL} alt="" style={{ width: '100%', height: 'auto' }} />
+        <OverlayHeading>{job?.data?.ViewJobPost?.title}</OverlayHeading>
+        <img src={job?.data?.ViewJobPost?.coverPhotoURL} alt="" style={{ width: '100%', height: 'auto' }} />
       </OverlayContent>
       <NonOverlayContent>
         <OverlayInfo>
           <OverlayInfoDiv>
             <OverlayInfoDivInner>
-              <img src={blog?.data?.ViewBlogPost?.authorProfilePictureURL} alt="" width={50} height={50} style={{ marginRight: 20, borderRadius: 50 }} />
+              <img src={job?.data?.ViewJobPost?.authorProfilePictureURL} alt="" width={50} height={50} style={{ marginRight: 20, borderRadius: 50 }} />
               <div>
-                <OverlayInfoDivTitle>{blog?.data?.ViewBlogPost?.authorName}</OverlayInfoDivTitle>
-                <OverlayInfoDivDesc>{blog?.data?.ViewBlogPost?.authorDesignation}</OverlayInfoDivDesc>
+                <OverlayInfoDivTitle>{job?.data?.ViewJobPost?.authorName}</OverlayInfoDivTitle>
+                <OverlayInfoDivDesc>{job?.data?.ViewJobPost?.authorDesignation}</OverlayInfoDivDesc>
               </div>
             </OverlayInfoDivInner>
           </OverlayInfoDiv>
 
           <OverlayInfoDiv>
-            <a href={blog?.data?.ViewBlogPost?.authorInstagramURL}>
+            <a href={job?.data?.ViewJobPost?.authorInstagramURL}>
               <img src={Insta} alt="" style={{ marginRight: 30 }} />
             </a>
-            <a href={blog?.data?.ViewBlogPost?.authorFacebookURL}>
+            <a href={job?.data?.ViewJobPost?.authorFacebookURL}>
               <img src={Fb} alt="" style={{ marginRight: 30 }} />
             </a>
-            <a href={blog?.data?.ViewBlogPost?.authorTwitterURL}>
+            <a href={job?.data?.ViewJobPost?.authorTwitterURL}>
               <img src={Twiter} alt="" />
             </a>
           </OverlayInfoDiv>
         </OverlayInfo>
         <OverlayPara>
-          <OverlayParaHeading>Title: {blog?.data?.ViewBlogPost?.title}</OverlayParaHeading>
+          <OverlayParaHeading>Title: {job?.data?.ViewJobPost?.title}</OverlayParaHeading>
           <OverlayParaPara>
-            <div dangerouslySetInnerHTML={{ __html: blog?.data?.ViewBlogPost?.content }}></div>
+            <div dangerouslySetInnerHTML={{ __html: job?.data?.ViewJobPost?.content }}></div>
           </OverlayParaPara>
         </OverlayPara>
 
       </NonOverlayContent>
     </Container >
-  );
-};
+    </>
+  )
+}
 
-
-
-export default Blog;
+export default CareerDetail

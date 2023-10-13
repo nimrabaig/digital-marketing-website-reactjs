@@ -35,48 +35,48 @@ import Arrow from "../../assets/arrow.png";
 import { useEffect, useState } from "react";
 import { cx, css } from "@emotion/css";
 import { SubjectOptions } from "../../constants/Dropdowns";
-import axios from "axios";
+import { toNullIfEmpty } from "../../helpers/Utils";
+import { useMutation } from "@apollo/client";
+import { CONTACT_US } from "../../helpers/Mutations";
 
 const ContactUs = () => {
-  const toNullIfEmpty = (value) => {
-    const trimmedValue = value.trim();
-    return trimmedValue === "" ? null : trimmedValue;
-  };
-
-  const endpoint =
-    "https://adz7rajlui.execute-api.ca-central-1.amazonaws.com/graphql";
-  const mutation = `
-  mutation ContactUs($name: String!, $email: String!, $company: String!, $subject: String!, $message: String!) {
-    ContactUs(name: $name, email: $email, company: $company, subject: $subject, message: $message)
-  }
-`;
 
   const [selected, setSelected] = useState(0);
+  const [btnDisabled, setBtnDisabled] = useState(false)
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
+  const [contactFunc, contact] = useMutation(CONTACT_US)
+
   const handleSubmit = async () => {
+    setBtnDisabled(true)
     try {
-      const response = await axios.post(endpoint, {
-        query: mutation,
+      const res = await contactFunc({
         variables: {
           name: toNullIfEmpty(name),
           email: toNullIfEmpty(email),
           company: toNullIfEmpty(company),
           subject: toNullIfEmpty(subject),
           message: toNullIfEmpty(message),
-        },
-      });
-      console.log(response?.data?.data?.ContactUs?.message);
-      alert(response?.data?.data?.ContactUs?.message);
+        }
+      })
+      if (res.errors || !res?.data?.ContactUs?.success) {
+        console.error("Error from contactFunc:", res.errors);
+        alert("Please fill out all the fields.");
+      } else {
+        console.log(res?.data?.ContactUs?.message);
+        alert(res?.data?.ContactUs?.message)
+      }
     } catch (error) {
-      alert("Please fill out all the fields");
-      console.error("Error executing mutation:", error);
+      console.log("An error occurred while trying to contact:", error)
+      alert("Please fill out all the fields.")
+    } finally {
+      setBtnDisabled(false)
     }
-  };
+  }
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -293,6 +293,7 @@ const ContactUs = () => {
                 marginTop: 60,
                 marginBottom: 40,
               }}
+              disabled={btnDisabled}
               onClick={() => handleSubmit()}
             >
               Send Message
