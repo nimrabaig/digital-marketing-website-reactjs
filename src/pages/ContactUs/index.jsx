@@ -169,7 +169,7 @@ const ContactUs = () => {
                     <Text weight={600} size={25} color={"#292930"}>
                       Phone
                     </Text>
-                    <Text>++16138072399</Text>
+                    <Text>+16138072399</Text>
                   </Column>
                 </Flex>
               </CardInner>
