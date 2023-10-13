@@ -33,7 +33,7 @@ const Career = () => {
   }, []);
 
   return (
-    <StyledPage>
+    <>
       <Wrapper>
         <Banner />
 
@@ -68,7 +68,7 @@ const Career = () => {
         </Background>
       </Wrapper>
       <GetInTouch />
-    </StyledPage>
+    </>
   );
 };
 

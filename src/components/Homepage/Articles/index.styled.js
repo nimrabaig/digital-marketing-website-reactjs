@@ -8,6 +8,7 @@ export const Container = styled.div`
   gap: 10px;
   /* width: 90%; */
   margin: 60px auto;
+  width: 100%;
 `;
 
 export const Card = styled.div`
@@ -24,7 +25,7 @@ export const Card = styled.div`
   @media (max-width: 1050px) {
     flex-direction: column;
     max-height: max-content;
-    width: 300px;
+    padding: 20px;
   }
 
   /* @media (min-width: 1400px) {
