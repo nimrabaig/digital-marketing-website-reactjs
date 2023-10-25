@@ -69,7 +69,7 @@ const Footer = () => {
                 <Text>Location</Text>
               </Flex>
               <Text>
-                1315 Derry Road Unit 1, Mississauga, ON L5T1B6, Canada
+              1315 Derry Road East, Unit 1, Mississauga, Ontario, Canada. L5T 1B6
               </Text>
               <Link>location</Link>
             </Column>

@@ -199,7 +199,7 @@ const ContactUs = () => {
                       Location
                     </Text>
                     <Text>
-                      1315 Derry Road Unit 1, Mississauga, ON L5T1B6, CA
+                    1315 Derry Road East, Unit 1, Mississauga, Ontario, Canada. L5T 1B6
                     </Text>
                   </Column>
                 </Flex>
