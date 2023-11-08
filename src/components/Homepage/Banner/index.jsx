@@ -10,8 +10,10 @@ import Button from "../../Button";
 import { Text } from "../../Section/SectionHeader/index.styled";
 import { useNavigate } from "react-router-dom";
 
+
 const Banner = () => {
   const navigate = useNavigate();
+
   return (
     <>
       <Wrapper>

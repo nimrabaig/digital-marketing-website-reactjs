@@ -66,7 +66,7 @@ const AboutUs = () => {
               strategies they need to thrive online. With years of experience in
               the digital marketing field, our founders realized the immense
               potential of harnessing the power of the Internet to transform
-              businesses
+              businesses.
             </ServiceDetail>
           </Services>
         </TextContent>
