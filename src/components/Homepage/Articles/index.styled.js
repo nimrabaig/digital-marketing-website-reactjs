@@ -98,6 +98,6 @@ export const Detail = styled(Text)`
 
 export const SideImage = styled.img`
   @media (max-width: 1050px) {
-    width: 300px;
+    width: 100%;
   }
 `;

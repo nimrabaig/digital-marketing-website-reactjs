@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import BannerImg from "../../assets/about-us-bg.png";
+import BannerImg from "../../assets/about-us-bg.jpg";
 import Button from "../../components/Button";
 
 export const Wrapper = styled.div`

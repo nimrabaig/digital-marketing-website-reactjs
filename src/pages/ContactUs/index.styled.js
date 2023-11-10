@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import BannerImg from "../../assets/contact-us-banner.png";
+import BannerImg from "../../assets/contact-us-banner.jpg";
 import { DropDownList } from "@progress/kendo-react-dropdowns";
 
 export const Wrapper = styled.div`

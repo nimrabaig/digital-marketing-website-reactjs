@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     background-position: left bottom;
     margin-top: 100px;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     height: 800px;
     background: none !important;
   }
@@ -26,7 +26,7 @@ export const Container = styled.div`
   width: 90%;
      margin: auto;
   justify-content: space-between;
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -43,7 +43,7 @@ export const TextContent = styled.div`
   margin-left: auto;
   margin-right: 100px;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
     margin: 90px auto 20px !important;
     width: 90%;
@@ -76,7 +76,7 @@ export const BenefitHeader = styled.div`
   width: 90%;
 
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     width: 100%;
     margin: auto !important;
   }

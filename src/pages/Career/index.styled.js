@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import BannerImg from "../../assets/career-banner.png";
+import BannerImg from "../../assets/career-banner.jpg";
 
 export const Wrapper = styled.div`
   margin: auto;

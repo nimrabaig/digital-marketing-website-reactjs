@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import ServiceBanner from "../../assets/service-banner.png";
-import CaseStudiesBanner from "../../assets/case-studies-details.png";
+import CaseStudiesBanner from "../../assets/case-studies-details.jpg";
 import AboutService from "../../assets/service-about.png";
 import { TextContent } from "../../components/Homepage/AboutUs/index.styled";
 import { Divider } from "../../components/Homepage/OurProcess/index.styled";

@@ -38,9 +38,9 @@ import Flow1 from "../../assets/flow-1.png";
 import Flow2 from "../../assets/flow-2.png";
 import Flow3 from "../../assets/flow-3.png";
 import { useEffect } from "react";
-import CaseStudiesBanner from "../../assets/case-studies-details.png";
+import CaseStudiesBanner from "../../assets/case-studies-details.jpg";
 import Google from "../../assets/google.png"
-import Cs1 from "../../assets/case-study-1.png"
+import Cs1 from "../../assets/case-study-1.jpg"
 import { styled } from "styled-components";
 
 const CaseStudy = () => {

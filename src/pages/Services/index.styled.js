@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import BannerImg from "../../assets/services-banner.png";
+import BannerImg from "../../assets/services-banner.jpg";
 
 export const Banner = styled.div`
   position: relative;

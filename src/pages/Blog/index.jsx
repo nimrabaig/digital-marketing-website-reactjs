@@ -38,7 +38,7 @@ import Flow1 from "../../assets/flow-1.png";
 import Flow2 from "../../assets/flow-2.png";
 import Flow3 from "../../assets/flow-3.png";
 import { useEffect } from "react";
-import CaseStudiesBanner from "../../assets/case-studies-details.png";
+import CaseStudiesBanner from "../../assets/case-studies-details.jpg";
 import Google from "../../assets/google.png"
 import Blog1 from "../../assets/blog-1.png"
 import Natasha from "../../assets/Natasha.png"

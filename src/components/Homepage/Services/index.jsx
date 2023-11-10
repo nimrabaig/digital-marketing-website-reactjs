@@ -25,6 +25,9 @@ const Services = () => {
       if (window.innerWidth <= 1000) {
         setMobielView(true);
         setSliceddata(slicedData.slice(0, 2));
+      }
+      if (window.innerWidth <= 1200 && window.innerHeight >= 1250) {
+        setMobielView(true);
       } else {
         setSliceddata(ServicesData);
         setMobielView(false);
@@ -39,59 +42,62 @@ const Services = () => {
   return (
     <Background>
       <StyledPage>
-      <Wrapper>
-        <Container>
-          <SectionHeader
-            icon={ServicesIcon}
-            title={"01 . Services"}
-            leftAlign={true}
-            oneliner={
-              "High-impact services to take your business to the next level"
-            }
-            color={"#fff"}
-          />
-          {!mobileView && (
-            <Button onClick={() => navigate("/services")} style={{ height: 52, padding: "0px 34px", width: 200 }}>
+        <Wrapper>
+          <Container>
+            <SectionHeader
+              icon={ServicesIcon}
+              title={"01 . Services"}
+              leftAlign={true}
+              oneliner={
+                "High-impact services to take your business to the next level"
+              }
+              color={"#fff"}
+            />
+            {!mobileView && (
+              <Button
+                onClick={() => navigate("/services")}
+                style={{ height: 52, padding: "0px 34px", width: 200 }}
+              >
+                Our Services{" "}
+                <Ellipse>
+                  <img src={Arrow} alt="" height={10} width={6} />{" "}
+                </Ellipse>
+              </Button>
+            )}
+          </Container>
+
+          <Grid>
+            {slicedData.map((service, index) => (
+              <Card>
+                <img src={service.image} alt="" />
+                <Title>{service.title}</Title>
+                <Description>{service.description}</Description>
+                <ReadMore onClick={() => navigate(`/service/${index}`)}>
+                  Read More{" "}
+                  <Ellipse>
+                    <img src={Arrow} alt="" height={10} width={6} />{" "}
+                  </Ellipse>
+                </ReadMore>
+              </Card>
+            ))}
+          </Grid>
+          {mobileView && (
+            <Button
+              style={{
+                height: 52,
+                padding: "0px 34px",
+                margin: "auto",
+                width: 200,
+              }}
+              onClick={() => navigate("/services")}
+            >
               Our Services{" "}
               <Ellipse>
                 <img src={Arrow} alt="" height={10} width={6} />{" "}
               </Ellipse>
             </Button>
           )}
-        </Container>
-
-        <Grid>
-          {slicedData.map((service, index) => (
-            <Card>
-              <img src={service.image} alt="" />
-              <Title>{service.title}</Title>
-              <Description>{service.description}</Description>
-              <ReadMore onClick={() => navigate(`/service/${index}`)}>
-                Read More{" "}
-                <Ellipse>
-                  <img src={Arrow} alt="" height={10} width={6} />{" "}
-                </Ellipse>
-              </ReadMore>
-            </Card>
-          ))}
-        </Grid>
-        {mobileView && (
-          <Button
-            style={{
-              height: 52,
-              padding: "0px 34px",
-              margin: "auto",
-              width: 200,
-            }}
-            onClick={() => navigate("/services")}
-          >
-            Our Services{" "}
-            <Ellipse>
-              <img src={Arrow} alt="" height={10} width={6} />{" "}
-            </Ellipse>
-          </Button>
-        )}
-      </Wrapper>
+        </Wrapper>
       </StyledPage>
     </Background>
   );

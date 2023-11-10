@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   padding: 40px;
   flex-direction: column;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     padding: 40px 0px !important;
     width: 90%;
   }
@@ -33,12 +33,19 @@ export const Container = styled.div`
     justify-content: center;
     margin: auto;
   }
+
+  /* @media (max-width: 1250px) and (min-height: 1250px) {
+    justify-content: center;
+  } */
 `;
 
 export const SideImage = styled.img`
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     display: none;
   }
+  /* @media (max-width: 1250px) and (min-height: 1250px) {
+    display: none;
+  } */
 `;
 
 export const Card = styled.div`
@@ -100,7 +107,7 @@ export const CardHeader = styled.div`
   gap: 30px;
   width: 93%;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -115,7 +122,7 @@ export const Heading = styled.div`
   text-align: left;
   align-self: flex-start;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     width: 70%;
     text-overflow: ellipsis;
   }
@@ -151,7 +158,7 @@ export const Category = styled.div`
   text-align: left;
   display: flex;
   width: 93%;
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -169,12 +176,13 @@ export const Detail = styled.div`
   width: 93%;
 `;
 export const SideContainer = styled.div`
-width: 45%;
+  width: 45%;
 
- @media (max-width: 1000px) {
-  width: 100%;
-      display: flex;
+  @media (max-width: 1024px) {
+    width: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
- }`
+  }
+`;

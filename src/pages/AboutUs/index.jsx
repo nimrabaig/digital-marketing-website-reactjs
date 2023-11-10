@@ -1,5 +1,4 @@
 import { ValuesData } from "../../constants/Values";
-import { Team } from "../../constants/Team";
 import {
   Banner,
   Container,
@@ -14,18 +13,12 @@ import {
   Bar,
   PrimaryButton,
   SecondaryButton,
-  TeamsContainer,
   ContactUsContainer,
-  TeamCard,
-  Name,
-  Image,
   TagsContainer,
   ValuesButtonContainer,
-  TeamGrid,
   Tag,
 } from "./index.styled";
-import TeamsIcon from "../../assets/hand-shake-icon.png";
-import IntroImg from "../../assets/about-us-intro.png";
+import IntroImg from "../../assets/about-us-intro.jpg";
 import Icon from "../../assets/at.png";
 import Button from "../../components/Button";
 import Icon1 from "../../assets/dev-scale.png";

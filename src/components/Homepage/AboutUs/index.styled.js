@@ -15,15 +15,15 @@ export const Wrapper = styled.div`
   background-color: white;
   background-size: contain;
   background-repeat: no-repeat;
+    background-position: center left;
   background-size: 68%;
 
   @media (min-width: 1500px) {
     background-size: 50%;
     height: max-content;
   }
-  @media (min-width: 2000px) {
-    background-size: 38% !important;
-    background-position-x: 20%;
+  @media (min-width: 1200px) {
+    background-position: center left;
   }
   @media (max-width: 1000px) {
     background: none !important;
@@ -33,6 +33,10 @@ export const Wrapper = styled.div`
   @media (max-width: 370px) {
     margin-top: 300px;
   }
+
+  /* @media (max-width: 1200px) and (min-height: 1250px) {
+    background: none !important;
+  } */
 `;
 
 export const TextContent = styled.div`
@@ -43,12 +47,12 @@ export const TextContent = styled.div`
   margin: 43px 100px;
   width: 50%;
   margin-left: auto;
-  margin-right: 100px;
+  margin-right: 70px;
 
-  @media (max-width: 1000px) {
-    margin: 90px auto !important;
+  /* @media (max-width: 1000px) {
+    margin: 90px auto 40px;
     width: 90%;
-  }
+  } */
 
   @media (max-width: 750px) {
     flex-direction: column;
