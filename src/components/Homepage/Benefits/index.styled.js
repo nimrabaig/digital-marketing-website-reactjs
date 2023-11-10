@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import BenefitsBg from "../../../assets/benefits-bg.png";
+import BenefitsBg from "../../../assets/benefits-bg.jpg";
 
 export const Wrapper = styled.div`
   width: 100%;
