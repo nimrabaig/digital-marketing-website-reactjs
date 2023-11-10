@@ -69,13 +69,6 @@ const Header = () => {
                 {item.text}
               </MenuItem>
             ))}
-            <Button
-              primary={true}
-              style={{ marginLeft: 40 }}
-              onClick={() => navigate("/contact-us")}
-            >
-              Get Started
-            </Button>
           </Menu>
         )}
 
