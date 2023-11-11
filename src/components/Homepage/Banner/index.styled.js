@@ -1,5 +1,7 @@
 import { styled } from "styled-components";
-import BannerImg from "../../../assets/Banner.jpg";
+// import BannerImg from "../../../assets/Banner.jpg";
+
+const BannerImg = "https://beezybee-email-template-graphics.s3.ca-central-1.amazonaws.com/banner.jpg";
 
 export const Wrapper = styled.div`
    display: flex;
