@@ -84,7 +84,7 @@ export const BenefitHeader = styled.div`
 
 export const BenefitTitle = styled.span`
   color: #555;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -96,7 +96,7 @@ export const BenefitDescription = styled.span`
   align-items: center;
   width: 100%;
   color: #555;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

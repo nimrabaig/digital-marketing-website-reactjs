@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 110vh;
+  /* height: 110vh; */
   width: 100%;
   background-image: url(${BannerImg});
   background-repeat: no-repeat;

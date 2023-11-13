@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
 `;
 export const Text = styled.div`
   color: ${(props) => props.color ?? "#fff"};
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 45px;
   font-style: normal;
   font-weight: 800;

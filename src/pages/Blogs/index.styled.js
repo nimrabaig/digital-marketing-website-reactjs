@@ -108,7 +108,7 @@ export const LongButtonsContainer = styled(ButtonContainer)`
 
 export const Text = styled.div`
   color: #555;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -188,7 +188,7 @@ export const BlogGrid = styled.div`
 export const CardText = styled.div`
   color: #d0d0d0;
   text-align: center;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

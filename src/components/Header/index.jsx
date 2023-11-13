@@ -64,7 +64,7 @@ const Header = () => {
               <MenuItem
                 selected={location.pathname === item.path}
                 key={index}
-                onClick={() => navigate(`${item.path}`)}
+                href={`${item.path}`}
               >
                 {item.text}
               </MenuItem>

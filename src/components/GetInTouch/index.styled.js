@@ -66,7 +66,7 @@ export const Container = styled.div`
 
 export const Text = styled.div`
   color: ${(props) => props.color};
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 45px;
   font-style: normal;
   font-weight: 800;

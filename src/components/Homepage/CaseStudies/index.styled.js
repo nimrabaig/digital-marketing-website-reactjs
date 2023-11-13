@@ -115,7 +115,7 @@ export const CardHeader = styled.div`
 
 export const Heading = styled.div`
   color: ${(props) => (props.selected ? "#fff" : "rgba(255, 255, 255, 1)")};
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
@@ -150,7 +150,7 @@ export const Ellipse = styled.div`
 
 export const Category = styled.div`
   color: #ff7503;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -166,7 +166,7 @@ export const Category = styled.div`
 
 export const Detail = styled.div`
   color: #d0d0d0;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

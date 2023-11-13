@@ -36,7 +36,7 @@ export const Column = styled.div`
 `;
 
 export const Text = styled.div`
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;

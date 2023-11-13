@@ -109,7 +109,7 @@ export const ServiceHeader = styled.div`
 
 export const ServiceText = styled.span`
   color: #555;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -127,7 +127,7 @@ export const ServiceDetail = styled.span`
   align-items: center;
   width: 90%;
   color: #555;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

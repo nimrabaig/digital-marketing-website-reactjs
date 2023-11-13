@@ -62,7 +62,7 @@ export const Column = styled.div`
 export const PackageType = styled.div`
   color: ${(props) => (props.primary ? "#fff" : "#292930")};
   text-align: center;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -73,7 +73,7 @@ export const PackageType = styled.div`
 export const Price = styled.div`
   color: ${(props) => (props.primary ? "#fff" : "#292930")};
   text-align: center;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 38px;
   font-style: normal;
   font-weight: 900;
@@ -86,7 +86,7 @@ export const Price = styled.div`
 export const Text = styled.div`
   color: ${(props) => (props.primary ? "#fff" : "#292930")};
   text-align: center;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -114,7 +114,7 @@ export const Button = styled.div`
 
 export const Oneliner = styled.span`
   color: #292930;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 40px;
   font-style: normal;
   font-weight: 600;

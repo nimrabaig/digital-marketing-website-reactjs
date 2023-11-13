@@ -37,7 +37,7 @@ export const SubscriptionBox = styled.div`
 
 export const Text = styled.div`
   color: #fff;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -68,7 +68,7 @@ export const Input = styled.input`
   background-color: rgba(91, 91, 97, 1);
   border-radius: 4px;
   color: #fff;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -176,7 +176,7 @@ export const BottomColumn = styled(Column)`
 
 export const SocialLink = styled.a`
 color: #fff;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

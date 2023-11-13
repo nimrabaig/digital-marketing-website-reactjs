@@ -146,11 +146,11 @@ export const TextArea = styled.textarea`
   border-radius: 4px;
   resize: vertical;
   min-height: 100px;
-  font-family: Nunito !important;
+  font-family: Rubik !important;
   font-size: 18px;
 
   &::placeholder {
-    font-family: Nunito;
+    font-family: Rubik;
     font-size: 18px;
   }
 
@@ -213,7 +213,7 @@ export const FAQQuestion = styled.div`
   gap: 20px;
   width: 100%;
   color: #292930;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
@@ -286,5 +286,5 @@ export const Select = styled(DropDownList)`
   position: relative;
   overflow: hidden;
   font-size: 18px;
-  font-family: Nunito;
+  font-family: Rubik;
 `;

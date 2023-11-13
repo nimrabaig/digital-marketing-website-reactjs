@@ -100,7 +100,7 @@ export const TagsContainer = styled(ButtonContainer)`
 
 export const Text = styled.div`
   color: #555;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -142,6 +142,9 @@ export const Card = styled.div`
   flex-shrink: 0;
   @media (max-width: 440px) {
     width: 240px;
+  }
+  &:hover {
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.35);
   }
 `;
 
@@ -185,7 +188,7 @@ export const TeamGrid = styled.div`
 export const CardText = styled.div`
   color: #d0d0d0;
   text-align: center;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

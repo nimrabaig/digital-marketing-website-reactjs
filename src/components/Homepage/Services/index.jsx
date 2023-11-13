@@ -68,11 +68,11 @@ const Services = () => {
 
           <Grid>
             {slicedData.map((service, index) => (
-              <Card>
+              <Card onClick={() => navigate(`/service/${index}`)}>
                 <img src={service.image} alt="" />
                 <Title>{service.title}</Title>
                 <Description>{service.description}</Description>
-                <ReadMore onClick={() => navigate(`/service/${index}`)}>
+                <ReadMore className="child" onClick={() => navigate(`/service/${index}`)}>
                   Read More{" "}
                   <Ellipse>
                     <img src={Arrow} alt="" height={10} width={6} />{" "}

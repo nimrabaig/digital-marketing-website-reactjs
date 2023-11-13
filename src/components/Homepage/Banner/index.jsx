@@ -6,6 +6,8 @@ import {
   ButtonsContainer,
   Flex,
 } from "./index.styled";
+import Arrow from "../../../assets/arrow.png";
+import { Ellipse } from "../Services/index.styled";
 import Button from "../../Button";
 import { Text } from "../../Section/SectionHeader/index.styled";
 import { useNavigate } from "react-router-dom";
@@ -36,14 +38,17 @@ const Banner = () => {
           <ButtonsContainer>
             <Button primary={true} onClick={() => navigate("/services")}>
               Our Services
+              <Ellipse>
+                  <img src={Arrow} alt="" height={10} width={6} />{" "}
+                </Ellipse>
             </Button>
-            <Button
+            {/* <Button
               primary={false}
               style={{ width: 91.0469 }}
               onClick={() => navigate("/contact-us")}
             >
               Get Started
-            </Button>
+            </Button> */}
           </ButtonsContainer>
         </Content>
       </Wrapper>

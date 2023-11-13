@@ -102,7 +102,7 @@ const Blog = () => {
 
   const Dates = styled.div`
   color: #555;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

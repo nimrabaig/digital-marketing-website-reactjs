@@ -54,7 +54,7 @@ export const Column = styled.div`
 
 export const Heading = styled.div`
   color: #292930;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 70px;
   font-style: normal;
   font-weight: 700;

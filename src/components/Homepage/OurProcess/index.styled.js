@@ -21,7 +21,7 @@ text-align: center;
 margin: auto;
   color: #292930;
   text-align: center;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -60,7 +60,7 @@ export const Stage = styled.div`
 
 export const Step = styled.div`
   color: #292930;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
@@ -78,7 +78,7 @@ export const Step = styled.div`
 
 export const StepDescription = styled.div`
   color: #555;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

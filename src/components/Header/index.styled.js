@@ -34,16 +34,21 @@ export const Menu = styled.div`
   }
 `;
 
-export const MenuItem = styled.div`
-  color: #292930;
+export const MenuItem = styled.a`
+  color: ${props => props.selected ? "#FF7503" : "#292930"};
   font-size: 18px;
   font-style: normal;
   font-weight: ${props => props.selected ? "600" : "300"};
   line-height: 160%; /* 28.8px */
   text-transform: capitalize;
+  text-decoration: none !important;
   margin: auto 20px;
   cursor: pointer;
   border-bottom: ${props => props.selected ? "3px solid #FF7503" : ""};
+
+  &:hover {
+    color: #FF7503;
+  }
 `;
 
 export const MobileMenuIcon = styled.img`
@@ -95,7 +100,7 @@ export const MobileMenuItem = styled.div`
   }
   span {
     color: ${(props) => (props.selected ? "#FF7503" : "#292930")};
-    font-family: Nunito;
+    font-family: Rubik;
     font-size: 20.617px;
     font-style: normal;
     font-weight: 500;

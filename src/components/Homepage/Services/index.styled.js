@@ -44,7 +44,7 @@ export const Grid = styled.div`
 
 export const Card = styled.div`
   position: relative;
-  width: 278px;
+  width: 295px;
   height: 400px;
   padding: 20px;
   border-radius: 20px;
@@ -53,11 +53,20 @@ export const Card = styled.div`
   background: linear-gradient(180deg, #36363e 0%, #292930 100%),
     linear-gradient(0deg, #424245, #424245);
   cursor: #fff;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.35);
+    .child {
+      background-color: #fff;
+      color: rgba(41, 41, 48, 1);
+    }
+  }
 `;
 
 export const Title = styled.div`
   color: #fff;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
@@ -68,7 +77,7 @@ export const Title = styled.div`
 
 export const Description = styled.div`
   color: #d0d0d0;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -86,7 +95,7 @@ export const ReadMore = styled.div`
   margin: 20px auto;
   border: 1px solid rgba(82, 82, 85, 1);
   background-color: transparent;
-  color: #d0d0d0;;
+  color: #d0d0d0;
 
   &:hover {
     background-color: #fff;

@@ -93,7 +93,7 @@ export const Card = styled.div`
 
 export const Title = styled.div`
   color: #fff;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
@@ -104,7 +104,7 @@ export const Title = styled.div`
 
 export const Description = styled.div`
   color: #d0d0d0;
-  font-family: Nunito;
+  font-family: Rubik;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

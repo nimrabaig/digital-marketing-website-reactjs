@@ -75,7 +75,7 @@ align-items: center;
 justify-content: center;
 gap: 10px;
 color: #292930;
-font-family: Nunito;
+font-family: Rubik;
 font-size: 25px;
 font-style: normal;
 font-weight: 700;
@@ -90,7 +90,7 @@ border-radius: 50%;
 
 export const Text = styled.div`
 color: #555;
-font-family: Nunito;
+font-family: Rubik;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
@@ -98,7 +98,7 @@ line-height: 156.5%; /* 28.17px */`
 
 export const ClientName = styled.span`
 color: #292930;
-font-family: Nunito;
+font-family: Rubik;
 font-size: 20px !important;
 font-style: normal;
 font-weight: 700;`
