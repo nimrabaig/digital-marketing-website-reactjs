@@ -18,7 +18,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const Banner = styled.div`
-  position: relative;
+   position: relative;
   display: flex;
   flex-direction: column;
   height: 600px;
@@ -40,7 +40,11 @@ export const Banner = styled.div`
   @media (max-width: 450px) {
     height: 245px;
   }
-`;
+
+  @media (min-width: 2000px) {
+    background-size: cover;
+    background-position: center;
+  }`;
 
 export const Container = styled.div`
   display: flex;

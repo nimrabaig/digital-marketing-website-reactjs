@@ -10,8 +10,7 @@ export const Banner = styled.div`
   width: 100%;
   background-image: url(${BannerImg});
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
 
   @media (max-width: 1024px) {
     height: 350px;
@@ -24,5 +23,10 @@ export const Banner = styled.div`
 
   @media (max-width: 450px) {
     height: 245px;
+  }
+
+  @media (min-width: 2000px) {
+    background-size: cover;
+    background-position: center;
   }
 `;

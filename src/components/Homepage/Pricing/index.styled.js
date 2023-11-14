@@ -35,6 +35,11 @@ export const Package = styled.div`
   color: ${(props) => (props.primary ? "#fff" : "rgba(85, 85, 85, 1)")};
   padding: 20px;
   border-radius: 10px;
+  &:hover {
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.35);
+    transition: all .5s;
+    transform: translateY(-10px);
+  }
 `;
 
 export const Row = styled.div`

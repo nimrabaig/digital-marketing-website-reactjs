@@ -40,19 +40,18 @@ import { useMutation } from "@apollo/client";
 import { CONTACT_US } from "../../helpers/Mutations";
 
 const ContactUs = () => {
-
   const [selected, setSelected] = useState(0);
-  const [btnDisabled, setBtnDisabled] = useState(false)
+  const [btnDisabled, setBtnDisabled] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const [contactFunc, contact] = useMutation(CONTACT_US)
+  const [contactFunc, contact] = useMutation(CONTACT_US);
 
   const handleSubmit = async () => {
-    setBtnDisabled(true)
+    setBtnDisabled(true);
     try {
       const res = await contactFunc({
         variables: {
@@ -61,22 +60,22 @@ const ContactUs = () => {
           company: toNullIfEmpty(company),
           subject: toNullIfEmpty(subject),
           message: toNullIfEmpty(message),
-        }
-      })
+        },
+      });
       if (res.errors || !res?.data?.ContactUs?.success) {
         console.error("Error from contactFunc:", res.errors);
         alert("Please fill out all the fields.");
       } else {
         console.log(res?.data?.ContactUs?.message);
-        alert(res?.data?.ContactUs?.message)
+        alert(res?.data?.ContactUs?.message);
       }
     } catch (error) {
-      console.log("An error occurred while trying to contact:", error)
-      alert("Please fill out all the fields.")
+      console.log("An error occurred while trying to contact:", error);
+      alert("Please fill out all the fields.");
     } finally {
-      setBtnDisabled(false)
+      setBtnDisabled(false);
     }
-  }
+  };
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -140,7 +139,13 @@ const ContactUs = () => {
                     <Text weight={600} size={25} color={"#292930"}>
                       Email
                     </Text>
-                    <Text>info@lumentadigtal.com</Text>
+                    <Text  className={
+                      css`
+                        @media (max-width: 750px) {
+                          font-size: 14px;
+                        }
+                      `
+                    }>info@lumentadigtal.com</Text>
                   </Column>
                 </Flex>
               </CardInner>
@@ -166,10 +171,16 @@ const ContactUs = () => {
                     )}
                   />
                   <Column>
-                    <Text weight={600} size={25} color={"#292930"}>
+                    <Text weight={600} size={25} color={"#292930"} >
                       Phone
-                    </Text>
-                    <Text>+16138072399</Text>
+                    </Text >
+                    <Text  className={
+                      css`
+                        @media (max-width: 750px) {
+                          font-size: 14px;
+                        }
+                      `
+                    }>+16138072399</Text>
                   </Column>
                 </Flex>
               </CardInner>
@@ -198,8 +209,15 @@ const ContactUs = () => {
                     <Text weight={600} size={25} color={"#292930"}>
                       Location
                     </Text>
-                    <Text>
-                    1315 Derry Road East, Unit 1, Mississauga, Ontario, Canada. L5T 1B6
+                    <Text className={
+                      css`
+                        @media (max-width: 750px) {
+                          font-size: 14px;
+                        }
+                      `
+                    }>
+                      1315 Derry Road East, Unit 1, Mississauga, Ontario,
+                      Canada. L5T 1B6
                     </Text>
                   </Column>
                 </Flex>
@@ -262,7 +280,7 @@ const ContactUs = () => {
                   css`
                     width: 80%;
                     @media (max-width: 750px) {
-                      width: 100%;
+                      width: 90%;
                     }
                   `
                 )}
@@ -285,19 +303,42 @@ const ContactUs = () => {
                 />
               </Column>
             </Form>
+            <div
+              className={css`
+                display: flex;
+                width: 80%;
 
-            <Button
-              style={{
-                backgroundColor: "rgba(41, 41, 48, 1)",
-                color: "#fff",
-                marginTop: 60,
-                marginBottom: 40,
-              }}
-              disabled={btnDisabled}
-              onClick={() => handleSubmit()}
+                @media (max-width: 750px) {
+                  align-items: center;
+                  width: 100%;
+                  margin: auto !important;
+                }
+              `}
             >
-              Send Message
-            </Button>
+              <Button
+                style={{
+                  backgroundColor: "rgba(41, 41, 48, 1)",
+                  color: "#fff",
+                  marginTop: 60,
+                  marginBottom: 40,
+                  marginLeft: "auto",
+                }}
+                className={css`
+                  background-color: rgba(41, 41, 48, 1);
+                  color: #fff;
+                  margin-top: 60px;
+                  margin-bottom: 40px;
+                  margin-left: auto;
+                  @media (max-width: 750px) {
+                    margin: auto !important;
+                  }
+                `}
+                disabled={btnDisabled}
+                onClick={() => handleSubmit()}
+              >
+                Send Message
+              </Button>
+            </div>
           </FormBackground>
         </Container>
       </Wrapper>

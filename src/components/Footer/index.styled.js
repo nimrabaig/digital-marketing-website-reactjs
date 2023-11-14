@@ -175,7 +175,7 @@ export const BottomColumn = styled(Column)`
 `;
 
 export const SocialLink = styled.a`
-color: #fff;
+  color: #fff;
   font-family: Rubik;
   font-size: 18px;
   font-style: normal;
@@ -188,4 +188,9 @@ color: #fff;
     margin: auto !important;
     text-align: center;
   }
-`
+
+  &:hover {
+    transition: all 0.5s;
+    transform: translateY(-2px);
+  }
+`;

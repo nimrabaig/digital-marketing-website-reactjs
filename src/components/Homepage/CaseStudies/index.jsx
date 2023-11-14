@@ -10,6 +10,7 @@ import {
   Detail,
   SideContainer,
   Wrapper,
+  MoreArrow,
 } from "./index.styled";
 import CaseStudiesIcon from "../../../assets/case-studies-icon.png";
 import Button from "../../Button";
@@ -60,9 +61,12 @@ const CaseStudies = () => {
 
             <Button
               onClick={() => navigate("/case-studies")}
-              style={{ height: 52, padding: "0px 34px", minWidth: 134 }}
+              style={{ height: 52, padding: "0px 34px", minWidth: 180 }}
             >
               More Case Studies
+              <MoreArrow>
+                      <img src={Arrow} alt="" height={10} width={6} />{" "}
+                    </MoreArrow>
             </Button>
           </Container>
 

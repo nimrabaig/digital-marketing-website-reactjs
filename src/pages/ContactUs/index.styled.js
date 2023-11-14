@@ -16,10 +16,9 @@ export const Banner = styled.div`
   width: 100%;
   background-image: url(${BannerImg});
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1250px) {
     height: 350px;
   }
 
@@ -28,8 +27,13 @@ export const Banner = styled.div`
     background-size: 200%;
   }
 
-  @media (max-width: 375px) {
-    height: 278px;
+  @media (max-width: 450px) {
+    height: 245px;
+  }
+
+  @media (min-width: 2000px) {
+    background-size: cover;
+    background-position: center;
   }
 `;
 
@@ -53,7 +57,7 @@ export const Flex = styled.div`
     flex-direction: column;
     align-items: flex-start;
     gap: 0px;
-    width: 100%;
+    width: 90%;
   }
 `;
 
@@ -84,6 +88,12 @@ export const ContactCardOuter = styled.div`
   @media (max-width: 400px) {
     width: 224px;
     height: 289.656px;
+  }
+
+  &:hover {
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.35);
+    transition: all 0.5s;
+    transform: translateY(-2px);
   }
 `;
 
@@ -136,7 +146,7 @@ export const FormBackground = styled.div`
 
 export const TextArea = styled.textarea`
   width: 98%;
-  padding: 4px 8px;;
+  padding: 4px 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   margin: 10px 0px;

@@ -186,3 +186,14 @@ export const SideContainer = styled.div`
     align-items: center;
   }
 `;
+
+export const MoreArrow = styled.div`
+  height: 20px;
+  width: 20px;
+  background-color: rgba(255, 117, 3, 1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+`;
