@@ -188,7 +188,8 @@ const Footer = () => {
               >
                 Facebook
               </SocialLink>
-              <SocialLink>Twitter</SocialLink>
+              <SocialLink  href="https://twitter.com/lumentadigital"
+                target="_blank">Twitter</SocialLink>
               <SocialLink
                 href="https://instagram.com/lumentadigital?igshid=MzRlODBiNWFlZA=="
                 target="_blank"
