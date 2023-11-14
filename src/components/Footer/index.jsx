@@ -73,7 +73,7 @@ const Footer = () => {
                 1315 Derry Road East, Unit 1, Mississauga, Ontario, Canada. L5T
                 1B6
               </Text>
-              <Link>location</Link>
+              {/* <Link>location</Link> */}
             </Column>
           </Row>
 
