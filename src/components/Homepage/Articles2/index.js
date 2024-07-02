@@ -1,24 +1,17 @@
 import { Wrapper } from "../Pricing/index.styled";
 import Button from "../../Button";
-import Arrow from "../../../assets/arrow.png";
 import Google from "../../../assets/google.png";
 import Youtube from "../../../assets/youtube.png";
 import Facebook from "../../../assets/facebook.png";
 import WhiteArrow from "../../../assets/white-arrow.png";
-import { Ellipse } from "../Services/index.styled";
 import ArticleIcon from "../../../assets/articles-icon.png";
-import Article1 from "../../../assets/article-1.png";
-import Article2 from "../../../assets/article-2.png";
 import cs1 from "../../../assets/cs1.png";
 import cs2 from "../../../assets/cs2.png";
 import cs3 from "../../../assets/cs3.png";
 import {
   Card,
   Column,
-  Category,
   Container,
-  Date,
-  Header,
   SideImage,
   Text,
   Title,

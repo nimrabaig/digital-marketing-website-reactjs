@@ -13,10 +13,8 @@ import {
 } from "./index.styled";
 import Arrow from "../../assets/arrow.png";
 import Icon from "../../assets/hand-shake-icon.png";
-import { Careers } from "../../constants/Careers";
 import GetInTouch from "../../components/GetInTouch";
 import { useEffect } from "react";
-import StyledPage from "../../components/Wrapper";
 import { useQuery } from "@apollo/client";
 import { GET_JOBS } from "../../helpers/Queries";
 import { htmlToText, trimString } from "../../helpers/Utils";

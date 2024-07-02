@@ -8,7 +8,6 @@ import CaseStudies from "../../components/Homepage/CaseStudies";
 import OurProcess from "../../components/Homepage/OurProcess";
 import Pricing from "../../components/Homepage/Pricing";
 import Services from "../../components/Homepage/Services";
-import Testimonials from "../../components/Homepage/Testimonials";
 import { useLocation } from "react-router-dom";
 
 const Homepage = () => {
@@ -21,7 +20,7 @@ const Homepage = () => {
         element.scrollIntoView({ behavior: "smooth" });
       }
     } else window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  }, []);
+  }, [path]);
 
   return (
     <>

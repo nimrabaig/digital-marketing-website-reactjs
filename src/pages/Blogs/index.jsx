@@ -1,8 +1,7 @@
-import { BlogData } from "../../constants/Blogs";
+
 import {
   Banner,
   Wrapper,
-  Text,
   Image,
   BlogGrid,
   BlogsContainer,
@@ -15,7 +14,6 @@ import {
   Header1,
   HeaderContainer,
 } from "./index.styled";
-import TeamsIcon from "../../assets/hand-shake-icon.png";
 import SectionHeader1 from "../../components/Section/SectionHeader1";
 import { useEffect } from "react";
 import Article from "../../components/Homepage/Articles/Article";

@@ -2,11 +2,8 @@ import './App.css';
 import RouterConfig from './router';
 import {
   ApolloClient,
-  ApolloLink,
   ApolloProvider,
-  concat,
   from,
-  HttpLink,
   InMemoryCache,
 } from "@apollo/client";
 import { onError } from "@apollo/client/link/error";
@@ -28,6 +25,7 @@ function App() {
     if (graphqlErrors) {
       graphqlErrors.map(({ message, location, path }) => {
         console.log(`GraphQL error ${message}`);
+        return message;
       });
     }
   });

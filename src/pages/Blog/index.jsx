@@ -1,48 +1,7 @@
-import {
-  Banner,
-  StyledContainer,
-  Column,
-  Heading,
-  SubHeading,
-  AboutSection,
-  Bullet,
-  ServiceText,
-  TextContainer,
-  WorkFlow,
-  WorkFlowHeading,
-  ProcessFlow,
-  FlowSteps,
-  ProcessDivider,
-  StepDescription,
-} from "./index.styled";
-import {
-  Card,
-  Title,
-  Description,
-  Grid,
-  Background,
-} from "../../components/Homepage/Services/index.styled";
-import {
-  Container,
-  Wrapper,
-} from "../../components/Homepage/CaseStudies/index.styled";
-import ServicesIcon from "../../assets/services-icon.png";
-import SectionHeader from "../../components/Section/SectionHeader";
-import { ServicesData } from "../../constants/Services";
+
 import { useParams } from "react-router-dom";
-import AboutIcon from "../../assets/at.png";
-import Check from "../../assets/bullet-check.png";
-import { Separator } from "../../components/Homepage/AboutUs/index.styled";
-import { cx, css } from "@emotion/css";
-import Flow1 from "../../assets/flow-1.png";
-import Flow2 from "../../assets/flow-2.png";
-import Flow3 from "../../assets/flow-3.png";
 import { useEffect } from "react";
 import CaseStudiesBanner from "../../assets/case-studies-details.jpg";
-import Google from "../../assets/google.png"
-import Blog1 from "../../assets/blog-1.png"
-import Natasha from "../../assets/Natasha.png"
-import In from "../../assets/In.png"
 import Insta from "../../assets/Insta.png"
 import Fb from "../../assets/Fb.png"
 import Twiter from "../../assets/Twiter.png"

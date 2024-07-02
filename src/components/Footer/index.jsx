@@ -7,7 +7,6 @@ import {
   SubscribeNow,
   SubscriptionBox,
   SubscriptionText,
-  Link,
   Phone,
   Icon,
   Flex,

@@ -48,7 +48,7 @@ const ContactUs = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const [contactFunc, contact] = useMutation(CONTACT_US);
+  const [contactFunc, ] = useMutation(CONTACT_US);
 
   const handleSubmit = async () => {
     setBtnDisabled(true);

@@ -2,7 +2,6 @@ import { useQuery } from '@apollo/client'
 import { useParams } from 'react-router-dom'
 import { GET_JOB } from '../../helpers/Queries'
 import CaseStudiesBanner from "../../assets/case-studies-details.jpg";
-import In from "../../assets/In.png"
 import Insta from "../../assets/Insta.png"
 import Fb from "../../assets/Fb.png"
 import Twiter from "../../assets/Twiter.png"
